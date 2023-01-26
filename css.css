@@ -52,17 +52,8 @@ body {
 }
 
 
-@media only screen and (max-width: 420px) {
-	.topnav {
-		padding: 0%;
 
-	}
 
-	.topnav a {
-		padding: 12px 12px;
-	}
-
-}
 
 .firstYoutube {
 	max-width: 80%;
@@ -111,6 +102,19 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 }
 */
+/* the mobile part of css*/
+
+@media only screen and (max-width: 420px) {
+	.topnav {
+		padding: 0%;
+
+	}
+
+	.topnav a {
+		padding: 10px 18px;
+	}
+}
+/* keyframes for something */
 @keyframes scrollbarThumb {
 	from {
 		background-color: red;
