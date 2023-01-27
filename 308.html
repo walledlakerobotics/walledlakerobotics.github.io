@@ -11,7 +11,7 @@
         background-color: rgb(255, 188, 188);
     }
 </style>
-<link rel="Stylesheet" href="308css.css">
+
 
 
 </head>
@@ -45,6 +45,14 @@
 
     <!--- this is new images-->
     <style>
+      .caption {
+	display: block;
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	font-style: italic;
+	padding: 20px;
+      }
+
         .image-container {
           position: relative;
         }
@@ -71,11 +79,21 @@
       
           /* Style the text */
           color: white;
-          font-size: 24px;
+          font-size: 14px;
           font-weight: bold;
           text-align: center;
           opacity: 0.5;
         }
+        .caption {
+	display: block;
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	font-style: italic;
+	padding: 20px;
+	background-color: rgba(226, 226, 226, 0.8);
+	color: black;  
+  }
+
       </style>
       
   
@@ -99,7 +117,7 @@
     <div style="text-align: center;" class="container">
         <img src="image/308.jfif" alt="Description of image" style="max-width: 50%; height: auto; border: 4px solid #333; border-radius: 4px;">
         <br>
-        <video width="640" height="480" controls>
+        <video width="75%" height="75%" controls>
           <source src="video/videorobot.mp4" type="video/mp4">
           Sorry, your browser doesn't support embedded videos.
         </video>
@@ -134,46 +152,8 @@
         
       </div>
       <br>
-      <br>
-      <br>
-      <br>      
-      <br>
-      <br>
-      <br>
-      <footer class="footer">
-        <div class="waves">
-          <div class="wave" id="wave1"></div>
-          <div class="wave" id="wave2"></div>
-          <div class="wave" id="wave3"></div>
-          <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social-icon">
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a></li>
-        </ul>
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-    
-        </ul>
-        <p>&copy;2023 Walled Lake Robotics</p>
-      </footer>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+     
+   
 </body>
 
 

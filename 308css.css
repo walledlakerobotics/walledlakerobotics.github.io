@@ -80,19 +80,8 @@ h1, h2, h3 {
 	font-size: 50px;
 	font-style: italic;
 	padding: 20px;
-
-
-
 	background-color: rgba(226, 226, 226, 0.8);
-
-	color: black;
-
-
-
-
-	
-		  
-
+	color: black;  
   }
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
