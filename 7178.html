@@ -9,11 +9,134 @@
 <link rel="stylesheet" href="footer.css">
 
 <style>
-    body{
-        background-color:cyan;
+    table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+
+
     }
+    
+
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 </style>
 
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 <body>
 
     <div class="topnav">
@@ -29,14 +152,157 @@
     </div>
 
     <h1 style="text-align: center;">Yetis 7178</h1>
-    <div class="content">
-        <p style="text-indent: 5%;">7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
-        The Yetis made it to the FIRST World Championship in 2022, as well as winning the Excellence in Engineering award 
-        at the Walled Lake event and the district Championship at the state Championship. 
-        The Team has also participated in mutable events, such as the memorial day parade, school football games and 
-        pinkout events.
-        Also Yeti's 7178 have won 2 blue banners.
-        From its cool Yeti Mascot to its even cooler team, the Walled lake Yetis are here to chill.</p>
+
+    <div class="divider-bar">
     </div>
 
+    <div class="content">
+        <h2>About The Team</h2>
+        <p style="text-indent: 5%; margin-right: 50% ;">Team 7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
+            The Yetis split off from the monster team in 2018 and have been thriving ever since. 
+            The team consists of many individual sub teams that are student driven and mentor advised. 
+            Our team consists of people of many different experience levels, meaning anyone can join and be a part of the team. 
+            7178 fosters a learning environment where the more experienced teach the inexperienced everything they need to be successful in order to keep the team the best it can be. 
+            </p>
+            
+
+
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="image/occra.png" style="width:100%">
+                  
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="image/robot.JPG" style="width:100%">
+               
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="image/twologo.jpg" style="width:100%">
+                 
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+
+
+
+
+</div>
+    <div class="divider-bar">
+    </div>
+    
+    <div class="content">
+    <h2 style="text-indent: 5%; margin-left: 50%;">Involvement in the community </h2>
+    <p style="text-indent: 5%; margin-left: 50%;">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Western.
+         We bring our beloved Tank Bot, a tank robot to shoot t-shirts at football games, pep assemblies and other important events that go on.
+         We also bring our robots to walk in the Walled Lake memorial day parade. </p>
+         </div>
+<div class="divider-bar"></div>
+<div class="content">
+    <h2 style="text-align: center;">Awards</h2>
+
+    
+        <table style="width:100%;border:1px solid black;">
+            <tr>
+              <th> <image src="image/firstlogo.png" alt="First Robotics" style="width: 100px;"></image></th>
+              <th>OCCRA</th>
+              
+            </tr>
+            <tr style="height:auto">
+              <td style="font-weight: bold;">2022</td>
+              <td style="font-weight: bold;">2022</td>
+            </tr>
+            <tr>
+            <td>
+                <li>Excellence in Engineering Award ~ FIM District, Walled Lake Event</li>
+                <li>2022 Finalist ~ FIM District, Walled Lake Event</li>
+                <li>2022 Winner Ford Field ~ FIM District, State Championship</li>
+            </td>
+            <td>
+                <li>Third Place ~ Marian Tournament</li>
+                <li>Beautiful Bot Award ~ Marian Tournament </li>
+                <li>Second Place ~ Walled Lake Western Tournament</li>
+                <li>Spirit of the Competition Award ~ Walled Lake Western Tournament</li>
+                <li>Strategic Design Award ~ County Championship</li>
+                <li>Finalist ~ County Championship</li>
+            </td>
+              
+            </tr>
+
+
+            <tr>
+                <td style="font-weight: bold;">2021</td>
+                <td style="font-weight: bold;">2021</td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+    
+                <td>
+                    <li>Technical Excellence Award ~ County Championship</li>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight: bold;">2020</td>
+                <td style="font-weight: bold;">2020</td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+    
+                <td>
+                    <li>Most Improved Award ~ Virtual Design Challenge </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight: bold;">2019</td>
+                <td style="font-weight: bold;">2019</td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+    
+                <td>
+                    <li>Semi-Finalist ~ County Championship  </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight: bold;">2018</td>
+                <td style="font-weight: bold;">2018</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <li>2018 Highest Rookie Seed Award ~ FIM District, Troy Event </li>
+                </td>
+    
+                <td>
+                    <li>Technical Excellence Award ~ Brother Rice/Marian Tournamen</li>
+                    <li>Second Place  ~ Brother Rice/Marian Tournament</li>
+                    <li>Third Place ~ Birmingham Tournament</li>
+                </td>
+            </tr>
+        
+
+          </table>
+    
+
+
+
+</div>
 </body>
