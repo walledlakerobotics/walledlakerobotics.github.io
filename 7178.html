@@ -12,20 +12,27 @@
     table, th, td {
   border:1px solid black;
   border-collapse: collapse;
-
-
     }
     
-
-    * {box-sizing:border-box}
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100px;
-  position: relative;
+  max-width: 350px;
+  max-height: 350px;
+  position: absolute;
+  top: 24%;
+  left: 55%;
   margin: auto;
 }
-
+.slideshow-container2{
+  max-width: 350px;
+  max-height: 350px;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  margin: auto;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -106,42 +113,12 @@
 }
 </style>
 
-<script>
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
 <body>
 
     <div class="topnav">
         <a href="index.html">Home</a>
-        <a href="first.html">First</a>
+        <a href="first.html">FIRST</a>
         <a href="occra.html">OCCRA</a>
         <a href="308.html">308</a>
         <a href="7178.html">7178</a>
@@ -167,31 +144,29 @@ function showSlides(n) {
             
 
 
-            <div class="slideshow-container">
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="image/occra.png" style="width:100%">
-                  
-                </div>
-              
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="image/robot.JPG" style="width:100%">
-               
-                </div>
-              
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="image/twologo.jpg" style="width:100%">
-                 
-                </div>
-              
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Slide show on the side of the about team section-->
+     
+       
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="image/firstlogo.png" style="width:350px;height: 200px;">
               </div>
+            
+              <div class="mySlides1">
+                <img src="image/3088.JPG" style="width:350px;height: 200px;">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="moreImages/OHL.png" style="width:350px;height: 200px;">
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+
+              <br>
               <br>
 
 
@@ -202,11 +177,55 @@ function showSlides(n) {
     </div>
     
     <div class="content">
-    <h2 style="text-indent: 5%; margin-left: 50%;">Involvement in the community </h2>
+    <h2 style=" margin-left: 50%;">Involvement in the community </h2>
     <p style="text-indent: 5%; margin-left: 50%;">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Western.
          We bring our beloved Tank Bot, a tank robot to shoot t-shirts at football games, pep assemblies and other important events that go on.
          We also bring our robots to walk in the Walled Lake memorial day parade. </p>
-         </div>
+         <br>
+        </div>
+
+        
+        <div class="slideshow-container2" >
+          <div class="mySlides2">
+            <img src="moreImages/OHL.png" style="width:350px;height: 150px;">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="moreImages/OHL.png" style="width:350px;height: 150px;">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="image/speed.JPG" style="width:350px;height: 150px;">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+
+        <!--DO NOT REMOVE IT WILL DESTORY THE SLIDE SHOW-->
+          <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+
+
 <div class="divider-bar"></div>
 <div class="content">
     <h2 style="text-align: center;">Awards</h2>
@@ -215,12 +234,12 @@ function showSlides(n) {
         <table style="width:100%;border:1px solid black;">
             <tr>
               <th> <image src="image/firstlogo.png" alt="First Robotics" style="width: 100px;"></image></th>
-              <th>OCCRA</th>
+              <th><image src="image/occra.png" alt="OCCRA" style="width: 100px;"></image></th>
               
             </tr>
             <tr style="height:auto">
-              <td style="font-weight: bold;">2022</td>
-              <td style="font-weight: bold;">2022</td>
+              <td style="font-weight: bold;text-align: center;">2022</td>
+              <td style="font-weight: bold;text-align: center;">2022</td>
             </tr>
             <tr>
             <td>
@@ -241,8 +260,8 @@ function showSlides(n) {
 
 
             <tr>
-                <td style="font-weight: bold;">2021</td>
-                <td style="font-weight: bold;">2021</td>
+                <td style="font-weight: bold;text-align: center;">2021</td>
+                <td style="font-weight: bold;text-align: center;">2021</td>
             </tr>
             <tr>
                 <td>
@@ -254,8 +273,8 @@ function showSlides(n) {
             </tr>
 
             <tr>
-                <td style="font-weight: bold;">2020</td>
-                <td style="font-weight: bold;">2020</td>
+                <td style="font-weight: bold;text-align: center;">2020</td>
+                <td style="font-weight: bold;text-align: center;">2020</td>
             </tr>
 
             <tr>
@@ -268,8 +287,8 @@ function showSlides(n) {
             </tr>
 
             <tr>
-                <td style="font-weight: bold;">2019</td>
-                <td style="font-weight: bold;">2019</td>
+                <td style="font-weight: bold;text-align: center;">2019</td>
+                <td style="font-weight: bold;text-align: center;">2019</td>
             </tr>
 
             <tr>
@@ -282,8 +301,8 @@ function showSlides(n) {
             </tr>
 
             <tr>
-                <td style="font-weight: bold;">2018</td>
-                <td style="font-weight: bold;">2018</td>
+                <td style="font-weight: bold;text-align: center;">2018</td>
+                <td style="font-weight: bold;text-align: center;">2018</td>
             </tr>
 
             <tr>
