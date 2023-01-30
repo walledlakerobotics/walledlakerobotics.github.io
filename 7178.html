@@ -16,23 +16,49 @@
     
 * {box-sizing:border-box}
 
+.right{
+  text-indent: 5%; 
+  margin-left: 50%;
+}
+.righthead{
+  margin-left: 50%;
+}
+.left{
+  text-indent: 5%; 
+  margin-right: 50% ;
+}
+
+
+
+
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
   max-height: 350px;
   position: absolute;
-  top: 24%;
+  top: 18%;
   left: 55%;
   margin: auto;
 }
 .slideshow-container2{
-  max-width: 350px;
+  max-width: 500px;
   max-height: 350px;
   position: absolute;
   top: 55%;
-  left: 15%;
+  left: 10%;
   margin: auto;
 }
+
+.slide1image{
+  width:500px;
+  height: 250px;
+}
+.side2images{
+  width:500px;
+  height: 250px;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -107,6 +133,45 @@
   animation-duration: 1.5s;
 }
 
+@media only screen and (max-width: 420px) {
+  .content{
+    height: 500px;
+  }
+  .slideshow-container{
+    top:60%;
+    left: 10%;
+
+  }
+  .slideshow-container2{
+    top: 110%;
+  }
+ 
+.right{
+  margin-left: 0%;
+}
+.righthead{
+  margin-left: 0%;
+  font-size: 20px;
+}
+
+.left{
+  margin-right: 0%;
+}
+.lefthead{
+  margin-left: 0%;
+  font-size: 20px;
+
+}
+.slide1image{
+  max-width: 300px;
+  width: 300px;
+  height: 150px;
+}
+.side2images{
+  height: 150px;
+  width: 300px;
+}
+}
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -134,8 +199,8 @@
     </div>
 
     <div class="content">
-        <h2>About The Team</h2>
-        <p style="text-indent: 5%; margin-right: 50% ;">Team 7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
+        <h2 class="lefthead">About The Team</h2>
+        <p class="left">Team 7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
             The Yetis split off from the monster team in 2018 and have been thriving ever since. 
             The team consists of many individual sub teams that are student driven and mentor advised. 
             Our team consists of people of many different experience levels, meaning anyone can join and be a part of the team. 
@@ -144,68 +209,68 @@
             
 
 
-
+</div>
             <!-- Slide show on the side of the about team section-->
      
        
             <div class="slideshow-container">
               <div class="mySlides1">
-                <img src="7178images/2022teampitsOCCRA.png" style="width:500px;height: 200px;">
+                <img src="7178images/2022teampitsOCCRA.png" class="slide1image" >
               </div>
             
               <div class="mySlides1">
-                <img src="7178images/7178worldssigninpit.JPG" style="width:500px;height: 200px;">
+                <img src="7178images/7178worldssigninpit.JPG" class="slide1image">
               </div>
             
               <div class="mySlides1">
-                <img src="7178images/centralwinnig.png" style="width:500px;height: 200px;">
+                <img src="7178images/centralwinnig.png" class="slide1image">
               </div>
 
               <div class="mySlides1">
-                <img src="7178images/clim.png" style="width:500px;height: 200px;">
+                <img src="7178images/clim.png" class="slide1image">
               </div>
             
               <div class="mySlides1">
-                <img src="7178images/driveteamworlds.png" style="width:500px;height: 200px;">
+                <img src="7178images/driveteamworlds.png" class="slide1image">
               </div>
             
               <div class="mySlides1">
-                <img src="7178images/goodshoot.JPG" style="width:500px;height: 200px;">
+                <img src="7178images/goodshoot.JPG" class="slide1image">
               </div>
               <div class="mySlides1">
-                <img src="7178images/michalbot.png" style="width:500px;height: 200px;">
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/OCCAR2021.png" style="width:500px;height: 200px;">
+                <img src="7178images/michalbot.png" class="slide1image">
               </div>
             
               <div class="mySlides1">
-                <img src="7178images/OCCAR2022.png" style="width:500px;height: 200px;">
+                <img src="7178images/OCCAR2021.png" class="slide1image">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/OCCAR2022.png" class="slide1image">
               </div>
 
               <div class="mySlides1">
-                <img src="7178images/OCCARBot7178.png" style="width:500px;height: 200px;">
+                <img src="7178images/OCCARBot7178.png" class="slide1image">
               </div>
             
               <div class="mySlides1">
-                <img src="7178images/shop.png" style="width:500px;height: 200px;">
+                <img src="7178images/shop.png" class="slide1image">
               </div>
             
               <div class="mySlides1">
-                <img src="7178images/teamcentealwinningagian.JPG" style="width:500px;height: 200px;">
+                <img src="7178images/teamcentealwinningagian.JPG" class="slide1image">
               </div>
 
               <div class="mySlides1">
-                <img src="7178images/TeamInfrontoffirstsign.JPG" style="width:500px;height: 200px;">
+                <img src="7178images/TeamInfrontoffirstsign.JPG" class="slide1image">
               </div>
 
               <div class="mySlides1">
-                <img src="7178images/teamstates.png" style="width:500px;height: 200px;">
+                <img src="7178images/teamstates.png" class="slide1image">
               </div>
 
               <div class="mySlides1">
-                <img src="7178images/worldsstans.JPG" style="width:500px;height: 200px;">
+                <img src="7178images/worldsstans.JPG" class="slide1image">
               </div>
               <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
               <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -218,30 +283,30 @@
 
 
 
-</div>
+
     <div class="divider-bar">
     </div>
     
     <div class="content">
-    <h2 style=" margin-left: 50%;">Involvement in the community </h2>
-    <p style="text-indent: 5%; margin-left: 50%;">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Western.
+    <h2 class="righthead">Involvement in the community </h2>
+    <p class="right">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Western.
          We bring our beloved Tank Bot, a tank robot to shoot t-shirts at football games, pep assemblies and other important events that go on.
          We also bring our robots to walk in the Walled Lake memorial day parade. </p>
-         <br>
+         <br><br><br><br><br>
         </div>
 
         
         <div class="slideshow-container2" >
           <div class="mySlides2">
-            <img src="moreImages/OHL.png" style="width:350px;height: 150px;">
+            <img src="moreImages/OHL.png" class="side2images">
           </div>
         
           <div class="mySlides2">
-            <img src="moreImages/OHL.png" style="width:350px;height: 150px;">
+            <img src="moreImages/OHL2.png" class="side2images" >
           </div>
         
           <div class="mySlides2">
-            <img src="image/speed.JPG" style="width:350px;height: 150px;">
+            <img src="image/speed.JPG" class="side2images">
           </div>
         
           <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
