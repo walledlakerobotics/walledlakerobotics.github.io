@@ -76,6 +76,7 @@ body {
 	column-count: 2;
 	break-inside: avoid;
 	column-width: 526px;
+	
 }
 
 
@@ -86,6 +87,16 @@ body {
 	width: 50%;
 	object-fit: contain;
 }
+
+
+
+.divider-bar{
+    border-top: dashed;
+    height: 5px;
+    width: 100%;
+  }
+
+  
 /*
 body::-webkit-scrollbar {
 	width: 11px;

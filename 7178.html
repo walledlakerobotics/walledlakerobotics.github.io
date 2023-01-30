@@ -9,16 +9,178 @@
 <link rel="stylesheet" href="footer.css">
 
 <style>
-    body{
-        background-color:cyan;
-    }
+
+    
+* {box-sizing:border-box}
+
+.right{
+  text-indent: 5%; 
+  margin-left: 50%;
+}
+.righthead{
+  margin-left: 50%;
+}
+.left{
+  text-indent: 5%; 
+  margin-right: 50% ;
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  max-height: 350px;
+  position: absolute;
+  top: 18%;
+  left: 55%;
+  margin: auto;
+}
+.slideshow-container2{
+  max-width: 500px;
+  max-height: 350px;
+  position: absolute;
+  top: 54%;
+  left: 10%;
+  margin: auto;
+}
+
+.slide1image{
+  width:500px;
+  height: 250px;
+}
+.side2images{
+  width:500px;
+  height: 250px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@media only screen and (max-width: 420px) {
+  .content{
+    height: 500px;
+  }
+  .slideshow-container{
+    top:60%;
+    left: 10%;
+
+  }
+  .slideshow-container2{
+    top: 110%;
+  }
+ 
+.right{
+  margin-left: 0%;
+}
+.righthead{
+  margin-left: 0%;
+  font-size: 20px;
+}
+
+.left{
+  margin-right: 0%;
+}
+.lefthead{
+  margin-left: 0%;
+  font-size: 20px;
+
+}
+.slide1image{
+  max-width: 300px;
+  width: 300px;
+  height: 150px;
+}
+.side2images{
+  height: 150px;
+  width: 300px;
+}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 </style>
+
 
 <body>
 
     <div class="topnav">
         <a href="index.html">Home</a>
-        <a href="first.html">First</a>
+        <a href="first.html">FIRST</a>
         <a href="occra.html">OCCRA</a>
         <a href="308.html">308</a>
         <a href="7178.html">7178</a>
@@ -29,14 +191,245 @@
     </div>
 
     <h1 style="text-align: center;">Yetis 7178</h1>
-    <div class="content">
-        <p style="text-indent: 5%;">7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
-        The Yetis made it to the FIRST World Championship in 2022, as well as winning the Excellence in Engineering award 
-        at the Walled Lake event and the district Championship at the state Championship. 
-        The Team has also participated in mutable events, such as the memorial day parade, school football games and 
-        pinkout events.
-        Also Yeti's 7178 have won 2 blue banners.
-        From its cool Yeti Mascot to its even cooler team, the Walled lake Yetis are here to chill.</p>
+
+    <div class="divider-bar">
     </div>
 
+    <div class="content">
+        <h2 class="lefthead">About The Team</h2>
+        <p class="left">Team 7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
+            The Yetis split off from the monster team in 2018 and have been thriving ever since. 
+            The team consists of many individual sub teams that are student driven and mentor advised. 
+            Our team consists of people of many different experience levels, meaning anyone can join and be a part of the team. 
+            7178 fosters a learning environment where the more experienced teach the inexperienced everything they need to be successful in order to keep the team the best it can be. 
+            </p>
+            
+
+
+</div>
+            <!-- Slide show on the side of the about team section-->
+     
+       
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="7178images/2022teampitsOCCRA.png" class="slide1image" >
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/7178worldssigninpit.JPG" class="slide1image">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/centralwinnig.png" class="slide1image">
+              </div>
+
+              <div class="mySlides1">
+                <img src="7178images/clim.png" class="slide1image">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/driveteamworlds.png" class="slide1image">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/goodshoot.JPG" class="slide1image">
+              </div>
+              <div class="mySlides1">
+                <img src="7178images/michalbot.png" class="slide1image">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/OCCAR2021.png" class="slide1image">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/OCCAR2022.png" class="slide1image">
+              </div>
+
+              <div class="mySlides1">
+                <img src="7178images/OCCARBot7178.png" class="slide1image">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/shop.png" class="slide1image">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="7178images/teamcentealwinningagian.JPG" class="slide1image">
+              </div>
+
+              <div class="mySlides1">
+                <img src="7178images/TeamInfrontoffirstsign.JPG" class="slide1image">
+              </div>
+
+              <div class="mySlides1">
+                <img src="7178images/teamstates.png" class="slide1image">
+              </div>
+
+              <div class="mySlides1">
+                <img src="7178images/worldsstans.JPG" class="slide1image">
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+
+              <br>
+              <br>
+
+
+
+
+
+    <div class="divider-bar">
+    </div>
+    
+    <div class="content">
+    <h2 class="righthead">Involvement in the community </h2>
+    <p class="right">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Western.
+         We bring our beloved Tank Bot, a tank robot to shoot t-shirts at football games, pep assemblies and other important events that go on.
+         We also bring our robots to walk in the Walled Lake memorial day parade. </p>
+         <br><br><br><br><br>
+        </div>
+
+        
+        <div class="slideshow-container2" >
+          <div class="mySlides2">
+            <img src="7178images/7178worldssigninpit.JPG" class="side2images">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="7178images/TeamInfrontoffirstsign.JPG" class="side2images" >
+          </div>
+        
+          <div class="mySlides2">
+            <img src="7178images/clim.png" class="side2images">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+
+        <!--DO NOT REMOVE IT WILL DESTORY THE SLIDE SHOW-->
+          <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+
+
+<div class="divider-bar"></div>
+<div class="content">
+    <h2 style="text-align: center;">Awards</h2>
+
+    
+        <table style="width:100%;">
+            <tr>
+              <th> <image src="image/firstlogo.png" alt="First Robotics" style="width: 100px;"></image></th>
+              <th><image src="image/occra.png" alt="OCCRA" style="width: 100px;"></image></th>
+              
+            </tr>
+            <tr style="height:auto">
+              <td style="font-weight: bold;text-align: center;">2022</td>
+              <td style="font-weight: bold;text-align: center;">2022</td>
+            </tr>
+            <tr>
+            <td>
+                <li>Excellence in Engineering Award ~ FIM District, Walled Lake Event</li>
+                <li>2022 Finalist ~ FIM District, Walled Lake Event</li>
+                <li>2022 Winner Ford Field ~ FIM District, State Championship</li>
+            </td>
+            <td>
+                <li>Third Place ~ Marian Tournament</li>
+                <li>Beautiful Bot Award ~ Marian Tournament </li>
+                <li>Second Place ~ Walled Lake Western Tournament</li>
+                <li>Spirit of the Competition Award ~ Walled Lake Western Tournament</li>
+                <li>Strategic Design Award ~ County Championship</li>
+                <li>Finalist ~ County Championship</li>
+            </td>
+              
+            </tr>
+
+
+            <tr>
+                <td style="font-weight: bold;text-align: center;">2021</td>
+                <td style="font-weight: bold;text-align: center;">2021</td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+    
+                <td>
+                    <li>Technical Excellence Award ~ County Championship</li>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight: bold;text-align: center;">2020</td>
+                <td style="font-weight: bold;text-align: center;">2020</td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+    
+                <td>
+                    <li>Most Improved Award ~ Virtual Design Challenge </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight: bold;text-align: center;">2019</td>
+                <td style="font-weight: bold;text-align: center;">2019</td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+    
+                <td>
+                    <li>Semi-Finalist ~ County Championship  </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight: bold;text-align: center;">2018</td>
+                <td style="font-weight: bold;text-align: center;">2018</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <li>2018 Highest Rookie Seed Award ~ FIM District, Troy Event </li>
+                </td>
+    
+                <td>
+                    <li>Technical Excellence Award ~ Brother Rice/Marian Tournamen</li>
+                    <li>Second Place  ~ Brother Rice/Marian Tournament</li>
+                    <li>Third Place ~ Birmingham Tournament</li>
+                </td>
+            </tr>
+        
+
+          </table>
+    
+
+
+
+</div>
 </body>
