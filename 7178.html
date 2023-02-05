@@ -7,7 +7,7 @@
 <title>Team 7178</title>
 
 <link rel="stylesheet" href="footer.css">
-
+<link rel="stylesheet" href="cssfooter.css">
 <style>
 .content{
   columns: 2;
@@ -161,13 +161,13 @@
     </div>
 
     <div class="content">
-        <h2 class="lefthead">About The Team</h2>
-        <p class="left">Team 7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
+        <h1 class="lefthead">About The Team</h1>
+        <h3 class="left">Team 7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
             The Yetis split off from the monster team in 2018 and have been thriving ever since. 
             The team consists of many individual sub teams that are student driven and mentor advised. 
             Our team consists of people of many different experience levels, meaning anyone can join and be a part of the team. 
             7178 fosters a learning environment where the more experienced teach the inexperienced everything they need to be successful in order to keep the team the best it can be. 
-            </p>
+        </h3>
             
 
 
@@ -266,10 +266,10 @@
         <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
       </div>
-    <h2 class="righthead">Involvement in the community </h2>
-    <p class="right">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Western.
+    <h1 class="righthead">Involvement in the community </h1>
+    <h3 class="right">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Western.
          We bring our beloved Tank Bot, a tank robot to shoot t-shirts at football games, pep assemblies and other important events that go on.
-         We also bring our robots to walk in the Walled Lake memorial day parade. </p>
+         We also bring our robots to walk in the Walled Lake memorial day parade. </h3>
          <br><br><br><br><br>
         
 </div>
@@ -301,17 +301,73 @@
 
 
 <div class="divider-bar"></div>
-<div class="robotsbefore">
-<h1 style="text-align: center;">Past Robots</h1>
-<img src="robotimgs/71782022first.png"style="width:25%;">
-<img src="robotimgs/71782022OCCRA.JPG"style="width:25%;">
-
-
-
-</div>
+<style>
+  .robotsbefore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .robotsbefore img {
+    width: 35%;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .robotsbefore img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  </style>
+  <h1 style="font-size: 3em; text-align: center;">Past Robots</h1>
+  <div class="robotsbefore">
+    <h2 style="text-align: center;">FIRST Robot</h2>
+    <img src="robotimgs/71782022first.png">
+    <img src="robotimgs/71782022OCCRA.JPG">
+    <h2 style="text-align: center;">OCCRA Robot</h2>
+  </div>
 <div class="divider-bar"></div>
+
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    background-color: rgb(211, 211, 250);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  td {
+    background-color: rgb(202, 196, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  th {
+    background-color: rgb(209, 203, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+</style>
 <div class="content2">
-    <h2 style="text-align: center;">Awards</h2>
+  <h1 style="font-size: 3em; text-align: center;">Awards</h1>
+
+
+  
+
+    
 
     
         <table style="width:100%;">
@@ -408,4 +464,48 @@
 
 
 </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="footer">
+  
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social-icon">
+    <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/Monsters308/">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a></li>
+  </ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="first.html">First</a></li>
+    <li class="menu__item"><a class="menu__link" href="occra.html">Occra</a></li>
+    <li class="menu__item"><a class="menu__link" href="308.html">308</a></li>
+    <li class="menu__item"><a class="menu__link" href="7178.html">7178</a></li>
+    <li class="menu__item"><a class="menu__link" href="https://teamlocker.squadlocker.com/#/lockers/402840">Shop</a></li>
+
+  </ul>
+  <p>&copy;2023 Walled Lake Robotics</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+</html>
