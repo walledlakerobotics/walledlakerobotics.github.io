@@ -113,5 +113,33 @@ h1, h2, h3 {
 	clear: both;
 	display: table;
   }
-
- 
+  /*this is the top of the website*/
+  .team-section {
+	display: flex;
+	align-items: center;
+	margin: 50px 0;
+  }
+  
+  .team-section img {
+	width: 50%;
+	border-radius: 15%;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .team-section .team-text {
+	width: 50%;
+	margin-left: 50px;
+  }
+  
+  .team-section h2 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20px;
+  }
+  
+  .team-section p {
+	font-size: 18px;
+	color: #555;
+	line-height: 1.5;
+  }
