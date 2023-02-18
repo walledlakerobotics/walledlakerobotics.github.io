@@ -1,0 +1,117 @@
+
+#hero {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+#content {
+  background-color: #130d0a;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+.layer-4 {
+
+  width: 100%;
+  size: 30%;
+  padding-top: 100px;
+
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+#hero-mobile {
+  display: none;
+  background: url("file:///C:/Users/grizz/OneDrive/Desktop/html%20testing/download (9).png") no-repeat center bottom/cover;
+  height: 320px;
+}
+
+.first-section {
+  padding: 50px 0 20px 0;
+}
+
+
+
+
+#hero, .layer {
+  min-height: 800px;
+}
+
+.layer-bg {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
+}
+
+.layer-1 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/Charged_Up_Logo.svg/1200px-Charged_Up_Logo.svg.png\a 		");
+  
+  background-position: left top;
+}
+.layer-5 {
+  background-image: url("file:///C:/Users/grizz/OneDrive/Desktop/html%20testing/download__13_-removebg-preview.png\a 		");
+  background-position: left top;
+  
+}
+.layer-2 {
+  background-image: url("file:///C:/Users/grizz/OneDrive/Desktop/html%20testing/308buildings.png");
+  background-position: bottom;
+  background-size: 1200px 300px;
+  background-position-y: 500px;
+}
+
+.layer-4 {
+  background-image: url("file:///C:/Users/grizz/OneDrive/Desktop/html%20testing/cool.png\a 		");
+  background-position: right bottom;
+  background-position-x: 1360px;
+  background-position-y: 282px;
+}
+.layer-7 {
+  background-image: url("file:///C:/Users/grizz/OneDrive/Desktop/html%20testing/light.png\a 		");
+  background-position-x: 1300px;
+  background-position-y: 100px;
+  
+}
+.layer-8 {
+  background-image: url("file:///C:/Users/grizz/OneDrive/Desktop/html%20testing/light.png\a 		");
+  background-position-x: 1200px;
+  background-position-y: 200px;
+  
+}
+.layer-3 {
+  background-image: url("https://louisville.edu/digital-transformation/siteimages/smoke/image\a 		") ;
+
+}
+
+.layer-6 {
+  background-image: url("file:///C:/Users/grizz/OneDrive/Desktop/html%20testing/download (9).png\a 		");
+  background-position: right top;
+}
+.layer-overlay {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png\a 		");
+}
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
+}
+.tutorial-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.tutorial-link:hover {
+  color: #ede0d5;
+}
