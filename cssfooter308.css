@@ -7,7 +7,7 @@
   .footer {
 	position: relative;
 	width: 100%;
-	background-image: linear-gradient(to right, rgb(255, 197, 197), rgb(255, 213, 213));
+	background-image: linear-gradient(to right, rgb(255, 172, 172), rgb(255, 213, 213));
 	min-height: 100px;
 	padding: 20px 50px;
 	display: flex;
