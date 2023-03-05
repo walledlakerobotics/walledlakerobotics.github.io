@@ -5,7 +5,12 @@ body {
 
 }
 
-
+.row img{
+	
+	width:550px !important;
+	padding: 1px;
+	
+}
 .topnav {
 	overflow: hidden;
 	padding: 1px;
