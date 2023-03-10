@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <audio controls >
+      <source src="C:\Users\grizz\OneDrive\Documents\GitHub\walledlakerobotics.github.io\melon.mp3" type="audio/mp3" autoplay="autoplay">
+      Your browser does not support the audio element.
+    </audio>
+    <title>Nyan Cat Bounce</title>
+    <style>
+      /* Set the dimensions of the container */
+      body {
+	margin: 0;
+	font-family: 'Comic Sans MS', Helvetica, sans-serif;
+	background-image: url('https://media.tenor.com/9t3RHqeQB9kAAAAC/nyan-cat-background-only.gif')
+
+}
+      #container {
+        position: relative;
+        width: 2000px;
+        height: 1000px;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+      
+      /* Set the dimensions of the Nyan Cat gif */
+      #nyan-cat {
+        position: absolute;
+
+        left: 0;
+        top: 0;
+        animation: bounce 6s ease-in-out infinite;
+      }
+      
+      /* Define the animation */
+      @keyframes bounce {
+        0% {
+          transform: translate(100px, 100px);
+        }
+        50% {
+          transform: translate(600px, 200px);
+        }
+        100% {
+          transform: translate(100px, 100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="https://raw.githubusercontent.com/gist/KartSriv/3ec0038fbd26cdac8573382dc1cc857e/raw/b62b85e17ba62459c4c2f37e3d6314407d576f9f/nyancat.gif" alt="Nyan Cat" id="nyan-cat">
+    </div>
+  </body>
+</html>
