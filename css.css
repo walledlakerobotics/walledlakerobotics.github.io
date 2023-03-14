@@ -8,6 +8,7 @@ body {
 	overflow: hidden;
 	padding: 1px;
 	background-image: linear-gradient(to right, rgb(255, 20, 20), rgb(20, 20, 255));
+	
 }
 
 	.topnav a {
