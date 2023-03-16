@@ -7,30 +7,30 @@ body {
 .topnav {
 	overflow: hidden;
 	padding: 1px;
-	background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 255));
+	background-image: linear-gradient(to right, rgb(255, 20, 20), rgb(20, 20, 255));
+	
 }
 
-.topnav a {
-	border-radius: 5%;
-	float: left;
-	/*color: #f2f2f2;*/
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	transition: background-color 100ms ease-out 100ms, color 100ms ease-out 100ms;
+	.topnav a {
+		float: left;
+		color: rgb(255, 255, 255);
+		text-align: center;
+		padding: 0px 16px;
+		padding-top: 12px;
+		text-decoration: none;
+		font-size: 20px;
+		transition-duration: 0.2s;
+	}
 
-}
-
-.topnav a:hover {
-	background-color: #ddd;
-	color: black;
-}
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+			padding-top: 16px;
+			transition-duration: 0.2s;
+		}
 
 #backgroundtext {
 	color: black;
-	text-align: center;
 }
 
 .test {
@@ -40,7 +40,6 @@ body {
 
 
 .content {
-	max-width: 80%;
 	margin: auto;
 	padding: 1px;
 }
@@ -140,3 +139,5 @@ body::-webkit-scrollbar-thumb {
 		background-color: red;
 	}
 }
+
+  

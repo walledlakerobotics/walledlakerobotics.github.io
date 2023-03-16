@@ -3,38 +3,96 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css.css">
-
+<link rel="stylesheet" href="footer.css">
 <title>Sponsors</title>
 <style>
     .SponsorColumn {
-        column-count: 7;
+        column-count: 5;
         margin: auto;
         min-height: 0px;
-        margin-top: 0px;
+        padding-left: 50px;
         column-width: 150px;
-        
+      
     }
 
     .ColumnBreak {
         break-inside: avoid;
+        max-width: 250px;
+        min-width: 150px;
+        max-height: 150px;
+        min-height: 150px;
     }
 
 
-</style>
-<link rel="stylesheet" href="footer.css">
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+    }
+  
+    li {
+      background-color: rgb(211, 211, 250);
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    td {
+      background-color: rgb(202, 196, 255);
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    th {
+      background-color: rgb(209, 203, 255);
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      padding: 20px 80px;
+    }
+    p{
+		text-decoration: none;
+    padding: 0px 10px 20px;
+		font-size: 25px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .content{
+      background-color:  rgba(255, 217, 217, 0.2);
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .ColumnBreak{
+      background-color:  rgba(255, 179, 179, 0.2);
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 0px 10px 20px;
+    }
+    .footer {
+	position: relative;
+	width: 94.75%;
+    }
+  </style>
+
 
 <body>
 
 
     <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="first.html">FIRST</a>
-        <a href="occra.html">OCCRA</a>
-        <a href="308.html">308</a>
-        <a href="7178.html">7178</a>
-        <a href="sponsors.html">Sponsors</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank">Shop</a>
+      <a href="index.html"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;" ></a> 
+      <a href="first.html" style="height:35px;">FIRST</a>
+      <a href="occra.html"style="height:35px;">OCCRA</a>
+      <a href="308.html" style="height:35px;">308</a>
+      <a href="7178.html" style="height:35px;">7178</a>
+      <a href="sponsors.html" style="height:35px;">Sponsors</a>
+      <a href="contact.html" style="height:35px;">Contact Us</a>
+      <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank" style="height:35px;">Shop</a>
      
     </div>
 
@@ -48,21 +106,21 @@
             materials, services, or equipment. Your donation will help to ensure that our team can continue to inspire,
             educate and prepare students for amazing carrers in Science, Technology, Engineering, and Mathematics. 
             Walled Lake Robotics is a non-profit so all contributions made to the Team are tax-deductible.</p>
-        <br><br>
         <p class="backgroundtext" style="text-indent: 5%;">Benefits of Sponsorship: Your donation not only supports the education of promising
             young students, but it will also provide you with a tremendous promotional opportunity. With your
             sponsorship, your name or company's name will be prominently displayed at all our competitions, on our team
             website and in our teams printed materials. This is a great way to show that you or your corporation support
             education and the advancement of technology.</p>
             <br><br>
+          </div>
         <h1 style="text-align: center">Current Sponsors</h1>
-    </div>
+    
     <br>
     </div>
     <div class="SponsorColumn">
-        <div class="ColumnBreak">
+        <div class="ColumnBreak" >
             <h2 style="text-align: center">Tecla</h2>
-            <img src="sponsors/TECLAlogo.png" width="128" height="64" class="center">
+            <img src="sponsors/TECLAlogo.png" style=" width:128px; height:64px;" width="128" height="64" class="center">
         </div>
 
         <div class="ColumnBreak">
@@ -87,6 +145,13 @@
             <img src="sponsors/RockwellAutomation.png" width="20%" height="96" class="center">
         
         </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="SponsorColumn">
         <div class="ColumnBreak">
             <h2 style="text-align: center">Great Lakes Powder Coating</h2>
             <img src="sponsors/GLPC.png" width="20%" height="96" class="center">
@@ -97,7 +162,16 @@
             <h2 style="text-align: center">Jay-Cee Sales & Rivet</h2>
             <img src="sponsors/jclogo.png" width="96" height="96" class="center">
         </div>
-        
+
+        <div class="ColumnBreak">
+          <h2 style="text-align: center">B & P Littleford</h2>
+          <img src="sponsors/B&P.png" width="96" height="96" class="center">
+      </div>
+      
+      <div class="ColumnBreak">
+        <h2 style="text-align: center">Dairy Dan</h2>
+        <img src="sponsors/dairy_Dan.png" width="96" height="96" class="center">
+    </div>
         <br>
         
        
@@ -107,3 +181,40 @@
     </div>
 
 </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="footer">
+
+  <script>
+    var w = window.innerWidth;
+    document.getElementById("footer").style.width = w;
+    </script>
+    
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/Monsters308/">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="first.html">First</a></li>
+      <li class="menu__item"><a class="menu__link" href="occra.html">Occra</a></li>
+      <li class="menu__item"><a class="menu__link" href="308.html">308</a></li>
+      <li class="menu__item"><a class="menu__link" href="7178.html">7178</a></li>
+      <li class="menu__item"><a class="menu__link" href="https://teamlocker.squadlocker.com/#/lockers/402840">Shop</a></li>
+  
+    </ul>
+    <p>&copy;2023 Walled Lake Robotics</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
