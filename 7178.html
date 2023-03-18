@@ -103,6 +103,10 @@
   text-align: center;
 }
 
+.awards{
+  width: 100%;
+
+}
 
 @media only screen and (max-width: 420px) {
   .content{
@@ -120,17 +124,25 @@
   font-size: 20px;
 }
 
-.slide1image{
-  position: absolute;
+.slideshow-container {
+display: none;
+}
+.slideshow-container2 {
+display: none;
+}
 
-  max-width: 300px;
-  width: 300px;
-  height: 150px;
+
+
+
+.awards{
+  position: absolute;
+left:10px;
+
 }
-.side2images{
-  height: 150px;
-  width: 300px;
+.content2{
+  height: 1900px;
 }
+
 }
 
 
@@ -138,6 +150,8 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
 </style>
 
 <body>
@@ -319,7 +333,11 @@
     transform: scale(1.05);
     cursor: pointer;
   }
+  
+  
   </style>
+
+
   <h1 style="font-size: 3em; text-align: center;">Past Robots</h1>
   <div class="robotsbefore">
     <h2 style="text-align: center;">FIRST Robot</h2>
@@ -374,7 +392,7 @@
     
 
     
-        <table style="width:100%;">
+        <table class="awards" >
             <tr>
               <th> <image src="image/firstlogo.png" alt="First Robotics" style="width: 100px;"></image></th>
               <th><image src="image/occra.png" alt="OCCRA" style="width: 100px;"></image></th>
