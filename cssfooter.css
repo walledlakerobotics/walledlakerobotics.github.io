@@ -9,7 +9,6 @@
 	width: 100%;
 	background-image: linear-gradient(to right, rgb(255, 143, 143), rgb(164, 164, 255));
 	min-height: 100px;
-	padding: 20px 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,7 +23,6 @@
 	align-items: center;
 	margin: 10px ;
 	flex-wrap: wrap;
-	padding-right: 60px;
   }
   footer li {
 	background: rgba(255, 255, 255, 0.2);
