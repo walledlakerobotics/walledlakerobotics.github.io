@@ -5,13 +5,19 @@
 <link rel="stylesheet" href="css.css">
 <link rel="stylesheet" href="footer.css">
 <title>Sponsors</title>
+
+<script>
+  var w = window.innerWidth;
+  document.getElementById("footer").style.width = w;
+  </script>
+
 <style>
     .SponsorColumn {
         column-count: 5;
         margin: auto;
         min-height: 0px;
         padding-left: 50px;
-        column-width: 150px;
+        column-width: 200px;
       
     }
 
@@ -76,13 +82,13 @@
     }
     .footer {
 	position: relative;
-	width: 94.75%;
+
     }
   </style>
 
 
 <body>
-
+  
 
     <div class="topnav">
       <a href="index.html"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;" ></a> 
@@ -136,7 +142,7 @@
 
         <div class="ColumnBreak">
             <h2 style="text-align: center">Michigan Department of Education</h2>
-            <img src="sponsors/MDElogo.png" width="20%" height="96" class="center">
+            <img src="sponsors/MDElogo.png" width="20%" height="96" class="center" >
         
         </div>
 
@@ -169,12 +175,45 @@
       </div>
       
       <div class="ColumnBreak">
-        <h2 style="text-align: center">Dairy Dan</h2>
+        <h2 style="text-align: center">Marv's Dairy Dan</h2>
         <img src="sponsors/dairy_Dan.png" width="96" height="96" class="center">
     </div>
+    <div class="ColumnBreak">
+      <h2 style="text-align: center">Marathon</h2>
+      <img src="sponsors/marathon.png" width="96" height="96" class="center">
+  </div>
+</div>
         <br>
+
+
+
+        <!-- Sponsor Column 3-->
         
-       
+        <div class="SponsorColumn">
+          <div class="ColumnBreak">
+              <h2 style="text-align: center">Dedoes</h2>
+              <img src="sponsors/Dedoes.png" width="20%" height="96" class="center">
+      
+          </div>
+  
+          <!-- <div class="ColumnBreak">
+              <h2 style="text-align: center"></h2>
+              <img src="" width="96" height="96" class="center">
+          </div>
+  
+          <div class="ColumnBreak">
+            <h2 style="text-align: center"></h2>
+            <img src="" width="96" height="96" class="center">
+        </div>
+        
+        <div class="ColumnBreak">
+          <h2 style="text-align: center"></h2>
+          <img src="" width="96" height="96" class="center">
+      </div>
+      <div class="ColumnBreak">
+        <h2 style="text-align: center"></h2>
+        <img src="" width="96" height="96" class="center">
+    </div> -->
     
       
  
@@ -190,7 +229,10 @@
 <br>
 <br>
 <br>
-<footer class="footer">
+<footer class="footer" id="footer">
+
+
+    
     <ul class="social-icon">
       <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/Monsters308/">
           <ion-icon name="logo-facebook"></ion-icon>

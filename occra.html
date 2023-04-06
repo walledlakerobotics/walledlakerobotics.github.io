@@ -7,15 +7,17 @@
 <title>OCCRA</title>
 
 <link rel="stylesheet" href="footer.css">
-
+<script>
+  var w = window.innerWidth;
+  document.getElementById("footer").style.width = w;
+  </script>
 <style>
    @media only screen and (max-width: 420px) {
     iframe{
         width:100%;
     }
    }
-</style>
-<style>
+
     ul {
       list-style: none;
       padding: 0;
@@ -50,14 +52,15 @@
     table {
       padding: 20px 80px;
     }
-
-    .content{
+    h2{
 		text-decoration: none;
+    padding: 20px 20px 10px 10px;
 		font-size: 25px;
         background-color:  rgba(255, 217, 217, 0.2);
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-      margin-left: 10px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+   
   </style>
 
 <body>
@@ -75,44 +78,60 @@
     </div>
 
    
+   
+
     <h1></h1>
     <div class="column">
-    <div class="content">
+        <div class="content">
 
-       <image src="image/occra.png" style="width: 40%; margin-left: 20%;">
-        <p style="text-align: left; text-indent: 5%; margin-left: 10px;">
-            <u>O</u>akland <u>C</u>ounty <u>C</u>ompetitive <u>R</u>obotics <u>A</u>ssociation (<id style="font-style: italic;">OCCRA</id>), is a robotics program based in Oakland County.
-              They provide a robotics challenge every year to warm teams up for the First season. 
+            <image src="image/occra.png" alt="First Robotics" style="width: 40%;padding-left:20%;"></image>
+            <h2 style="font-size: 19px; margin-left:8px;">
+              <u>O</u>akland <u>C</u>ounty <u>C</u>ompetitive <u>R</u>obotics <u>A</u>ssociation
+            </h2>
+            
+            <h2 class="backgroundtext" style="text-indent: 5%;margin-left:8px ; font-size: 22px ;"> They provide a robotics challenge every year to warm teams up for the First season. 
               <id style="font-style: italic;">OCCRA</id> creates a game for the teams similar to First but less complicated.  
+
               To compete in these games, students are tasked to build a robot capable of playing the given game to the best of their ability. 
+              
               Students work as a team using their knowledge of mechanical and electrical engineering, CAD design and programming with the help of their mentors, to build and control their robots to achieve the given goal.
+
                Each year <id style="font-style: italic;">OCCRA</id> gives a new objective for teams, like FIRST, to compete in so each year students can learn practical knowledge of mechanics, engineering, programming and physics every year in a new, fun way.
-               Walled Lake Robotics 308 and 7178 both participate in OCCRA every year.  
+               Walled Lake Robotics 308 and 7178 both participate in OCCRA every year. 
+
+
+            </h2>
+            
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+  
+        <div class = "screen">
+          <iframe width="100%" height="415px" src="https://www.youtube.com/embed/8IVR3npq3fE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
 
     </div>
-
-    <div class = "screen">
-        <iframe width="100%" height="415px" src="https://www.youtube.com/embed/8IVR3npq3fE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
-<footer class="footer">
+<footer class="footer" id="footer">
+  <script>
+    var w = window.innerWidth;
+    document.getElementById("footer").style.width = w;
+    </script>
     <ul class="social-icon">
       <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/Monsters308/">
           <ion-icon name="logo-facebook"></ion-icon>
