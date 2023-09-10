@@ -5,12 +5,6 @@ body {
 
 }
 
-.row img{
-	
-	width:550px !important;
-	padding: 1px;
-	
-}
 .topnav {
 	overflow: hidden;
 	padding: 1px;
@@ -22,19 +16,22 @@ body {
 		color: rgb(255, 255, 255);
 		text-align: center;
 		padding: 0px 16px;
-		padding-top: 6px;
+		padding-top: 12px;
 		text-decoration: none;
 		font-size: 20px;
 		transition-duration: 0.2s;
+		height: 40px;
 	}
-	.topnav > img{
+	/* .topnav > img{
 		padding-top: 0px !important; 
-	}
+	} */
 
 		.topnav a:hover {
 			background-color: #ddd;
 			color: black;
-			padding-top: 10px;
+			/* Note: default line height is about 24px */
+			line-height: 30px; 
+			transition-timing-function: ease-out;
 			transition-duration: 0.2s;
 		}
 
@@ -122,10 +119,18 @@ h1, h2, h3 {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
 	float: left;
-	width: 30%;
-	padding: 30px;
+	width: 33%;
+	padding: 1vw;
   }
-  
+  .row {
+	display: flex;
+  }
+
+.row img{
+	max-width: 30vw;
+	padding: 1px;
+}
+
   /* Clear floats after image containers */
   .row::after {
 	content: "";
@@ -161,4 +166,9 @@ h1, h2, h3 {
 	font-size: 18px;
 	color: #555;
 	line-height: 1.5;
+  }
+
+  .content2 {
+	max-width: 80%;
+	margin: auto;
   }
