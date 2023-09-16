@@ -1,0 +1,63 @@
+/* Slideshow container */
+.slideshow-container {
+    /* The width and height of the container can be set to whatever you want. The images will automatically resize to it. */
+    width: 400px;
+    height: 225px;
+    box-sizing: content-box;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 5px;
+    background-color: rgb(36, 36, 36);
+}
+
+.slideshow-container img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;/* Hide the images by default */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    width: auto;
+    padding: 32px 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* slideshow template: 
+ <div class="slideshow-container">
+    <img src="image1.png">
+    <img src="image2.png">
+    ...
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
+...
+<script src="js/slideshow.js"></script>
+*/
+

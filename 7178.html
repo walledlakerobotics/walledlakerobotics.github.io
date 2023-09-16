@@ -5,152 +5,104 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="slideshow.css">
 
   <title>Team 7178 - Walled Lake Robotics</title>
 
   <link rel="stylesheet" href="footer.css">
   <style>
-  .content{
-    columns: 2;
-  }
-  .content2 {
-    max-width: 80%;
-    margin: auto;
-    padding: 1px;
-  }   
-
-  * {box-sizing:border-box}
-
-  .right{
-    position: relative;
-    text-indent: 5%; 
-  }
-  .righthead{
-    position: relative;
-    
-  }
-  .left{
-    position: relative;
-    text-indent: 5%; 
-    margin: none;
-  }
-
-
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 500px;
-    max-height: 350px;
-    position: relative;
-    top: 5%;
-    left: 7%;
-  }
-  .slideshow-container2{
-    max-width: 500px;
-    max-height: 350px;
-    position: relative;
-    left:8%;
-  }
-
-  .slide1image{
-    width:500px;
-    height: 250px;
-    
-  }
-  .side2images{
-    width:500px;
-    height: 250px;
-  }
-
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .awards{
-    width: 100%;
-
-  }
-
-  @media only screen and (max-width: 420px) {
     .content{
-      height: 500px;
-      columns: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin: 30px 80px;
     }
-  
-  .righthead{
-  
-    font-size: 20px;
-  }
+
+    .slideshow-container {
+      width: 450px;
+      height: 275px;
+    }
+
+    .text-box {
+      max-width: 40%;
+      margin: 10px;
+    }
+
+    .text-box h1 {
+      text-align: center;
+      text-indent: 0%;
+    }
+
+    .text-box h3 {
+      position: relative;
+      text-indent: 5%; 
+      max-width: 50ch;
+      font-weight: normal;
+    }
+
+    .content2 {
+      max-width: 80%;
+      margin: auto;
+      padding: 1px;
+    }   
+
+    * {box-sizing:border-box}
 
 
-  .lefthead{
-    font-size: 20px;
-  }
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
 
-  .slideshow-container {
-  display: none;
-  }
-  .slideshow-container2 {
-  display: none;
-  }
+    .awards{
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .content{
+        height: 500px;
+        columns: 1;
+      }
+
+      .text-box {
+        max-width: 80%;
+      }
+
+      .slideshow-container {
+        width: 250px;
+        height: 152px;
+      }
+    
+      .righthead{
+        font-size: 20px;
+      }
+
+      .lefthead{
+        font-size: 20px;
+      }
+
+      .awards{
+        position: absolute;
+        left: 10px;
+      }
+
+      .content2{
+        height: 1900px;
+      }
+    }
 
 
-
-
-  .awards{
-    position: absolute;
-  left:10px;
-
-  }
-  .content2{
-    height: 1900px;
-  }
-
-  }
-
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
 
 
   </style>
@@ -169,20 +121,21 @@
         <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank" style="height:50px;">Shop</a>
     </div>
 
-    <h1 style="text-align: center;font-size: 50px;">Yetis 7178</h1>
+    <h1 style="text-align: center;font-size: 50px;">7178 - The Yetis</h1>
 
     <div class="divider-bar">
     </div>
 
     <div class="content">
+      <div class="text-box">
         <h1 class="lefthead">About The Team</h1>
-        <h3 class="left">Team 7178, otherwise known as the Yetis, Is Walled Lake Monster's younger team. 
-            The Yetis split off from the monster team in 2018 and have been thriving ever since. 
+        <h3 class="left">Team 7178, otherwise known as the Yetis, is Walled Lake Robotics's younger team. 
+            The Yetis split off from the Monsters in 2018 and have been thriving ever since. 
             The team consists of many individual sub teams that are student driven and mentor advised. 
             Our team consists of people of many different experience levels, meaning anyone can join and be a part of the team. 
             7178 fosters a learning environment where the more experienced teach the inexperienced everything they need to be successful in order to keep the team the best it can be. 
         </h3>
-            
+      </div>
 
 
 
@@ -190,128 +143,42 @@
      
        
             <div class="slideshow-container">
-              <div class="mySlides1">
-                <img src="7178images/2022teampitsOCCRA.png" class="slide1image" >
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/7178worldssigninpit.JPG" class="slide1image">
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/centralwinnig.png" class="slide1image">
-              </div>
-
-              <div class="mySlides1">
-                <img src="7178images/clim.png" class="slide1image">
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/driveteamworlds.png" class="slide1image">
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/goodshoot.JPG" class="slide1image">
-              </div>
-              <div class="mySlides1">
-                <img src="7178images/michalbot.png" class="slide1image">
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/OCCAR2021.png" class="slide1image">
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/OCCAR2022.png" class="slide1image">
-              </div>
-
-              <div class="mySlides1">
-                <img src="7178images/OCCARBot7178.png" class="slide1image">
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/shop.png" class="slide1image">
-              </div>
-            
-              <div class="mySlides1">
-                <img src="7178images/teamcentealwinningagian.JPG" class="slide1image">
-              </div>
-
-              <div class="mySlides1">
-                <img src="7178images/TeamInfrontoffirstsign.JPG" class="slide1image">
-              </div>
-
-              <div class="mySlides1">
-                <img src="7178images/teamstates.png" class="slide1image">
-              </div>
-
-              <div class="mySlides1">
-                <img src="7178images/worldsstans.JPG" class="slide1image">
-              </div>
-              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              <img src="7178images/2022teampitsOCCRA.png">    
+              <img src="7178images/centralwinnig.png">  
+              <img src="7178images/clim.png">  
+              <img src="7178images/driveteamworlds.png">     
+              <img src="7178images/goodshoot.JPG">
+              <img src="7178images/michalbot.png">
+              <img src="7178images/OCCAR2021.png">
+              <img src="7178images/OCCAR2022.png">
+              <img src="7178images/OCCARBot7178.png">
+              <img src="7178images/teamstates.png">
+              <img src="7178images/worldsstans.JPG">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
             </div>
     </div>
-
-              <br>
-              <br>
-
-
-
-
 
     <div class="divider-bar">
     </div>
     
     <div class="content">
-      <div class="slideshow-container2" >
-        <div class="mySlides2">
-          <img src="7178images/7178worldssigninpit.JPG" class="side2images">
-        </div>
-      
-        <div class="mySlides2">
-          <img src="7178images/TeamInfrontoffirstsign.JPG" class="side2images" >
-        </div>
-      
-        <div class="mySlides2">
-          <img src="7178images/clim.png" class="side2images">
-        </div>
-      
-        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      <div class="slideshow-container" >
+        <img src="7178images/7178worldssigninpit.JPG">
+        <img src="7178images/TeamInfrontoffirstsign.JPG">
+        <img src="7178images/shop.png">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
       </div>
-    <h1 class="righthead">Involvement in the community </h1>
-    <h3 class="right">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Western.
-         We bring our beloved Tank Bot, a tank robot to shoot t-shirts at football games, pep assemblies and other important events that go on.
-         We also bring our robots to walk in the Walled Lake memorial day parade. </h3>
-         <br><br><br><br><br>
+      <div class="text-box">
+        <h1 class="righthead">Involvement in the community </h1>
+        <h3 class="right">Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Walled Lake Western.
+            We bring our beloved Tank Bot, a tank robot to shoot t-shirts at football games, pep assemblies, and other important events that go on.
+            We also bring our robots to walk in the Walled Lake memorial day parade. </h3>
+      </div>
+         
         
 </div>
-        
-
-
-        <!--DO NOT REMOVE IT WILL DESTORY THE SLIDE SHOW-->
-          <script>
-            let slideIndex = [1,1];
-            let slideId = ["mySlides1", "mySlides2"]
-            showSlides(1, 0);
-            showSlides(1, 1);
-            
-            function plusSlides(n, no) {
-              showSlides(slideIndex[no] += n, no);
-            }
-            
-            function showSlides(n, no) {
-              let i;
-              let x = document.getElementsByClassName(slideId[no]);
-              if (n > x.length) {slideIndex[no] = 1}    
-              if (n < 1) {slideIndex[no] = x.length}
-              for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";  
-              }
-              x[slideIndex[no]-1].style.display = "block";  
-            }
-            </script>
 
 
 <div class="divider-bar"></div>
@@ -551,6 +418,7 @@
   
   <p>&copy;2023 Walled Lake Robotics</p>
 </footer>
+<script src="js/slideshow.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
