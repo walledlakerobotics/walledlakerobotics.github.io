@@ -1,4 +1,5 @@
 /* Slideshow container */
+
 .slideshow-container {
     /* The width and height of the container can be set to whatever you want. The images will automatically resize to it. */
     width: 400px;
@@ -19,11 +20,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;/* Hide the images by default */
+    display: none;
+    /* Hide the images by default */
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -45,8 +48,9 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* slideshow template: 
@@ -60,4 +64,3 @@
 ...
 <script src="js/slideshow.js"></script>
 */
-

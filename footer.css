@@ -29,7 +29,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px ;
+    margin: 10px;
     flex-wrap: wrap;
     gap: 7px;
 }
@@ -69,30 +69,30 @@ footer p {
 }
 
 .menu__link:hover {
-    opacity: 1; 
+    opacity: 1;
 }
 
 /* Footer template: 
 <footer>
-  <ul class="social-icon">
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="https://www.facebook.com/Monsters308/"><ion-icon name="logo-facebook"></ion-icon></a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
-    </li>
-  </ul>
+    <ul class="social-icon">
+        <li class="social-icon__item">
+            <a class="social-icon__link" href="https://www.facebook.com/Monsters308/"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li class="social-icon__item">
+            <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+        </li>
+    </ul>
 
-  <ul class="menu">
-    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-    <li class="menu__item"><a class="menu__link" href="first.html">First</a></li>
-    <li class="menu__item"><a class="menu__link" href="occra.html">Occra</a></li>
-    <li class="menu__item"><a class="menu__link" href="308.html">308</a></li>
-    <li class="menu__item"><a class="menu__link" href="7178.html">7178</a></li>
-    <li class="menu__item"><a class="menu__link" href="https://teamlocker.squadlocker.com/#/lockers/402840">Shop</a></li>
-  </ul>
-  
-  <p>&copy;2023 Walled Lake Robotics</p>
+    <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="first.html">First</a></li>
+        <li class="menu__item"><a class="menu__link" href="occra.html">Occra</a></li>
+        <li class="menu__item"><a class="menu__link" href="308.html">308</a></li>
+        <li class="menu__item"><a class="menu__link" href="7178.html">7178</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://teamlocker.squadlocker.com/#/lockers/402840">Shop</a></li>
+    </ul>
+    
+    <p>&copy;2023 Walled Lake Robotics</p>
 </footer> 
 */
 
@@ -142,6 +142,7 @@ footer p {
     0% {
         background-position-x: 1000px;
     }
+
     100% {
         background-positon-x: 0px;
     }
@@ -151,6 +152,7 @@ footer p {
     0% {
         background-position-x: -1000px;
     }
+
     100% {
         background-positon-x: 0px;
     }
