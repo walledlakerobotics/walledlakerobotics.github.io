@@ -11,3 +11,6 @@
 .vs/website/FileContentIndex/read.lock
 .vs/website/v17/.suo
 .vscode/settings.json
+
+# Windows > Mac (jk)
+.DS_Store

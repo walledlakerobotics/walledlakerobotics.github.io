@@ -1,164 +1,181 @@
 body {
-	margin: 0;
-	font-family: 'Comic Sans MS', Helvetica, sans-serif;
-	background-image: linear-gradient(to right, rgb(255, 243, 243), rgb(253, 229, 229));
+    margin: 0;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(255, 243, 243), rgb(253, 229, 229));
 
 }
 
-.row img{
-	
-	width:550px !important;
-	padding: 1px;
-	
-}
 .topnav {
-	overflow: hidden;
-	padding: 1px;
-	background-image: linear-gradient(to right, rgb(255, 32, 32), rgb(255, 95, 95));
+    overflow: hidden;
+    padding: 1px;
+    background-image: linear-gradient(to right, rgb(255, 32, 32), rgb(255, 95, 95));
 }
 
-	.topnav a {
-		float: left;
-		color: rgb(255, 255, 255);
-		text-align: center;
-		padding: 0px 16px;
-		padding-top: 6px;
-		text-decoration: none;
-		font-size: 20px;
-		transition-duration: 0.2s;
-	}
-	.topnav > img{
-		padding-top: 0px !important; 
-	}
+.topnav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px 16px;
+    padding-top: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.2s;
+    height: 40px;
+}
 
-		.topnav a:hover {
-			background-color: #ddd;
-			color: black;
-			padding-top: 10px;
-			transition-duration: 0.2s;
-		}
+/* .topnav > img{
+		padding-top: 0px !important; 
+	} */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    /* Note: default line height is about 24px */
+    line-height: 30px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+}
 
 
 #backgroundtext {
-	color: black;
-	text-align: center;
+    color: black;
+    text-align: center;
 }
 
-.test{
-	text-align: center;
-	background-color: teal;
+.test {
+    text-align: center;
+    background-color: teal;
 }
 
 
 .content {
-	max-width: 1000px;
-	margin: auto;
-	padding: 1px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1px;
 }
 
 p {
-	font-family: 'Arial', sans-serif;
-	font-size: 27px;
-	line-height: 1.5;
-	margin: 0 0 1em 0;
-	text-align: justify;
-	
-  }
+    font-family: 'Arial', sans-serif;
+    font-size: 27px;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    text-align: justify;
+
+}
+
 /* Green color for headings */
-h1, h2, h3 {
-	color: #000000;
-	background-color: rgb(255, 213, 213);
+h1,
+h2,
+h3 {
+    color: #000000;
+    background-color: rgb(255, 213, 213);
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Red color for links */
-  a {
-	color: #8B0000;
-  }
+}
 
-  /* Green background for success messages */
-  .success {
-	background-color: #90EE90;
-  }
-  
-  /* Red background for error messages */
-  .error {
-	background-color: #FF4500;
-  }
-  
-  /* Add a green border to certain elements */
-  .green-border {
-	border: 2px solid #006400;
-  }
-  
-  /* Add a red border to certain elements */
-  .red-border {
-	border: 2px solid #8B0000;
-  }
-  
+/* Red color for links */
+a {
+    color: #8B0000;
+}
 
-  .caption {
-	display: block;
-	font-family: 'Comic Sans MS';
-	font-size: 30px;
-	font-style: italic;
-	background-color: #e4e4e4;
-	margin: auto;
-	padding: 5px;
-	color: black;
+/* Green background for success messages */
+.success {
+    background-color: #90EE90;
+}
+
+/* Red background for error messages */
+.error {
+    background-color: #FF4500;
+}
+
+/* Add a green border to certain elements */
+.green-border {
+    border: 2px solid #006400;
+}
+
+/* Add a red border to certain elements */
+.red-border {
+    border: 2px solid #8B0000;
+}
 
 
+.caption {
+    display: block;
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    font-style: italic;
+    background-color: #e4e4e4;
+    margin: auto;
+    padding: 5px;
+    color: black;
 
-	min-height: 100px;
-	padding: 20px 50px;
-	
-		  
 
-  }
+
+    min-height: 100px;
+    padding: 20px 50px;
+
+
+
+}
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-	float: left;
-	width: 30%;
-	padding: 30px;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
-	content: "";
-	clear: both;
-	display: table;
-  }
-  /*this is the top of the website*/
-  .team-section {
-	display: flex;
-	align-items: center;
-	margin: 50px 0;
-  }
-  
-  .team-section img {
-	width: 50%;
-	border-radius: 15%;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-  
-  .team-section .team-text {
-	width: 50%;
-	margin-left: 50px;
-  }
-  
-  .team-section h2 {
-	font-size: 32px;
-	font-weight: bold;
-	color: #333;
-	margin-bottom: 20px;
-  }
-  
-  .team-section p {
-	font-size: 18px;
-	color: #555;
-	line-height: 1.5;
-  }
+    float: left;
+    width: 33%;
+    padding: 1vw;
+}
+
+.row {
+    display: flex;
+}
+
+.row img {
+    max-width: 30vw;
+    padding: 1px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*this is the top of the website*/
+.team-section {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.team-section img {
+    width: 50%;
+    border-radius: 15%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.team-section .team-text {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.content2 {
+    max-width: 80%;
+    margin: auto;
+}
