@@ -29,6 +29,11 @@
     transition-duration: 0.2s;
 }
 
+.topnav a:hover img{
+    filter: invert(1);
+    transition: 0.2s;
+}
+
 
 
 /* Mobile responsiveness stuff */
