@@ -5,38 +5,6 @@ body {
 
 }
 
-.topnav {
-    overflow: hidden;
-    padding: 1px;
-    background-image: linear-gradient(to right, rgb(255, 32, 32), rgb(255, 95, 95));
-}
-
-.topnav a {
-    float: left;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 0px 16px;
-    padding-top: 12px;
-    text-decoration: none;
-    font-size: 20px;
-    transition-duration: 0.2s;
-    height: 40px;
-}
-
-/* .topnav > img{
-		padding-top: 0px !important; 
-	} */
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    /* Note: default line height is about 24px */
-    line-height: 30px;
-    transition-timing-function: ease-out;
-    transition-duration: 0.2s;
-}
-
-
 #backgroundtext {
     color: black;
     text-align: center;

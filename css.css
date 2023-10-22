@@ -6,33 +6,6 @@ body {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-.topnav {
-    overflow: hidden;
-    padding: 1px;
-    background-image: linear-gradient(to right, rgb(255, 20, 20), rgb(20, 20, 255));
-
-}
-
-.topnav a {
-    float: left;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 0px 16px;
-    padding-top: 12px;
-    text-decoration: none;
-    font-size: 20px;
-    transition-duration: 0.2s;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    /* Note: default line height is about 24px */
-    line-height: 30px;
-    transition-timing-function: ease-out;
-    transition-duration: 0.2s;
-}
-
 #backgroundtext {
     color: black;
 }
@@ -53,10 +26,6 @@ body {
     margin: auto;
     padding: 1px;
 }
-
-
-
-
 
 .firstYoutube {
     max-width: 80%;
@@ -82,7 +51,6 @@ body {
 
 }
 
-
 .center {
     display: block;
     margin-left: auto;
@@ -90,8 +58,6 @@ body {
     width: 50%;
     object-fit: contain;
 }
-
-
 
 .divider-bar {
     border-top: dashed;

@@ -34,6 +34,12 @@ footer p {
     gap: 7px;
 }
 
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+}
+
 .social-icon__item,
 .menu__item {
     list-style: none;

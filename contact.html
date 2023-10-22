@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css.css">
         <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="nav.css">
 
         <title>Contact Us! - Walled Lake Robotics</title>
 
@@ -76,6 +77,7 @@
                 color: rgb(0, 0, 0);
                 padding: 10px 20px;
                 margin-bottom: 10px;
+                margin-left: 15px;
                 border-radius: 10px;
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             }
@@ -85,16 +87,13 @@
                 padding: 20px 20px 10px 10px;
                 font-size: 25px;
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-                background-color: rgba(255, 236, 236, 0.5);
+                background-color: rgb(242, 236, 255, 0.3);
                 color: rgb(0, 0, 0);
                 padding: 10px 20px;
                 margin-bottom: 10px;
+                margin-left: 15px;
                 border-radius: 10px;
-            }
-
-            .footer {
-                position: relative;
-
+                text-align: center;
             }
 
             .content {
@@ -104,37 +103,42 @@
     </head>
 
     <body>
-        <div class="topnav">
+        <nav class="topnav">
             <a href="index.html" style="line-height: 24px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
-            <a href="first.html" style="height:35px;">FIRST</a>
-            <a href="occra.html" style="height:35px;">OCCRA</a>
-            <a href="308.html" style="height:35px;">308</a>
-            <a href="7178.html" style="height:35px;">7178</a>
-            <a href="sponsors.html" style="height:35px;">Sponsors</a>
-            <a href="contact.html" style="height:35px;">Contact Us</a>
-            <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank" style="height:35px;">Shop</a>
-        </div>
+            <div class="mobile">
+                <img src="image/xicon.png" alt="x button" id="mobile-x-button" style="position: absolute; width: 30px; height: 30px; cursor: pointer;">
+                <a href="first.html">FIRST</a>
+                <a href="occra.html">OCCRA</a>
+                <a href="308.html">308</a>
+                <a href="7178.html">7178</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank">Shop</a>
+            </div>
+            <a href="#" style="line-height: 24px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+        </nav>
+
+        <script src="js/nav.js"></script>
 
 
         <h1></h1>
         <div class="content">
             <h1 style="text-align: center;">Contact Us!</h1>
             <div class="column">
-                <h3> School Coach/Liaison:<a href="https://wlcsd.org/profiles/Patrick_Ohl_Profile/" target="_blank">Patrick Ohl</a></h3>
-
-                <p>
-                    Walled Lake Robotics team meetings for both 308 and 7178 are held on Tuesdays and Thursdays from 6-8:30pm,
-                    and on Saturdays from 9:00 am to 3:00 pm at Walled Lake Western. 
-                </p>
+                <h3>Head Mentor: Patrick Ohl</h3>
 
                 <p>
                     If you have any questions, please don't hesitate to email Patrick Ohl at <a href="mailto:patrickohl@wlcsd.org">patrickohl@wlcsd.org</a>
                 </p>
 
                 <p>
-                    Students participating in Robotics gain hands on experience that is not available in the classroom.
-                    Scholarships are available to students participating in robotics for many different schools and
-                    majors.
+                    Team meetings for both 308 and 7178 are held on Tuesdays and Thursdays from 6-8:30pm,
+                    and on Saturdays from 9:00am to 3:00pm at Walled Lake Western. 
+                </p>
+
+                <p>
+                    Parents who wish to contribute to the team are welcomed to apply as mentors, and students may ask to join the team for the second half of the year if they aren't 
+                    able to make it for OCCRA.
                 </p>
 
                 <img src="image/OHL2.png" class="center">
