@@ -1,9 +1,16 @@
 const hamburg = document.getElementById("burger");
+const x = document.getElementById("mobile-x-button");
+const mobileLinks = document.querySelector("div.mobile")
+
 hamburg.onclick = function(){
-  document.querySelector("div.mobile").style.cssText = "display:flex;"
+  if(mobileLinks.style.cssText === "display: flex;"){
+    mobileLinks.style.cssText = ""
+  }
+  else{
+    mobileLinks.style.cssText = "display: flex;"
+  }
 } 
 
-const x = document.getElementById("mobile-x-button");
 x.onclick = function(){
-  document.querySelector("div.mobile").style.cssText = ""
+  mobileLinks.style.cssText = ""
 }
