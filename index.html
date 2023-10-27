@@ -21,7 +21,8 @@
                 margin-left: auto;
                 margin-right: auto;
                 width: fit-content;
-                padding: 15px;
+                /* max-width: 80vw; */
+                padding: 13px 23px;
                 border-radius: 10px;
                 margin-top: 20px;
                 margin-bottom: 20px;
@@ -60,7 +61,7 @@
             .info1 {
                 max-width: 50ch;
                 font-weight: normal;
-
+                font-size: 1.35em;
             }
 
             .othermed {
@@ -84,6 +85,44 @@
                 margin-bottom: 10px;
                 border-radius: 10px;
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .vertical-split {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: center;
+                gap: 20px;
+
+                margin-top: 100px;
+                margin-bottom: 125px;
+            }
+
+            .vertical-split img {
+                max-width: 100%;
+            }
+
+            .vertical-split-column {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                flex: 1;
+                max-width: 50%;
+                padding: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @media (orientation: portrait) {
+                .vertical-split {
+                    flex-direction: column;
+                }
+
+                .vertical-split-column {
+                    max-width: 100%;
+                }
             }
 
             /* @media only screen and (max-width: 200px) {
@@ -140,11 +179,29 @@
             <div class="text-box">
                 <h1 class="teamhist">About Walled Lake Robotics</h1>
                 <h2 class="info1" style="text-indent: 5%;">
-                    At Walled Lake Robotics, anyone can find a job on the team that they will enjoy whether it’s a
-                    mechanical job, electrical engineering, marketing, CAD design, programming, and more.
-                    Everyone is welcome to become a part of our teams. If you would like to learn more or meet us, visit
+                    Welcome to the official website for the robotics teams 308 and 7178! At Walled Lake Robotics, anyone can find a job on the team that they will enjoy, whether it’s 
+                    mechanical engineering, electrical engineering, marketing, CAD design, programming, and more.
+                    Anyone from Walled Lake Western, Central, or Northern is welcome to become a part of our teams. If you would like to learn more or meet us, visit
                     our contact page.
                 </h2>
+            </div>
+
+            <div class="vertical-split" style="margin-inline: auto; border-style: dashed; ">
+                <div class="vertical-split-column">
+                    <h1 class="teamhist" style="font-size: 3rem;">What is Robotics?</h1>
+                    <div class="text-box" style="margin-top: 0px;">
+                        <h2 class="info1">Robotics is an after-school sport in which groups of high school students work together to make a robot that can compete in a game.
+                            Although the games change every year, they usually involve picking up game pieces and scoring them in a goal. In addition,
+                            games will often have other ways of scoring points, giving teams options as to what they can design their robot to do.
+                        </h2>
+                        <h2 class="info1">
+                            Walled Lake Robotics competes in two games: one in the fall and one in the spring. To learn more about our seasons, visit our <b>OCCRA</b> and <b>FIRST</b> pages.
+                        </h2>
+                    </div>
+                </div>
+                <div class="vertical-split-column" style="padding: 60px;">
+                    <img src="image/7178workingOnBot.jpg">
+                </div>
             </div>
         </div>
 
