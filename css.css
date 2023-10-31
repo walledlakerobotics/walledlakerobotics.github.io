@@ -1,5 +1,9 @@
 /* This is the main css file that all of the webpages use */
 
+:root {
+    font-size: calc(10px + 0.4vw);
+}
+
 body {
     background-image: linear-gradient(to right, rgb(255, 188, 188), rgb(188, 188, 255));
     margin: 0;
