@@ -24,7 +24,7 @@ body {
 
 p {
     font-family: 'Arial', sans-serif;
-    font-size: 27px;
+    font-size: 1.688rem;
     line-height: 1.5;
     margin: 0 0 1em 0;
     text-align: justify;
@@ -73,20 +73,15 @@ a {
 .caption {
     display: block;
     font-family: 'Comic Sans MS';
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: italic;
     background-color: #e4e4e4;
     margin: auto;
     padding: 5px;
     color: black;
 
-
-
     min-height: 100px;
     padding: 20px 50px;
-
-
-
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -131,14 +126,14 @@ a {
 }
 
 .team-section h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
 }
 
 .team-section p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #555;
     line-height: 1.5;
 }
