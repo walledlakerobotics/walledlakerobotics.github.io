@@ -116,6 +116,7 @@ a {
     display: flex;
     align-items: center;
     margin: 50px 0;
+    padding: 20px 40px;
 }
 
 .team-section img {
@@ -127,6 +128,10 @@ a {
 .team-section .team-text {
     width: 50%;
     margin-left: 50px;
+}
+
+.team-section h3 {
+    font-weight: normal;
 }
 
 .team-section h2 {
@@ -142,7 +147,24 @@ a {
     line-height: 1.5;
 }
 
+@media (orientation: portrait) {
+    .team-section {
+        flex-direction: column;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .team-section > * {
+        width: 100% !important; 
+    }
+
+    .team-section .team-text {
+        margin-left: 0px;
+    }
+}
+
 .content2 {
-    max-width: 80%;
+    max-width: 100%;
+    overflow-x: auto;
     margin: auto;
 }
