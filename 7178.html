@@ -11,13 +11,16 @@
         <title>Team 7178 - Walled Lake Robotics</title>
 
         <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="nav.css">
+
         <style>
             .content {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-around;
-                margin: 30px 80px;
+                /* margin: 30px 80px; */
+                padding-block: 25px;
             }
 
             .slideshow-container {
@@ -43,20 +46,19 @@
             }
 
             .content2 {
-                max-width: 80%;
+                max-width: 100%;
+                overflow-x: auto;
                 margin: auto;
-                padding: 1px;
             }
 
             * {
                 box-sizing: border-box
             }
 
-
             /* Caption text */
             .text {
                 color: #f2f2f2;
-                font-size: 15px;
+                font-size: 0.938rem;
                 padding: 8px 12px;
                 position: absolute;
                 bottom: 8px;
@@ -69,11 +71,6 @@
             }
 
             @media only screen and (max-width: 1000px) {
-                .content {
-                    height: 500px;
-                    columns: 1;
-                }
-
                 .text-box {
                     max-width: 80%;
                 }
@@ -84,20 +81,11 @@
                 }
 
                 .righthead {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                 }
 
                 .lefthead {
-                    font-size: 20px;
-                }
-
-                .awards {
-                    position: absolute;
-                    left: 10px;
-                }
-
-                .content2 {
-                    height: 1900px;
+                    font-size: 1.25rem;
                 }
             }
 
@@ -116,18 +104,24 @@
 
     <body>
 
-        <div class="topnav">
-            <a href="index.html" style="line-height: 24px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
-            <a href="first.html" style="height:50px;">FIRST</a>
-            <a href="occra.html" style="height:50px;">OCCRA</a>
-            <a href="308.html" style="height:50px;">308</a>
-            <a href="7178.html" style="height:50px;">7178</a>
-            <a href="sponsors.html" style="height:50px;">Sponsors</a>
-            <a href="contact.html" style="height:50px;">Contact Us</a>
-            <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank" style="height:50px;">Shop</a>
-        </div>
+        <nav class="topnav">
+            <a href="index.html" style="line-height: 24px; padding-top: 9px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
+            <div class="mobile">
+                <img src="image/xicon.png" alt="x button" id="mobile-x-button" style="position: absolute; width: 30px; height: 30px; cursor: pointer;">
+                <a href="first.html">FIRST</a>
+                <a href="occra.html">OCCRA</a>
+                <a href="308.html">308</a>
+                <a href="7178.html">7178</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank">Shop</a>
+            </div>
+            <a href="#" style="line-height: 24px; padding-top: 9px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+        </nav>
 
-        <h1 style="text-align: center; font-size: 50px;">7178 - The Yetis</h1>
+        <script src="js/nav.js"></script>
+
+        <h1 style="text-align: center; font-size: 3.125rem;">7178 - The Yetis</h1>
 
         <div class="divider-bar"></div>
 
@@ -221,17 +215,19 @@
         <div class="divider-bar"></div>
 
         <style>
-            table {
-                padding: 20px 80px;
+            .content2 table {
+                padding: 20px 0px;
+                width: 70%;
+                margin-inline: auto;
             }
 
-            ul {
+            .content2 ul {
                 list-style: none;
                 padding: 0;
                 margin: 0;
             }
 
-            li {
+            .content2 li {
                 background-color: rgb(211, 211, 250);
                 color: rgb(0, 0, 0);
                 padding: 10px 20px;
@@ -240,7 +236,7 @@
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             }
 
-            td {
+            .content2 td {
                 background-color: rgb(202, 196, 255);
                 color: rgb(0, 0, 0);
                 padding: 10px 20px;
@@ -250,7 +246,7 @@
                 width: 50%;
             }
 
-            th {
+            .content2 th {
                 background-color: rgb(209, 203, 255);
                 color: rgb(0, 0, 0);
                 padding: 10px 20px;
@@ -388,9 +384,6 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
 
         <div class="wave-container">
             <div class="wave" id="wave1"></div>
@@ -402,7 +395,7 @@
         <footer>
             <ul class="social-icon">
                 <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://www.facebook.com/Monsters308/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a class="social-icon__link" href="https://www.facebook.com/groups/972328127497050"><ion-icon name="logo-facebook"></ion-icon></a>
                 </li>
                 <li class="social-icon__item">
                     <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>

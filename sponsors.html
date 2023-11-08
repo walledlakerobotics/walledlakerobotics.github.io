@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css.css">
         <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="nav.css">
+        
         <title>Sponsors - Walled Lake Robotics</title>
 
         <style>
@@ -39,43 +41,6 @@
                 margin-bottom: 5px;
             }
 
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            li {
-                background-color: rgb(211, 211, 250);
-                color: rgb(0, 0, 0);
-                padding: 10px 20px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            }
-
-            td {
-                background-color: rgb(202, 196, 255);
-                color: rgb(0, 0, 0);
-                padding: 10px 20px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            }
-
-            th {
-                background-color: rgb(209, 203, 255);
-                color: rgb(0, 0, 0);
-                padding: 10px 20px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            }
-
-            table {
-                padding: 20px 80px;
-            }
-
             p {
                 text-decoration: none;
                 padding: 0px 10px 20px;
@@ -94,16 +59,22 @@
     </head>
 
     <body>
-        <div class="topnav">
-            <a href="index.html" style="line-height: 24px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
-            <a href="first.html" style="height:35px;">FIRST</a>
-            <a href="occra.html" style="height:35px;">OCCRA</a>
-            <a href="308.html" style="height:35px;">308</a>
-            <a href="7178.html" style="height:35px;">7178</a>
-            <a href="sponsors.html" style="height:35px;">Sponsors</a>
-            <a href="contact.html" style="height:35px;">Contact Us</a>
-            <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank" style="height:35px;">Shop</a>
-        </div>
+        <nav class="topnav">
+            <a href="index.html" style="line-height: 24px; padding-top: 9px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
+            <div class="mobile">
+                <img src="image/xicon.png" alt="x button" id="mobile-x-button" style="position: absolute; width: 30px; height: 30px; cursor: pointer;">
+                <a href="first.html">FIRST</a>
+                <a href="occra.html">OCCRA</a>
+                <a href="308.html">308</a>
+                <a href="7178.html">7178</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="https://teamlocker.squadlocker.com/#/lockers/402840" target="_blank">Shop</a>
+            </div>
+            <a href="#" style="line-height: 24px; padding-top: 9px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+        </nav>
+
+        <script src="js/nav.js"></script>
 
 
 
@@ -111,18 +82,18 @@
         <div class="content">
             <h1 style="text-align: center">Sponsors</h1>
             <p class="backgroundtext" style="text-indent: 5%;">
-                The success of the Walled Lake Monster Robotics Team
+                The success of the Walled Lake Robotics teams
                 would not be possible without the generous help of donors and sponsors. Individual or company donations can be in the form of money,
-                materials, services, or equipment. Your donation will help to ensure that our team can continue to
+                materials, services, or equipment. Your donation will help to ensure that our teams can continue to
                 inspire, educate and prepare students for amazing carrers in Science, Technology, Engineering, and Mathematics.
-                Walled Lake Robotics is a non-profit so all contributions made to the Team are tax-deductible.
+                Walled Lake Robotics is a non-profit, so all contributions made to the teams are tax-deductible.
             </p>
 
             <p class="backgroundtext" style="text-indent: 5%;">
-                Benefits of Sponsorship: Your donation not only supports the education of promising
+                Benefits of sponsorship: your donation not only supports the education of promising
                 young students, but it will also provide you with a tremendous promotional opportunity. With your
                 sponsorship, your name or company's name will be prominently displayed at all our competitions, on our
-                team website and in our teams printed materials. This is a great way to show that you or your corporation
+                website, and in our teams printed materials. This is a great way to show that you or your corporation
                 support education and the advancement of technology.
             </p>
             <br><br>
@@ -203,7 +174,7 @@
         <footer>
             <ul class="social-icon">
                 <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://www.facebook.com/Monsters308/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a class="social-icon__link" href="https://www.facebook.com/groups/972328127497050"><ion-icon name="logo-facebook"></ion-icon></a>
                 </li>
                 <li class="social-icon__item">
                     <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>

@@ -5,21 +5,32 @@ footer {
 
     background-image: linear-gradient(to right, rgb(255, 143, 143), rgb(164, 164, 255));
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 20px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 footer li {
     background: rgba(255, 255, 255, 0.2);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
     color: rgb(0, 0, 0);
     margin: 15px 0 10px 0;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -32,6 +43,12 @@ footer p {
     margin: 10px;
     flex-wrap: wrap;
     gap: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
 }
 
 .social-icon__item,
@@ -76,7 +93,7 @@ footer p {
 <footer>
     <ul class="social-icon">
         <li class="social-icon__item">
-            <a class="social-icon__link" href="https://www.facebook.com/Monsters308/"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a class="social-icon__link" href="https://www.facebook.com/groups/972328127497050"><ion-icon name="logo-facebook"></ion-icon></a>
         </li>
         <li class="social-icon__item">
             <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
@@ -98,6 +115,8 @@ footer p {
 
 .wave-container {
     position: relative;
+    /* same size as image height */
+    margin-top: 100px; 
 }
 
 .wave {

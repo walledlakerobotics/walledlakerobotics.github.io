@@ -1,6 +1,12 @@
 //stores what position the slideshows are in. The index of the position corresponds to the id of the slideshow
 let slideIndexes = []; 
 
+//preloads an image into the browser's cache
+function preloadImage(image){
+  const img = new Image();
+  img.src = image.src;
+}
+
 function changeSlide(direction, slideId){
   const slideshow = document.getElementById("slideshow" + slideId);
   let newIndex = slideIndexes[slideId] + (direction === "prev" ? -1 : 1);
@@ -26,6 +32,11 @@ const slideshows = document.querySelectorAll("div.slideshow-container");
 slideshows.forEach((slideshow, i) => {
   slideshow.id = "slideshow" + i; 
   slideshow.querySelector("img").style.display = "block"; //show first image
+
+  //preload all the images to reduce lag
+  slideshow.querySelectorAll("img").forEach((img) => {
+    preloadImage(img)
+  })
   
   //make arrows work
   slideshow.querySelector("a.prev").onclick = function(){
