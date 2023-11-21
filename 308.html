@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="308css.css">
         <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="slideshow.css">
         <style>
             /* overriding footer css */
             footer {
@@ -24,6 +25,18 @@
             /* override nav css */
             .topnav {
                 background-image: linear-gradient(to right, rgb(255, 32, 32), rgb(255, 95, 95));
+            }
+
+            .slideshow-container {
+                margin-inline: auto;
+                margin-block: auto;
+                width: 50rem;
+                height: 30rem;
+                max-width: 90%;
+            }
+
+            .prev, .next {
+                padding: 64px 16px;
             }
         </style>
 
@@ -196,31 +209,18 @@
         </div>
         <h1 class="first-txt" style="text-align: center; font-size: 3rem"> Robotics Pictures </h1>
 
-        <div class="row">
-            <div class="column">
-                <img src="image/winner.jpg" alt="frc awards">
-            </div>
-            <div class="column">
-                <img src="image/part.jfif" alt="broken occra bot">
-            </div>
-            <div class="column">
-                <img src="image/awesomeproto.JPG" alt="Awesome Protogen Mascot">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                <img src="image/robottt.JPG" alt="308 in the stands">
-            </div>
-            <div class="column">
-                <img src="image/speed.JPG" alt="occra drivers">
-            </div>
-            <div class="column">
-                <img src="image/touchrobot.JPG" alt="frc bot">
-            </div>
-        </div>
-
         <br>
+        <div class="slideshow-container">
+            <img src="image/winner.jpg" alt="frc awards">
+            <img src="image/part.jfif" alt="broken occra bot">
+            <img src="image/awesomeproto.JPG" alt="Awesome Protogen Mascot">
+            <img src="image/robottt.JPG" alt="308 in the stands">
+            <img src="image/speed.JPG" alt="occra drivers">
+            <img src="image/touchrobot.JPG" alt="frc bot">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+
         <br>
         <div class="divider-bar"></div>
 
@@ -680,6 +680,7 @@
             <a href="secret/meow.html" style="opacity: 0; height: 5px;">meow</a>
         </footer>
 
+        <script src="js/slideshow.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
