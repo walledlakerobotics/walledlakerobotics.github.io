@@ -24,10 +24,10 @@ function changeSlide(direction, slideId){
 
   //Make old image slide left or right
   if (direction === "next"){
-    slideshow.querySelector("img:nth-child(" + (slideIndexes[slideId]+1) + ")").style.left = "-51%"
+    slideshow.querySelector("img:nth-child(" + (slideIndexes[slideId]+1) + ")").style.left = "-50.1%"
   }
   else if (direction === "prev"){
-    slideshow.querySelector("img:nth-child(" + (slideIndexes[slideId]+1) + ")").style.left = "151%"
+    slideshow.querySelector("img:nth-child(" + (slideIndexes[slideId]+1) + ")").style.left = "150.1%"
   }
 
   //turn off transition delay for new image
@@ -35,10 +35,10 @@ function changeSlide(direction, slideId){
 
   //put new image into position to slide in
   if (direction === "next"){
-    slideshow.querySelector("img:nth-child(" + (newIndex+1) + ")").style.left = '151%'
+    slideshow.querySelector("img:nth-child(" + (newIndex+1) + ")").style.left = '150.1%'
   }
   else if (direction === "prev"){
-    slideshow.querySelector("img:nth-child(" + (newIndex+1) + ")").style.left = '-51%'
+    slideshow.querySelector("img:nth-child(" + (newIndex+1) + ")").style.left = '-50.1%'
   }
 
   //wait until new image is in position and then gradually slide it into the middle of the container

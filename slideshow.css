@@ -11,6 +11,8 @@
     border-radius: 5px;
     border-width: 5px;
     background-color: rgb(36, 36, 36);
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .slideshow-container img {
@@ -18,9 +20,10 @@
     max-height: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 150.1%;
     transform: translate(-50%, -50%);
-    display: none;
+    transition-duration: 1s;
+    display: block;
     /* Hide the images by default */
 }
 
