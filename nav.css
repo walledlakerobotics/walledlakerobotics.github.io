@@ -1,7 +1,8 @@
 .topnav {
     overflow: hidden;
     padding: 1px;
-    background-image: linear-gradient(to right, rgb(255, 20, 20), rgb(20, 20, 255));
+    background-image: linear-gradient(to right, rgb(235, 0, 0), rgb(20, 20, 255));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .topnav, .topnav * {
