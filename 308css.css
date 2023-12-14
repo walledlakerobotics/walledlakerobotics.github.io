@@ -116,8 +116,9 @@ a {
 .team-section {
     display: flex;
     align-items: center;
-    margin: 50px 0;
+    margin: 10px 0;
     padding: 20px 40px;
+    padding-bottom: 70px;
 }
 
 .team-section img {
@@ -169,4 +170,56 @@ a {
     max-width: 100%;
     overflow-x: auto;
     margin: auto;
+}
+
+.modernDivider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block
+}
+
+.line {
+    height: 10px;
+    width: 100%;
+    clear:both;
+}
+.lineUpsidedown {
+    height: 10px;
+    width: 100%;
+    clear:both;
+}
+
+
+.line:nth-child(1) {
+    background-color: rgba(255, 0, 0, 0.8); /* Adjust the opacity of the second line */
+}
+
+.line:nth-child(2) {
+    background-color: rgba(255, 0, 0, 0.6); /* Adjust the opacity of the third line */
+}
+
+/* Add more lines and adjust their opacity as needed */
+
+.line:nth-child(3) {
+    background-color: rgba(255, 0, 0, 0.4); /* Adjust the opacity of the fourth line */
+}
+.line:nth-child(4) {
+    background-color: rgba(255, 0, 0, 0.2); /* Adjust the opacity of the fourth line */
+}
+.lineUpsidedown:nth-child(1) {
+    background-color: rgba(255, 0, 0, 0.2); /* Adjust the opacity of the second line */
+}
+
+.lineUpsidedown:nth-child(2) {
+    background-color: rgba(255, 0, 0, 0.4); /* Adjust the opacity of the third line */
+}
+
+/* Add more lines and adjust their opacity as needed */
+
+.lineUpsidedown:nth-child(3) {
+    background-color: rgba(255, 0, 0, 0.6); /* Adjust the opacity of the fourth line */
+}
+.lineUpsidedown:nth-child(4) {
+    background-color: rgba(255, 0, 0, 0.8); /* Adjust the opacity of the fourth line */
 }
