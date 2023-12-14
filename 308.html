@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0045)https://walledlakerobotics.github.io/308.html -->
-<html>
+<html lang="en">
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="308css.css">
         <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="slideshow.css">
         <style>
             /* overriding footer css */
             footer {
@@ -23,7 +24,20 @@
 
             /* override nav css */
             .topnav {
-                background-image: linear-gradient(to right, rgb(255, 32, 32), rgb(255, 95, 95));
+                background-image: linear-gradient(to right, rgb(235, 0, 0), rgb(235, 0, 0));
+                box-shadow: 0 10px 20px rgba(255, 0, 0, 0.19), 0 6px 6px rgba(255, 0, 0, 0.23);
+            }
+
+            .slideshow-container {
+                margin-inline: auto;
+                margin-block: auto;
+                width: 50rem;
+                height: 30rem;
+                max-width: 90%;
+            }
+
+            .prev, .next {
+                padding: 64px 16px;
             }
         </style>
 
@@ -53,32 +67,28 @@
         <script src="js/nav.js"></script>
 
         <!-- This looked like it could be really cool, so I'm gonna leave it here in case we wanna go back to it
-        <html class="animated fadeIn">
-        <head>
-            <link rel="stylesheet" href="paralax.css">
-        </head>
-        
-        <body>
-            <div id="hero">
-            <div class="layer-bg layer" data-depth="0.30" data-type="parallax"></div>
-            <div class="layer-5 layer" data-depth="0.18" data-type="parallax"></div>
-            <div class="layer-1 layer" data-depth="0.30" data-type="parallax"></div>
-            <div class="layer-7 layer" data-depth="0.22" data-type="parallax"></div>
-            <div class="layer-2 layer" data-depth="0.30" data-type="parallax"></div>
-            <div class="layer-3 layer" data-depth="0.30" data-type="parallax"></div>
-            <div class="layer-8 layer" data-depth="0.60" data-type="parallax"></div>
-            <div class="layer-6 layer" data-depth="0.22" data-type="parallax"></div>
-            <div class="layer-4 layer" data-depth="0.30" data-type="parallax"></div>
-            <div class="layer-overlay layer" data-depth="0.20" data-type="parallax"></div>
+        <div class="animated fadeIn">
+            <head>
+                <link rel="stylesheet" href="paralax.css">
+            </head>
             
-        </div>
-        <div id="hero-mobile"></div>
-        
-            
-            <script src="js/paralax.js"></script>
-        
-        </body>
-        </html> -->
+            <div>
+                <div id="hero">
+                <div class="layer-bg layer" data-depth="0.30" data-type="parallax"></div>
+                <div class="layer-5 layer" data-depth="0.18" data-type="parallax"></div>
+                <div class="layer-1 layer" data-depth="0.30" data-type="parallax"></div>
+                <div class="layer-7 layer" data-depth="0.22" data-type="parallax"></div>
+                <div class="layer-2 layer" data-depth="0.30" data-type="parallax"></div>
+                <div class="layer-3 layer" data-depth="0.30" data-type="parallax"></div>
+                <div class="layer-8 layer" data-depth="0.60" data-type="parallax"></div>
+                <div class="layer-6 layer" data-depth="0.22" data-type="parallax"></div>
+                <div class="layer-4 layer" data-depth="0.30" data-type="parallax"></div>
+                <div class="layer-overlay layer" data-depth="0.20" data-type="parallax"></div>
+            </div>
+            <div id="hero-mobile"></div>
+                <script src="js/paralax.js"></script>
+            </div>
+        </div> -->
 
         <!--- this is new images-->
         <style>
@@ -120,25 +130,55 @@
                 transform: translate(-50%, 0px);
                 max-width: 100%;
             }
+            .logo{
+                width: 20% !important; 
+                padding-left: 25px;
+                height: auto;
+                box-shadow: none !important;
+            }
+            .logoGroup{
+                display: flex;
+                align-items: center;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+                background-color: rgb(255, 213, 213);
+            }
+            
+            .logoGroup h1{
+                padding-left: 20px;
+                font-size: 3.7rem !important;
+                background-color: transparent;
+                box-shadow: none;
+                margin: 5px !important;
+
+            }
+            
+            @media only screen and (max-width: 450px) {
+            /* Adjust the font size for smaller screens */
+            .logoGroup h1 {
+                font-size: 2.5rem !important;
+            }
+        }
+
+
         </style>
 
 
-        <h1 style="text-align: center; font-size: 3.125rem;">308 - The Monsters</h1>
         <div class="team-section">
-            <img src="image/308.jfif" alt="Team Image">
+            <img src="image/308groupPhoto.jpeg" alt="Team Group Photo">
             <div class="team-text">
-                <h3>The 308 Monsters FIRST Robotics team, established in 1999, is a group of high school students who
-                    participate in the FIRST Robotics Competition (FRC). The FRC is an annual competition in which teams
-                    of high school students design, build, and program robots to compete in a game that combines
-                    elements of sports, engineering, and technology. The 308 Monsters team spends many hours designing,
-                    building, and testing their robot in preparation for FRC.</h3>
+                <div class="logoGroup">
+                    <img class="logo" src="image/download (9).png" alt="308 Team Logo">
+                    <h1>308 - The Monsters</h1>
+                </div>
+                <h3>The 308 Monsters Robotics team, established in 1999, is a group of high school students who
+                    participate in the FIRST Robotics Competition (FRC) and in the Oakland County Competitive Robotics Association (OCCRA). 
+                    The 308 Monsters team spends many hours designing, building, and testing their robot in preparation for FRC.</h3>
                 <h3>We offer hands-on experiences and the opportunity to develop valuable life skills. Our team is
                     dedicated to providing students with first-hand experience in designing, building, and programming
                     robots. Our focus on teamwork, communication, problem-solving, and leadership helps students develop
                     important life skills that can give students the head start on careers. As an FRC team, we are
                     committed to excellence in all that we do and are dedicated to helping students achieve their full
-                    potential. Join 308 today and discover the many benefits of being a part of the 308 Monsters
-                    Robotics Team!</h3>
+                    potential. Join the 308 Robotics Team today and discover the many benefits of being a Monster!</h3>
             </div>
         </div>
 
@@ -146,7 +186,6 @@
         <div style="text-align: center;" class="container">
             <br>
             <div>
-
                 <head>
                     <style>
                         .fixed2-bg {
@@ -158,20 +197,21 @@
                 </head>
 
                 <div>
-
-
-
                     <!-- <div class="fixed2-bg"></div>
 
                     <div style="height:40px; background-color:rgb(187, 187, 187);"></div> -->
 
                 </div>
-
             </div>
             <h1 class="first-txt" style="text-align: center; font-size: 3rem">
                 308 at the 2022 OCCRA Competition
             </h1>
-            <div style="height:40px; background-color:rgb(187, 187, 187);"></div> 
+            <div class="modernDivider">
+                <div class="lineUpsidedown"></div>
+                <div class="lineUpsidedown"></div>
+                <div class="lineUpsidedown"></div>
+                <div class="lineUpsidedown"></div>
+            </div>
             <video width="940" height="580" controls class="occra-video">
                 <source src="video/videorobot.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
@@ -197,47 +237,37 @@
             </head>
 
             <div>
-
                 <div class="fixed-bg"></div>
 
-                <div style="height: 40px; background-color:rgb(187, 187, 187);"></div>
-
+                <div class="modernDivider">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
 
         </div>
         <h1 class="first-txt" style="text-align: center; font-size: 3rem"> Robotics Pictures </h1>
 
-        <div class="row">
-            <div class="column">
-                <img src="image/winner.jpg" alt="frc awards">
-            </div>
-            <div class="column">
-                <img src="image/part.jfif" alt="broken occra bot">
-            </div>
-            <div class="column">
-                <img src="image/awesomeproto.JPG" alt="Awesome Protogen Mascot">
-            </div>
+        <br>
+        <div class="slideshow-container">
+            <img src="image/winner.jpg" alt="frc awards">
+            <img src="image/part.jpg" alt="broken occra bot">
+            <img src="image/awesomeproto.JPG" alt="Awesome Protogen Mascot">
+            <img src="image/robottt.JPG" alt="308 in the stands">
+            <img src="image/speed.JPG" alt="occra drivers">
+            <img src="image/touchrobot.JPG" alt="frc bot">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
         </div>
 
-        <div class="row">
-            <div class="column">
-                <img src="image/robottt.JPG" alt="308 in the stands">
-            </div>
-            <div class="column">
-                <img src="image/speed.JPG" alt="occra drivers">
-            </div>
-            <div class="column">
-                <img src="image/touchrobot.JPG" alt="frc bot">
-            </div>
-        </div>
-
-
-
         <br>
-        <br>
+
+        
+
+
         <div class="divider-bar"></div>
-
-
 
         <style>
             .robotsbefore {
@@ -258,11 +288,11 @@
                 cursor: pointer;
             }
         </style>
-        <h1 style="font-size: 3em; text-align: center;">Past Robots - 2022</h1>
+        <h1 style="font-size: 3em; text-align: center;">Past Robots - 2023</h1>
         <div class="robotsbefore">
             <h2 style="text-align: center;">FIRST Robot</h2>
-            <img src="image/frc robo.jpg">
-            <img src="image/new robo.png">
+            <img src="robotImages/308/2023FRC.jpg">
+            <img src="robotImages/308/2023OCCRA.jpg">
             <h2 style="text-align: center;">OCCRA Robot</h2>
         </div>
 
@@ -308,6 +338,11 @@
                 width: 70%;
                 margin-inline: auto;
             }
+
+            .table-year {
+                font-weight: bold;
+                text-align: center;
+            }
         </style>
 
         <h1 style="font-size: 3em; text-align: center;">Awards</h1>
@@ -320,47 +355,91 @@
                     </th>
                     <th>
                         <image src="image/occra.png" alt="OCCRA" style="width: 100px;"></image>
+                        <!-- OCCRA awards for 308:
+                            -308 joined OCCRA in 2012, any awards before 2012 are from the old northern team (team 802)  
+                            -From 2014 to 2018, the Monsters were divied into two teams: 308 and 803. For consistency sake, only the awards from 308 are listed.
+                            -2019 was when the Yetis officially competed in OCCRA as team 7178, although 803's 2018 awards are still listed in the Yeti table--->
                     </th>
 
                 </tr>
 
-                <tr style="height:auto">
-                    <td style="font-weight: bold;text-align: center;">2023</td>
-                    <td style="font-weight: bold;text-align: center;">2023</td>
+                <tr>
+                    <td class="table-year">2023</td>
+                    <td class="table-year">2023</td>
                 </tr>
                 <td>
-                    <li>Autonomous Award sponsored by Ford ~ Livonia</li>
-                    <li>District Event Finalist ~ Milford</li>
-
+                    <li>Finalist ~ Milford District Event</li>
+                    <li>Autonomous Award sponsored by Ford ~ Livonia District Event</li>
                 </td>
-
 
                 <td>
-                    <!-- Add the li tags in here for the 2023 occra awards -->
+                    <li>Design Award ~ Marian Tournament</li>
+                    <li>Quality Award ~ Seaholm Tournament</li>
+                    <li>First Place ~ Seaholm Tournament</li>
+                    <li>Technical Excellence Award ~ County Championship</li>
+                    <li>Semi-Finalist ~ County Championship</li>
                 </td>
 
-                <tr style="height:auto">
-                    <td style="font-weight: bold;text-align: center;">2022</td>
-                    <td style="font-weight: bold;text-align: center;">2022</td>
+                <tr>
+                    <td class="table-year">2022</td>
+                    <td class="table-year">2022</td>
                 </tr>
                 <tr>
                     <td>
 
                     </td>
                     <td>
+                        <li>Strategic Design Award ~ Marian Tournament</li>
                         <li>Finalist ~ County Championship</li>
                     </td>
 
                 </tr>
 
-
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2021</td>
-                    <td style="font-weight: bold;text-align: center;">2021</td>
+                    <td class="table-year">2020</td>
+                    <td class="table-year">2020</td>
                 </tr>
+
                 <tr>
                     <td>
+                        <li>Gracious Professionalism Award sponsored by Johnson &amp; Johnson ~ Milford District Event</li>
+                    </td>
 
+                    <td>
+                        <li>Strategic Design Award ~ Virtual Design Challenge</li>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table-year">2019</td>
+                    <td class="table-year">2019</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <li>Excellence in Engineering Award sponsored by Delphi ~ Troy District Event</li>
+                        <li>Innovation in Control Award sponsored by Rockwell Automation ~ Milford District Event</li>
+                    </td>
+
+                    <td>
+                        <!-- Source: https://www.oakland.k12.mi.us/stem/occra#fs-panel-33083 -->
+                        <li>Beautiful Bot Award ~ Lake Orion Tournament</li>
+                        <li>Third Place ~ Lake Orion Tournament</li>
+                        <li>Strategic Design Award ~ Birmingham Tournament</li>
+                        <li>Third Place ~ Oxford Tournament</li>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table-year">2017</td>
+                    <td class="table-year">2017</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <li>District Event Winner ~ Lansing District Event</li>
+
+                        <li>Imagery Award in honor of Jack Kamen ~ Waterford District Event</li>
                     </td>
 
                     <td>
@@ -369,14 +448,13 @@
                 </tr>
 
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2020</td>
-                    <td style="font-weight: bold;text-align: center;">2020</td>
+                    <td class="table-year">2016</td>
+                    <td class="table-year">2016</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2020 FIM District Milford Event ~ Gracious Professionalism Award sponsored by Johnson &amp;
-                            Johnson</li>
+                        <li>Innovation in Control Award sponsored by Rockwell Automation ~ Livonia District Event</li>
                     </td>
 
                     <td>
@@ -385,225 +463,211 @@
                 </tr>
 
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2019</td>
-                    <td style="font-weight: bold;text-align: center;">2019</td>
+                    <td class="table-year">2015</td>
+                    <td class="table-year">2015</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2019 FIM District Troy Event ~ Excellence in Engineering Award sponsored by Delphi </li>
-                        <li>2019 FIM District Milford Event ~ Innovation in Control Award sponsored by Rockwell
-                            Automation</li>
+                        <li>Judges' Award ~ Lansing District Event</li>
                     </td>
 
                     <td>
-                        <li>2019 Lake Orion Tournament ~ County Championship </li>
-                        <li>2019 Lake Orion Tournament ~ Third Place </li>
-                        <li>2019 Birmingham Tournament ~ Strategic Design Award </li>
-                        <li>2019 Oxford Tournament ~ Third Place</li>
+                        <li>Third Place ~ West Bloomfield Tournament</li>
+                        <li>Quality Award ~ Diversity Showcase</li>
+                        <li>Strategic Design Award ~ Saint Mary's Tournament</li>
+                        <li>Semi-Finalist ~ County Championship</li>
                     </td>
                 </tr>
 
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2017</td>
-                    <td style="font-weight: bold;text-align: center;">2017</td>
+                    <td class="table-year">2014</td>
+                    <td class="table-year">2014</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2017 FIM District - Lansing Event ~ District Event Winner</li>
-
-                        <li>2017 FIM District - Waterford Event ~ Imagery Award in honor of Jack Kamen</li>
+                        <li>Quality Award sponsored by Motorola ~ Lansing District Event</li>
+                        <li>Innovation in Control Award sponsored by Rockwell Automation ~ Livonia District Event</li>
                     </td>
 
                     <td>
-
+                        <!-- Source: https://web.archive.org/web/20180310042956/http://www.monsters308.org/80361-2/ -->
+                        <li>Second Place ~ Walled Lake Western Tournament</li>
+                        <li>Spirit of the Competition Award ~ Walled Lake Western Tournament</li>
+                        <li>First Place ~ Diversity Showcase</li>
+                        <li>Second Place ~ Birmingham Seaholm Tournament</li>
+                        <li>Judges' Award ~ County Championship</li>
+                        <li>Top Seed Award ~ County Championship</li>
+                        <li>Semi-Finalist ~ County Championship</li>
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2016</td>
-                    <td style="font-weight: bold;text-align: center;">2016</td>
+                    <td class="table-year">2013</td>
+                    <td class="table-year">2013</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2016 FIM District - Livonia Event ~ Innovation in Control Award sponsored by Rockwell
-                            Automation</li>
+                        
                     </td>
 
                     <td>
-
+                        <li>Technical Excellence Award ~ Waterford Tournament</li>
+                        <li>Spirit of the Competition Award ~ County Championship</li>
                     </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;text-align: center;">2015</td>
-                    <td style="font-weight: bold;text-align: center;">2015</td>
                 </tr>
 
                 <tr>
-                    <td>
-                        <li>2015 FIM District - Lansing Event ~ Judges' Award</li>
-                    </td>
-
-                    <td>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;text-align: center;">2014</td>
-                    <td style="font-weight: bold;text-align: center;">2014</td>
+                    <td class="table-year">2012</td>
+                    <td class="table-year">2012</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2014 Lansing FIRST Robotics District Competition ~ Quality Award sponsored by Motorola</li>
-                        <li>2014 Livonia FIRST Robotics District Competition ~ Innovation in Control Award sponsored by
-                            Rockwell Automation</li>
+                        <li>Quality Award sponsored by Motorola ~ Northville District Event</li>
+                        <li>Finalist ~ Northville District Event</li>
                     </td>
 
                     <td>
-
+                        <li>Spirit of the Competition Award ~ South Lyon Tournament</li>
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2012</td>
-                    <td style="font-weight: bold;text-align: center;">2012</td>
+                    <td class="table-year">2011</td>
+                    <td class="table-year">2011</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2012 Northville FIRST Robotics District Competition ~ Regional Finalists Quality Award
-                            sponsored by Motorola</li>
+                        <li>Innovation in Control Award sponsored by Rockwell Automation ~ Livonia District Event</li>
                     </td>
 
                     <td>
 
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2011</td>
-                    <td style="font-weight: bold;text-align: center;">2011</td>
+                    <td class="table-year">2010</td>
+                    <td class="table-year">2010</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2011 Livonia FIRST Robotics District Competition ~ Innovation in Control Award sponsored by
-                            Rockwell Automation</li>
+                        <li>Quality Award sponsored by Motorola ~ Cass Tech District Event</li>
+                        <li>Finalist ~ Cass Tech District Event</li>
                     </td>
 
                     <td>
 
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2010</td>
-                    <td style="font-weight: bold;text-align: center;">2010</td>
+                    <td class="table-year">2009</td>
+                    <td class="table-year">2009</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2010 Cass Tech FIRST Robotics District Competition ~ Finalist Quality Award sponsored by
-                            Motorola</li>
+                        <li>Imagery Award ~ Troy District Event</li>
                     </td>
 
                     <td>
 
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2009</td>
-                    <td style="font-weight: bold;text-align: center;">2009</td>
+                    <td class="table-year">2006</td>
+                    <td class="table-year">2006</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2009 Troy FIRST Robotics District Competition ~ Imagery Award</li>
+                        <li>Xerox Creativity Award ~ Great Lakes Regional</li>
                     </td>
 
                     <td>
 
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2006</td>
-                    <td style="font-weight: bold;text-align: center;">2006</td>
+                    <td class="table-year">2005</td>
+                    <td class="table-year">2005</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2006 Great Lakes Regional ~ Xerox Creativity Award</li>
+                        <li>Finalist ~ Great Lakes Regional</li>
                     </td>
 
                     <td>
 
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2005</td>
-                    <td style="font-weight: bold;text-align: center;">2005</td>
+                    <td class="table-year">2003</td>
+                    <td class="table-year">2003</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2005 Great Lakes Regional ~ Regional Finalist</li>
+                        <li>Xerox Creativity Award ~ West Michigan Regional</li>
                     </td>
 
                     <td>
 
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2003</td>
-                    <td style="font-weight: bold;text-align: center;">2003</td>
+                    <td class="table-year">2002</td>
+                    <td class="table-year">2002</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2003 West Michigan Regional ~ E Xerox Creativity Award</li>
+                        <li>Championship Finalist ~ Einstein Field</li>
+                        <li>Division Champion ~ Galileo Division</li>
                     </td>
 
                     <td>
 
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2002</td>
-                    <td style="font-weight: bold;text-align: center;">2002</td>
+                    <td class="table-year">2001</td>
+                    <td class="table-year">2001</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2002 Einstein Field ~ Championship Finalist</li>
-                        <li>2002 Galileo Division~ Division Champion</li>
+                        <li>Regional Finalist ~ Great Lakes Regional</li>
+                        <li>Incredible Play ~ Great Lakes Regional</li>
+                        <li>Industrial Design ~ Great Lakes Regional</li>
                     </td>
 
                     <td>
 
                     </td>
                 </tr>
+
                 <tr>
-                    <td style="font-weight: bold;text-align: center;">2001</td>
-                    <td style="font-weight: bold;text-align: center;">2001</td>
+                    <td class="table-year">2000</td>
+                    <td class="table-year">2000</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <li>2001 Great Lakes Regional ~ Regional Finalist, Incredible Play, Industrial Design</li>
-                    </td>
-
-                    <td>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;text-align: center;">2000</td>
-                    <td style="font-weight: bold;text-align: center;">2000</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <li>2000 National Championship ~ Leadership in Controls</li>
-                        <li>2000 Motorola Midwest Regional ~ Leadership in Controls</li>
+                        <li>Leadership in Controls ~ National Championship</li>
+                        <li>Leadership in Controls ~ Motorola Midwest Regional</li>
                     </td>
 
                     <td>
@@ -619,8 +683,6 @@
         <br>
         <br>
         <br>
-
-
 
 
         <div class="divider-bar"></div>
@@ -643,6 +705,9 @@
                     <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
                 </li>
                 <li class="social-icon__item">
+                    <a class="social-icon__link" href="https://www.youtube.com/@308Monsters1"><ion-icon name="logo-youtube"></ion-icon></a>
+                </li>
+                <li class="social-icon__item">
                     <a class="social-icon__link" href="https://github.com/Monsters-308/"><ion-icon name="logo-github"></ion-icon></a>
                 </li>
             </ul>
@@ -658,9 +723,10 @@
 
             <p>&copy;2023 Walled Lake Robotics</p>
 
-            <a href="secret/meow.html" style="opacity: 0;">meow</a>
+            <a href="secret/meow.html" style="opacity: 0; height: 5px;">meow</a>
         </footer>
 
+        <script src="js/slideshow.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
