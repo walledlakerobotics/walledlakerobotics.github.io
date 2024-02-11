@@ -146,6 +146,18 @@
             </div>
         </div>
 
+        <script> 
+            const video = document.getElementById("my-video");
+            
+            // Wait for video metadata to load first
+            video.onloadedmetadata = function() {
+                // Get the duration of the video (in seconds)
+                let duration = video.duration;
+                // Set video to a random timestamp
+                video.currentTime = Math.random() * duration;
+            };
+        
+        </script>
 
         <div class="divider-bar"></div>
         <div class="content">
@@ -199,7 +211,7 @@
                 <li class="menu__item"><a class="menu__link" href="https://teamlocker.squadlocker.com/#/lockers/402840">Shop</a></li>
             </ul>
 
-            <p>&copy;2023 Walled Lake Robotics</p>
+            <p>&copy;2024 Walled Lake Robotics</p>
         </footer>
     </body>
 
