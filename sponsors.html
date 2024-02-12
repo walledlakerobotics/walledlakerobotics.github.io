@@ -12,12 +12,30 @@
         <title>Sponsors - Walled Lake Robotics</title>
 
         <style>
-            .sponsor-card-container {
+            .sponsor-card-container-center{
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
                 gap: 20px;
                 margin: auto;
+                padding-bottom: 1%;
+            }
+            .sponsor-card-container-top {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin: auto;
+                padding-bottom: 1%;
+            }
+            .sponsor-card-container-bottom{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin: auto;
+                
+                
             }
 
             .sponsor-card {
@@ -36,12 +54,21 @@
                 justify-content: space-between;
 
             }
+            
 
             a .sponsor-card:hover {
                 background-color: rgba(255, 255, 255, 0.5);;
             }
 
-            .sponsor-card-container a {
+            .sponsor-card-container-bottom a {
+                text-decoration: none;
+                color: black;
+            }
+            .sponsor-card-container-center a {
+                text-decoration: none;
+                color: black;
+            }
+            .sponsor-card-container-top a {
                 text-decoration: none;
                 color: black;
             }
@@ -119,23 +146,17 @@
         <br>
 
 
-        <div class="sponsor-card-container">
-            <a href="https://teclausa.com/" target="_blank">
+        <div class="sponsor-card-container-top">
+            <a href="https://www.rockwellautomation.com/en-us.html" target="_blank">
                 <div class="sponsor-card">
-                    <h2>Tecla</h2>
-                    <img src="sponsors/TECLAlogo.png" style=" width:128px; height:96px;" height="96" class="center">
+                    <h2 >Rockwell Automation </h2>
+                    <img src="sponsors/RockwellAutomation.png" style="width: 60%;" height="96" class="center">
                 </div>
             </a>
-            <a href="https://www.avl.com/en" target="_blank">
+            <a href="https://www.stellantis.com/en" target="_blank">
                 <div class="sponsor-card">
-                    <h2>AVL</h2>
-                    <img src="sponsors/avl.svg" style=" width:128px; height:96px;" height="96" class="center">
-                </div>
-            </a>
-            <a href="https://www.brodysonline.com/" target="_blank">
-                <div class="sponsor-card">
-                    <h2>Broody</h2>
-                    <img src="sponsors/broody.svg" style=" width:128px; height:96px;" height="96" class="center">
+                    <h2 >Stellantis</h2>
+                    <img src="sponsors/stellantis.svg" style="width: 60%;" height="96" class="center">
                 </div>
             </a>
             <a href="https://www.fanucamerica.com/" target="_blank">
@@ -144,10 +165,25 @@
                     <img src="sponsors/FANUC-logo.svg" style=" width:128px; height:96px;" height="96" class="center">
                 </div>
             </a>
+            <a href="https://www.avl.com/en" target="_blank">
+                <div class="sponsor-card">
+                    <h2>AVL</h2>
+                    <img src="sponsors/avl.svg" style=" width:128px; height:96px;" height="96" class="center">
+                </div>
+            </a>
             <a href="https://www.gm.com/" target="_blank">
                 <div class="sponsor-card">
                     <h2>General Motors</h2>
                     <img src="sponsors/General_Motors_(2021).svg" style=" width:128px; height:96px;" height="96" class="center">
+                </div>
+            </a>
+        </div>
+
+        <div class="sponsor-card-container-center">
+            <a href="https://teclausa.com/" target="_blank">
+                <div class="sponsor-card">
+                    <h2>Tecla</h2>
+                    <img src="sponsors/TECLAlogo.png" style=" width:128px; height:96px;" height="96" class="center">
                 </div>
             </a>
             <a href="https://innovatiotech.com/" target="_blank">
@@ -177,26 +213,6 @@
                 </div>
             </a>
 
-            <a href="https://www.rockwellautomation.com/en-us.html" target="_blank">
-                <div class="sponsor-card">
-                    <h2 >Rockwell Automation </h2>
-                    <img src="sponsors/RockwellAutomation.png" style="width: 60%;" height="96" class="center">
-                </div>
-            </a>
-            <a href="https://www.stellantis.com/en" target="_blank">
-                <div class="sponsor-card">
-                    <h2 >Stellantis</h2>
-                    <img src="sponsors/stellantis.svg" style="width: 60%;" height="96" class="center">
-                </div>
-            </a>
-
-            <a href="https://glpcfab.com/" target="_blank">
-                <div class="sponsor-card">
-                    <h2 >Great Lakes Powder Coating</h2>
-                    <img src="sponsors/GLPC.png" height="96" class="center">
-                </div>
-            </a>
-
             <a href="https://www.rivetsonline.com/" target="_blank">
                 <div class="sponsor-card">
                     <h2 >Jay-Cee Sales &amp; Rivet</h2>
@@ -211,26 +227,23 @@
                 </div>
             </a>
 
-            <a href="https://www.facebook.com/MarvsDairyDan/" target="_blank">
-                <div class="sponsor-card">
-                    <h2 >Marv's Dairy Dan</h2>
-                    <img src="sponsors/dairy_Dan.png" height="96" class="center">
-                </div>
-            </a>
-
             <a href="https://www.marathonfuel.com/home" target="_blank">
                 <div class="sponsor-card">
                     <h2 >Marathon</h2>
                     <img src="sponsors/marathon.png" height="96" class="center">
                 </div>
             </a>
-
-            <a href="https://www.dedoes.com/" target="_blank">
-                <div class="sponsor-card">
-                    <h2 >Dedoes</h2>
-                    <img src="sponsors/Dedoes.png" height="96" class="center">
+        </div>
+        <div class="sponsor-card-container-bottom"></div>
+            <a href="https://www.brodysonline.com/" target="_blank">
+                <div class="sponsor-card" style="margin-left: auto; margin-right: auto;">
+                    <h2>Broody</h2>
+                    <img src="sponsors/broody.svg" style=" width:128px; height:96px;" height="96" class="center">
                 </div>
             </a>
+        </div>
+
+            
         </div>
 
         <br>
