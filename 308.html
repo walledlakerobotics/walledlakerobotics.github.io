@@ -130,46 +130,49 @@
                 transform: translate(-50%, 0px);
                 max-width: 100%;
             }
-            .logo{
-                width: 20% !important; 
+
+            .logoGroup .logo {
+                width: 5.5rem; 
+                height: fit-content;
+                padding: 5px;
                 padding-left: 25px;
-                height: auto;
                 box-shadow: none !important;
             }
-            .logoGroup{
+
+            .logoGroup {
                 display: flex;
+                justify-content: center;
                 align-items: center;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+                box-shadow: 0 3px 9px rgba(0, 0, 0, 0.19), 0 5px 13px rgba(0, 0, 0, 0.23);
                 background-color: rgb(255, 213, 213);
+
+                margin-block: 2rem;
             }
             
-            .logoGroup h1{
-                padding-left: 20px;
-                font-size: 3.7rem !important;
+            .logoGroup h1 {
+                font-size: 3.125rem;
                 background-color: transparent;
                 box-shadow: none;
                 margin: 5px !important;
-
             }
             
-            @media only screen and (max-width: 450px) {
-            /* Adjust the font size for smaller screens */
-            .logoGroup h1 {
-                font-size: 2.5rem !important;
+            @media only screen and (max-width: 500px) {
+                /* Adjust the font size for smaller screens */
+                .logoGroup h1 {
+                    font-size: 2.5rem;
+                }
             }
-        }
-
-
         </style>
 
-
+        <div class="logoGroup">
+            <img class="logo" src="image/download (9).png" alt="308 Team Logo">
+            <h1>308 - The Monsters</h1>
+        </div>
+        
         <div class="team-section">
             <img src="image/308groupPhoto.jpeg" alt="Team Group Photo">
             <div class="team-text">
-                <div class="logoGroup">
-                    <img class="logo" src="image/download (9).png" alt="308 Team Logo">
-                    <h1>308 - The Monsters</h1>
-                </div>
+                
                 <h3>The 308 Monsters Robotics team, established in 1999, is a group of high school students who
                     participate in the FIRST Robotics Competition (FRC) and in the Oakland County Competitive Robotics Association (OCCRA). 
                     The 308 Monsters team spends many hours designing, building, and testing their robot in preparation for FRC.</h3>
