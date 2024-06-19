@@ -54,6 +54,8 @@ footer p {
 .social-icon__item,
 .menu__item {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .social-icon__item:hover a {
@@ -71,6 +73,10 @@ footer p {
 .menu__item:hover,
 .social-icon__item:hover {
     background-color: rgba(255, 255, 255, 0.5)
+}
+
+.menu__item {
+    width: 4rem;
 }
 
 .menu__link {
