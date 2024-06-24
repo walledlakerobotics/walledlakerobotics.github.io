@@ -22,9 +22,13 @@
     top: 50%;
     left: 150.1%;
     transform: translate(-50%, -50%);
-    transition-duration: 1s;
+    transition-duration: 0s;
+    transition-timing-function: ease;
     display: block;
-    /* Hide the images by default */
+}
+
+.slideshow-container img:nth-child(1) {
+    left: 50%;
 }
 
 /* Next & previous buttons */
