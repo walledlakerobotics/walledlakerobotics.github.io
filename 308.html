@@ -130,46 +130,49 @@
                 transform: translate(-50%, 0px);
                 max-width: 100%;
             }
-            .logo{
-                width: 20% !important; 
+
+            .logoGroup .logo {
+                width: 5.5rem; 
+                height: fit-content;
+                padding: 5px;
                 padding-left: 25px;
-                height: auto;
                 box-shadow: none !important;
             }
-            .logoGroup{
+
+            .logoGroup {
                 display: flex;
+                justify-content: center;
                 align-items: center;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+                box-shadow: 0 3px 9px rgba(0, 0, 0, 0.19), 0 5px 13px rgba(0, 0, 0, 0.23);
                 background-color: rgb(255, 213, 213);
+
+                margin-block: 2rem;
             }
             
-            .logoGroup h1{
-                padding-left: 20px;
-                font-size: 3.7rem !important;
+            .logoGroup h1 {
+                font-size: 3.125rem;
                 background-color: transparent;
                 box-shadow: none;
                 margin: 5px !important;
-
             }
             
-            @media only screen and (max-width: 450px) {
-            /* Adjust the font size for smaller screens */
-            .logoGroup h1 {
-                font-size: 2.5rem !important;
+            @media only screen and (max-width: 500px) {
+                /* Adjust the font size for smaller screens */
+                .logoGroup h1 {
+                    font-size: 2.5rem;
+                }
             }
-        }
-
-
         </style>
 
-
+        <div class="logoGroup">
+            <img class="logo" src="image/download (9).png" alt="308 Team Logo.">
+            <h1>308 - The Monsters</h1>
+        </div>
+        
         <div class="team-section">
-            <img src="image/308groupPhoto.jpeg" alt="Team Group Photo">
+            <img src="image/308groupPhoto.jpg" alt="Team Group Photo.">
             <div class="team-text">
-                <div class="logoGroup">
-                    <img class="logo" src="image/download (9).png" alt="308 Team Logo">
-                    <h1>308 - The Monsters</h1>
-                </div>
+                
                 <h3>The 308 Monsters Robotics team, established in 1999, is a group of high school students who
                     participate in the FIRST Robotics Competition (FRC) and in the Oakland County Competitive Robotics Association (OCCRA). 
                     The 308 Monsters team spends many hours designing, building, and testing their robot in preparation for FRC.</h3>
@@ -252,12 +255,12 @@
 
         <br>
         <div class="slideshow-container">
-            <img src="image/winner.jpg" alt="frc awards">
-            <img src="image/part.jpg" alt="broken occra bot">
-            <img src="image/awesomeproto.jpg" alt="Awesome Protogen Mascot">
-            <img src="image/stands.jpg" alt="308 in the stands">
-            <img src="image/speed.jpg" alt="occra drivers">
-            <img src="image/touchrobot.jpg" alt="frc bot">
+            <img src="image/winner.jpg" alt="FRC drive team holding a finalist award.">
+            <img src="image/part.jpg" alt="Students working on the 2022 OCCRA robot in the pits.">
+            <img src="image/awesomeproto.jpg" alt="Awesome Protogen Mascot!">
+            <img src="image/stands.jpg" alt="Students holding a 308 sign in the stands.">
+            <img src="image/speed.jpg" alt="2022 OCCRA drive team.">
+            <img src="image/touchrobot.jpg" alt="2023 FRC robot being pushed by cart.">
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
         </div>
@@ -291,8 +294,8 @@
         <h1 style="font-size: 3em; text-align: center;">Past Robots - 2023</h1>
         <div class="robotsbefore">
             <h2 style="text-align: center;">FIRST Robot</h2>
-            <img src="robotImages/308/2023FRC.jpg">
-            <img src="robotImages/308/2023OCCRA.jpg">
+            <img src="robotImages/308/2023FRC.jpg" alt="2023 FRC robot.">
+            <img src="robotImages/308/2023OCCRA.jpg" alt="2023 OCCRA robot.">
             <h2 style="text-align: center;">OCCRA Robot</h2>
         </div>
 
@@ -351,13 +354,13 @@
             <table>
                 <tr>
                     <th>
-                        <image src="image/firstlogo.png" alt="First Robotics" style="width: 100px;"></image>
+                        <img src="image/firstlogo.png" alt="FIRST logo" style="width: 100px;">
                     </th>
                     <th>
-                        <image src="image/occra.png" alt="OCCRA" style="width: 100px;"></image>
+                        <img src="image/occra.png" alt="OCCRA logo" style="width: 100px;">
                         <!-- OCCRA awards for 308:
                             -308 joined OCCRA in 2012, any awards before 2012 are from the old northern team (team 802)  
-                            -From 2014 to 2018, the Monsters were divied into two teams: 308 and 803. For consistency sake, only the awards from 308 are listed.
+                            -From 2014 to 2018, the Monsters were divided into two teams: 308 and 803. For consistency sake, only the awards from 308 are listed.
                             -2019 was when the Yetis officially competed in OCCRA as team 7178, although 803's 2018 awards are still listed in the Yeti table--->
                     </th>
 
@@ -718,7 +721,7 @@
                 <li class="menu__item"><a class="menu__link" href="occra.html">OCCRA</a></li>
                 <li class="menu__item"><a class="menu__link" href="308.html">308</a></li>
                 <li class="menu__item"><a class="menu__link" href="7178.html">7178</a></li>
-                <li class="menu__item"><a class="menu__link" href="https://teamlocker.squadlocker.com/#/lockers/402840">Shop</a></li>
+                <li class="menu__item"><a class="menu__link" href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a></li>
             </ul>
 
             <p>&copy;2024 Walled Lake Robotics</p>

@@ -26,7 +26,6 @@ body {
 }
 
 p {
-    font-family: 'Arial', sans-serif;
     font-size: 1.688rem;
     line-height: 1.5;
     margin: 0 0 1em 0;
@@ -117,7 +116,7 @@ a {
     display: flex;
     align-items: center;
     margin: 10px 0;
-    padding: 20px 40px;
+    padding: 0px 40px;
     padding-bottom: 70px;
 }
 

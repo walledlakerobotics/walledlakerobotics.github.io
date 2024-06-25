@@ -54,6 +54,8 @@ footer p {
 .social-icon__item,
 .menu__item {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .social-icon__item:hover a {
@@ -71,6 +73,10 @@ footer p {
 .menu__item:hover,
 .social-icon__item:hover {
     background-color: rgba(255, 255, 255, 0.5)
+}
+
+.menu__item {
+    width: 4rem;
 }
 
 .menu__link {
@@ -106,10 +112,10 @@ footer p {
         <li class="menu__item"><a class="menu__link" href="occra.html">OCCRA</a></li>
         <li class="menu__item"><a class="menu__link" href="308.html">308</a></li>
         <li class="menu__item"><a class="menu__link" href="7178.html">7178</a></li>
-        <li class="menu__item"><a class="menu__link" href="https://teamlocker.squadlocker.com/#/lockers/402840">Shop</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a></li>
     </ul>
     
-    <p>&copy;2023 Walled Lake Robotics</p>
+    <p>&copy;2024 Walled Lake Robotics</p>
 </footer> 
 */
 
