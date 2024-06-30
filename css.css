@@ -73,6 +73,36 @@ body {
     width: 100%;
 }
 
+.previous-robots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 6rem;
+}
+
+.previous-robots img {
+    max-width: 30%;
+    max-height: 70vh;
+    margin: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.previous-robots img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+    .previous-robots {
+        flex-wrap: wrap;
+        margin-inline: 0px;
+    }
+
+    .previous-robots img {
+        width: 35%;
+    }
+
+}
 
 /*
 body::-webkit-scrollbar {
