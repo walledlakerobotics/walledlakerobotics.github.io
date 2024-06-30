@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(255, 243, 243), rgb(253, 229, 229));
+    background-image: linear-gradient(to right, rgb(255, 239, 239), rgb(255, 239, 239));
 }
 
 #backgroundtext {
@@ -147,6 +147,37 @@ a {
     font-size: 1.125rem;
     color: #555;
     line-height: 1.5;
+}
+
+.previous-robots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 6rem;
+}
+
+.previous-robots img {
+    max-width: 30%;
+    max-height: 70vh;
+    margin: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.previous-robots img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+    .previous-robots {
+        flex-wrap: wrap;
+        margin-inline: 0px;
+    }
+
+    .previous-robots img {
+        width: 35%;
+    }
+
 }
 
 @media (orientation: portrait) {
