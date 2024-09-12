@@ -92,6 +92,45 @@ body {
     cursor: pointer;
 }
 
+.vertical-split {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+    gap: 20px;
+
+    margin-top: 90px;
+    margin-bottom: 115px;
+}
+
+.vertical-split img {
+    max-width: 100%;
+}
+
+.vertical-split-column {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    flex: 1;
+    max-width: 50%;
+    padding: 23px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (orientation: portrait) {
+    .vertical-split {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .vertical-split-column {
+        max-width: 100%;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .previous-robots {
         flex-wrap: wrap;
