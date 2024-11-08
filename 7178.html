@@ -143,21 +143,61 @@
         </nav>
 
         <script src="js/nav.js"></script>
+        <style>
+        .logoGroup .logo {
+            width: 5.5rem; 
+            height: fit-content;
+            padding: 5px;
+            padding-left: 25px;
+            box-shadow: none !important;
+            transform: translateX(-50px);
+        }
 
-        <h1 style="text-align: center; font-size: 3.125rem;">7178 - The Yetis</h1>
+        .logoGroup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.19), 0 5px 13px rgba(0, 0, 0, 0.23);
+            background-color: rgb(131, 142, 241);
+
+            margin-block: 2rem;
+        }
+        
+        .logoGroup h1 {
+            font-size: 3.125rem;
+            background-color: transparent;
+            box-shadow: none;
+            margin: 5px !important;
+            transform: translateX(-50px);
+        }
+        
+        @media only screen and (max-width: 500px) {
+            /* Adjust the font size for smaller screens */
+            .logoGroup h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+
+    <div class="logoGroup">
+        <img class="logo" src="image/7178.png" alt="7178 Team Logo.">
+        <h1>7178 Yeti</h1>
+    </div>
 
         <div class="divider-bar"></div>
 
         <div class="content">
             <div class="text-group">
                 <h1 class="lefthead">About The Team</h1>
-                <h3 class="left">Team 7178, otherwise known as the Yetis, is Walled Lake Robotics's younger team.
-                    The Yetis split off from the Monsters in 2018 and have been thriving ever since.
-                    The team consists of many individual sub teams that are student driven and mentor advised.
-                    Our team consists of people of many different experience levels, meaning anyone can join and be a
-                    part of the team.
-                    7178 fosters a learning environment where the more experienced teach the inexperienced everything
-                    they need to be successful in order to keep the team the best it can be.
+                <h3 class="left">Team 7178, otherwise known as the Yetis, is a Walled Lake Robotics team. There was one team that originated in 1999, called the monsters. 
+                    In 2018 they split into two separate teams. The Yetis went their separate way from the Monsters and have been thriving ever 
+                    since then. They consist of many individual sub teams, such as electrical, mechanical, and programming, 
+                    which are all student driven and mentor advised. 7178 consists of many students with different experience levels, 
+                    meaning that anyone is able to join and can help out. In addition, our team fosters a learning environment in which 
+                    the more experienced students and mentors teach the new students/inexperienced the skills that they need to be successful 
+                    to keep our team thriving. With the variety of students 7178 has, they are able to maintain a well rounded team with a good 
+                    robot each year.  
+
                 </h3>
             </div>
 
@@ -194,23 +234,49 @@
             <div class="text-group">
                 <h1 class="righthead">Involvement in the community </h1>
                 <h3 class="right">
-                    Along with the competitions, 7178 is also involved in the community at both Walled Lake Central and Walled Lake Western.
-                    We bring our beloved Tank Bot, a tank robot to shoot t-shirts at football games, pep assemblies, and other important
-                    events that go on. We also bring our robots to walk in the Walled Lake memorial day parade.
+                    Along with the competitions, 7178 is also involved in the community at both Walled Lake Central, Western, and Northern. 
+                    When our team has the opportunity to be involved we take it. During our events we bring our beloved Tank bot, 
+                    a robot that shoots t-shirts at football games, pep assemblies, the walled lake memorial parade, STEM nights at
+                    elementary schools, and other community gatherings. During Westerns Football games,
+                    7178 cheers on the players and spreads knowledge about what we do as a team in robotics. 
+                    In addition when we partake in parades, we drive our Tank bot shooting merchandise into the crowds and handing out
+                    candy to children. On the other hand throughout our STEM nights, we display our robots, how they function, their code,
+                    and decorations (Fancy Lights). In conclusion, as a team we provide role models for future scholars/younger 
+                    students that may find interests in being involved with Walled Lake Robotics. 
+
                 </h3>
             </div>
 
 
         </div>
-
+        <style>
+            .subBar{
+                color: #000000;
+                width: 350px;
+                margin: auto;
+                text-align: center;
+                background-color: rgba(85, 116, 177, 0.5);
+                padding: 10px 20px;
+                /* margin-bottom: 10px; */
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        </style>
 
         <div class="divider-bar"></div>
-
-        <h1 style="font-size: 3em; text-align: center;">Past Robots - 2023</h1>
+        <h1 style="font-size: 3em; text-align: center;">Past Robots</h1>
+        <h1 class="subBar" style="font-size: 3em;">2024 Robots</h1>
         <div class="previous-robots">
             <h2 style="text-align: center;">FIRST Robot</h2>
-            <img src="robotImages/7178/2023FRC.jpg" alt="2023 FRC robot.">
-            <img src="robotImages/7178/2023OCCRA.jpg" alt="2023 OCCRA robot.">
+            <img src="robotImages/7178/2024FRC.png" alt="First">
+            <img src="robotImages/7178/2024OCCRA.jpg" alt="OCCRA">
+            <h2 style="text-align: center;">OCCRA Robot</h2>
+        </div>
+        <h1 class="subBar" style="font-size: 3em;">2023 Robots</h1>
+        <div class="previous-robots">
+            <h2 style="text-align: center;">FIRST Robot</h2>
+            <img src="robotImages/7178/2023FRC.jpg" alt="First">
+            <img src="robotImages/7178/2023OCCRA.jpg" alt="OCCRA">
             <h2 style="text-align: center;">OCCRA Robot</h2>
         </div>
 
@@ -274,6 +340,23 @@
                         <img src="image/occra.png" alt="OCCRA logo" style="width: 100px;">
                     </th>
                 </tr>
+                <tr style="height:auto">
+                    <td style="font-weight: bold;text-align: center;">2024</td>
+                    <td style="font-weight: bold;text-align: center;">2024</td>
+                </tr>
+                <td>
+                    <ul>
+                        <li>Team Spirit Award ~ Milford District Event</li>
+                    </ul>
+                </td>
+
+                <td>
+                    <ul>
+                        <li>Spirit of the Competition  ~ Walled Lake Central</li>
+                    </ul>
+                    
+                </td>
+
                 
                 <tr style="height:auto">
                     <td style="font-weight: bold;text-align: center;">2023</td>
