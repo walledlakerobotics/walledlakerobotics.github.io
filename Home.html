@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="icon" href="image/iconWithLine.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+
+        <title>FIRST - Walled Lake Robotics</title>
+
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="css.css">
+        <style>
+            /* styles specific to this page go here. 
+            this page's theme: 
+            background-image: linear-gradient(to right, rgb(255, 225, 225), rgb(225, 230, 255));
+            */
+            .body,
+            .content,
+            footer {
+                background: linear-gradient(90deg, rgb(255 235 235) 0%, rgb(255 255 255) 33%, rgb(255 255 255) 66%, rgb(233 230 255) 100%)
+            }
+            .content h2 {
+                padding: 10px 20px 10px 20px;
+                font-size: 1.563rem;
+                text-align: center;
+                width: auto;
+            }
+
+            @media (orientation: portrait) {
+                .content img {
+                    margin-left: 14%;
+                    padding-left: 0px !important;
+                }
+
+                .firstYoutube {
+                    margin-top: 0px;
+                    padding-top: 0px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="topnav">
+            <div class="mobile">
+                <a href="home.html" class="href-align-right">WALLED LAKE ROBOTICS</a>
+                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank" class="href-align-left">SHOP</a>                
+                <a href="community.html" class="href-align-left">COMMUNITY</a>
+                <a href="sponsors.html" class="href-align-left">SPONSORS</a>
+                <a href="contact.html" class="href-align-left">CONTACT</a>
+                <a href="7178.html" class="href-align-left" style="color: rgb(218, 228, 251);">7178</a>
+                <a href="308.html" class="href-align-left" style="color: rgb(254, 217, 217);">308</a>
+                <a href="first.html" class="href-align-left">FIRST</a>
+                <a href="occra.html" class="href-align-left">OCCRA</a>
+            </div>
+            <a href="#" style="line-height: 24px; padding-top: 3px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+        </nav>
+        <script src="js/nav.js"></script>
+        <div>
+            <video autoplay muted loop id="homepage-video" class="header-video">
+                <source src="video/backgroundvideo.mp4" type="video/mp4">
+            </video>
+            <script>  /* start the video by beginning at a random time. */ 
+                const video = document.getElementById("homepage-video");
+                video.onloadedmetadata = function() {
+                    let duration = video.duration;
+                    video.currentTime = Math.random() * duration/15;
+                };
+            </script>
+        </div>
+        <div class="video-overlay">
+            <p class="title">Walled Lake Robotics</p>
+            <div class="center teams">
+                <img src="image/7178.png" class="logo"></img>
+                <img src="image/308.png" class="logo"></img>
+            </div>
+        </div>
+        <div class="content">
+            <h2 class="mini-header">Welcome to the home of Walled Lake Robotics.</h2>
+            <h1 class="header">Who are we?</h1>
+            <div class="text-box">
+                <p style="text-indent: 6vw;">Our teams, 308 and 7178, are FIRST robotics teams based out of Walled Lake, Michigan. Walled Lake Robotics fosters a learning environment in which students 
+                    are prepared for jobs that they are interested in pursuing in the future.</p>
+                <p style="text-indent: 6vw;">WLR competes in both the OCCRA season and the FIRST season early in the year.
+                    Anyone from Walled Lake Western, Central, or Northern is welcome to become a part of our teams! If you would like to learn more or meet us, visit
+                    our <a href="contact.html">contact page.</a></p>
+            </div>
+            <h1 class="header">What's Robotics?</h1>
+            <div class="text-box">
+                <p>Robotics is an after-school varsity sport in which groups of high school students, 
+                    guided by experienced mentors, collaborate to build a robot that can compete in a season-specific game. 
+                    Each season provides a new and unique challenge!
+                    To learn more about our seasons, visit our <a href="occra.html">OCCRA</a> and <a href="first.html">FIRST</a> pages.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="first.html">FIRST</a></li>
+                <li class="menu__item"><a class="menu__link" href="occra.html">OCCRA</a></li>
+                <li class="menu__item"><a class="menu__link" href="308.html">308</a></li>
+                <li class="menu__item"><a class="menu__link" href="7178.html">7178</a></li>
+                <li class="menu__item"><a class="menu__link" href="community.html">Community</a></li>
+                <li class="menu__item"><a class="menu__link" href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a></li>
+            </ul>
+            <p class="credit">&copy; 2024 Walled Lake Robotics</p>
+        </footer>
+    </body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

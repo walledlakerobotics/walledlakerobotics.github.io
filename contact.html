@@ -1,125 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
     <head>
         <link rel="icon" href="image/iconWithLine.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css.css">
-        <link rel="stylesheet" href="footer.css">
+
+        <title>FIRST - Walled Lake Robotics</title>
+
         <link rel="stylesheet" href="nav.css">
-
-        <title>Contact Us! - Walled Lake Robotics</title>
-
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="css.css">
         <style>
-            .column a:link {
-                text-decoration: none;
+            /* styles specific to this page go here. 
+            this page's theme: 
+            background: linear-gradient(90deg, rgb(255 235 235) 0%, rgb(255 255 255) 33%, rgb(255 255 255) 66%, rgb(233 230 255) 100%)
+            */
+            .hydrated,
+            .body,
+            .content,
+            footer {
+                background: linear-gradient(90deg, rgb(255 235 235) 0%, rgb(255 255 255) 33%, rgb(255 255 255) 66%, rgb(233 230 255) 100%)
             }
-
-            .column a:visited {
-                text-decoration: none;
-            }
-
-            .column a:hover {
-                text-decoration: underline;
-            }
-
-            .column a:active {
-                text-decoration: underline;
-            }
-        </style>
-
-        <style>
-            .column p {
-                padding: 20px 20px 10px 10px;
+            
+            .content h2 {
+                padding: 10px 20px 10px 20px;
                 font-size: 1.563rem;
-                padding: 10px 20px;
-                margin-bottom: 10px;
-                margin-left: 15px;
-                border-radius: 10px;
-            }
-
-            h3 {
-                padding: 20px 20px 10px 10px;
-                font-size: 1.563rem;
-                padding: 10px 20px;
-                margin-bottom: 10px;
-                margin-left: 15px;
-                border-radius: 10px;
                 text-align: center;
             }
-
-            h3.text-box {
-                width: auto;
+            .content {
+                height: fit-content;
+                margin-top: calc(35px + 1vh);
+            }
+            .sidebar {
+                display: flex;
+                margin-right: 2vw;
+                margin-left: 15vw;
+                flex-direction: row-reverse;
+                align-content: center;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: wrap;
+            }
+            .text-box-wide, .text-box {
+                font-family: "Open Sans", serif;
+                font-weight: 400;
+                translate: none;
             }
 
-            .content {
-                margin-left: 5px;
+            .text-box-wide {
+                margin-bottom: 0;
+                font-size: 1.375rem
+            }
+            .ohl {
+                margin: auto;
+                align-self:  center;
+                max-height: 60vh;
+                margin-right: 15vw;
+                margin-left: 2vw;
+                height: max-content;
+            }
+            
+
+            @media only screen and (max-width: 1040px) {
+                .content {
+                    margin-top: calc(70px + 1vh);
+                }   
+                .center {
+                    flex-wrap: wrap;
+                }
+                .ohl {
+                    margin: 0;
+                    margin-top: 5vh;
+                }
+                .sidebar {
+                    margin-right: 15vw;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                .text-box-wide,.content,.popout-header {
+                    margin-left: 20;
+                    margin-right: 20;
+                }
+                .content {
+                    margin-top: calc(35px + 1vh);
+                }
             }
         </style>
     </head>
-
-    <body>
-        <nav class="topnav">
-            <a href="index.html" style="line-height: 24px; padding-top: 9px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
-            <div class="mobile">
-                <img src="image/xicon.png" alt="x button" id="mobile-x-button" style="position: absolute; width: 30px; height: 30px; cursor: pointer;">
-                <a href="first.html">FIRST</a>
-                <a href="occra.html">OCCRA</a>
-                <a href="308.html">308</a>
-                <a href="7178.html">7178</a>
-                <a href="community.html">Community</a>
-                <a href="sponsors.html">Sponsors</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a>
-            </div>
-            <a href="#" style="line-height: 24px; padding-top: 9px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
-        </nav>
-
-        <script src="js/nav.js"></script>
-
-
-        <h1></h1>
-        <div class="content">
-            <h1 style="text-align: center;">Contact Us!</h1>
-
-            <div class="column">
-                <h3 class="text-box">Coach: Patrick Ohl</h3>
-
-                <p class="text-box">
+        <div class="content center" style="margin-top: 0; margin-top: 10px; margin-bottom: 5vh; column-count: 3; margin-top: 5vh;">
+            <div class="sidebar">
+                <h2 class="text-box popout-header" style="font-weight: 700; font-size: 1.7rem; margin: 0; justify-self: center;">
+                    Contact Coach Ohl
+                </h2>
+                <p class="text-box-wide popout-header" style="margin-top: 3vh">
                     If you have any questions, please don't hesitate to email Patrick Ohl at <a href="mailto:patrickohl@wlcsd.org">patrickohl@wlcsd.org</a>.
                 </p>
-
-                <p class="text-box">
-                    Team meetings for both 308 and 7178 are held on Tuesdays and Thursdays from 6-8:30pm,
-                    and on Saturdays from 9:00am to 3:00pm at OSTC Southwest. 
+                <p class="text-box-wide popout-header" style="margin-top: 3vh;">
+                    Team meetings for both 308 and 7178 are held on Tuesdays and Thursdays from 6-8:30pm, and on Saturdays from 9:00am to 3:00pm at OSTC Southwest. Parents who wish to contribute to the team are welcomed to apply as mentors, and students may ask to join the team for the second half of the year if they aren't able to make it for OCCRA.
                 </p>
-
-                <p class="text-box">
-                    Parents who wish to contribute to the team are welcomed to apply as mentors, and students may ask to join the team for the second half of the year if they aren't 
-                    able to make it for OCCRA.
-                </p>
-
-                <img src="image/ohl.jpg" alt="Patrick Ohl holding 4 OCCRA awards across his arms." class="center">
-                <!--  <img src="image/twologo.jpg" class="center">-->
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
             </div>
+            <img src="image/ohl.jpg" alt="Coach Ohl holding 4 OCCRA awards." class="ohl">
+            <br>
         </div>
+    <body>
+        <nav class="topnav">
+            <div class="mobile">
+                <a href="home.html" class="href-align-right">WALLED LAKE ROBOTICS</a>
+                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank" class="href-align-left">SHOP</a>                
+                <a href="community.html" class="href-align-left">COMMUNITY</a>
+                <a href="sponsors.html" class="href-align-left">SPONSORS</a>
+                <a href="contact.html" class="href-align-left">CONTACT</a>
+                <a href="7178.html" class="href-align-left" style="color: rgb(218, 228, 251);">7178</a>
+                <a href="308.html" class="href-align-left" style="color: rgb(254, 217, 217);">308</a>
+                <a href="first.html" class="href-align-left">FIRST</a>
+                <a href="occra.html" class="href-align-left">OCCRA</a>
+            </div>
+            <a href="#" style="line-height: 24px; padding-top: 3px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+        </nav>
+        <script src="js/nav.js"></script>
         <footer>
-            <ul class="social-icon">
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://www.facebook.com/groups/972328127497050"><ion-icon name="logo-facebook"></ion-icon></a>
-                </li>
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
-                </li>
-            </ul>
-
             <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="first.html">FIRST</a></li>
                 <li class="menu__item"><a class="menu__link" href="occra.html">OCCRA</a></li>
@@ -128,8 +130,7 @@
                 <li class="menu__item"><a class="menu__link" href="community.html">Community</a></li>
                 <li class="menu__item"><a class="menu__link" href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a></li>
             </ul>
-
-            <p>&copy;2025 Walled Lake Robotics</p>
+            <p class="credit">&copy; 2024 Walled Lake Robotics</p>
         </footer>
     </body>
 

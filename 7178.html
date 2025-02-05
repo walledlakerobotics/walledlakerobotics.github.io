@@ -15,7 +15,7 @@
         <style>
             /* Overriding color css */
             footer {
-                background-image: linear-gradient(to right, rgb(202, 228, 255), rgb(202, 228, 255));
+                background-image: linear-gradient(to right, rgb(177.5, 184, 252.5), rgb(177.5, 184, 252.5));
             }
 
             /* override nav css */
@@ -23,7 +23,7 @@
                 background-image: linear-gradient(to right, rgb(20, 20, 255), rgb(20, 20, 255));
             }
             
-            body {
+            body,.content {
                 background-image: linear-gradient(to right, rgb(177.5, 184, 252.5), rgb(177.5, 184, 252.5));
             }
         </style>
@@ -111,7 +111,6 @@
                 }
             }
 
-
             @keyframes fade {
                 from {
                     opacity: .4
@@ -127,21 +126,19 @@
     <body>
 
         <nav class="topnav">
-            <a href="index.html" style="line-height: 24px; padding-top: 9px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
             <div class="mobile">
-                <img src="image/xicon.png" alt="x button" id="mobile-x-button" style="position: absolute; width: 30px; height: 30px; cursor: pointer;">
-                <a href="first.html">FIRST</a>
-                <a href="occra.html">OCCRA</a>
-                <a href="308.html">308</a>
-                <a href="7178.html">7178</a>
-                <a href="community.html">Community</a>
-                <a href="sponsors.html">Sponsors</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a>
+                <a href="home.html" class="href-align-right">WALLED LAKE ROBOTICS</a>
+                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank" class="href-align-left">SHOP</a>                
+                <a href="community.html" class="href-align-left">COMMUNITY</a>
+                <a href="sponsors.html" class="href-align-left">SPONSORS</a>
+                <a href="contact.html" class="href-align-left">CONTACT</a>
+                <a href="7178.html" class="href-align-left" style="color: rgb(218, 228, 251);">7178</a>
+                <a href="308.html" class="href-align-left" style="color: rgb(254, 217, 217);">308</a>
+                <a href="first.html" class="href-align-left">FIRST</a>
+                <a href="occra.html" class="href-align-left">OCCRA</a>
             </div>
-            <a href="#" style="line-height: 24px; padding-top: 9px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+            <a href="#" style="line-height: 24px; padding-top: 3px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
         </nav>
-
         <script src="js/nav.js"></script>
         <style>
         .logoGroup .logo {
@@ -160,7 +157,7 @@
             box-shadow: 0 3px 9px rgba(0, 0, 0, 0.19), 0 5px 13px rgba(0, 0, 0, 0.23);
             background-color: rgb(131, 142, 241);
 
-            margin-block: 2rem;
+            margin-block: 5rem;
         }
         
         .logoGroup h1 {
@@ -170,9 +167,15 @@
             margin: 5px !important;
             transform: translateX(-50px);
         }
-        
-        @media only screen and (max-width: 500px) {
-            /* Adjust the font size for smaller screens */
+        @media only screen and (max-width: 952px) {
+            .logoGroup {
+                margin-block: 7rem;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .logoGroup {
+                margin-block: 5rem;
+            }
             .logoGroup h1 {
                 font-size: 2.5rem;
             }
