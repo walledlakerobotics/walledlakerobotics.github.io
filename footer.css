@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");*/
 
 footer {
     position: relative;
-
-    background-image: linear-gradient(to right, rgb(255, 143, 143), rgb(164, 164, 255));
+    background-image: linear-gradient(to right, rgb(255, 225, 225), rgb(225, 230, 255));
     min-height: 100px;
     padding: 20px 30px;
     display: flex;
@@ -27,6 +26,12 @@ footer li {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+body {
+    /*background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));*/
+    margin: 0;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
 footer p {
     color: rgb(0, 0, 0);
     margin: 15px 0 10px 0;
@@ -44,7 +49,9 @@ footer p {
     flex-wrap: wrap;
     gap: 7px;
 }
-
+.credit {
+    color:black
+}
 @media only screen and (max-width: 600px) {
     .menu {
         display: none;
@@ -70,24 +77,29 @@ footer p {
     transition: 0.3s;
 }
 
-.menu__item:hover,
+.menu__item:hover {
+    width: 7rem;
+}
+
 .social-icon__item:hover {
     background-color: rgba(255, 255, 255, 0.5)
 }
 
 .menu__item {
     width: 5rem;
+    transition: width .2s;
 }
 
 .menu__link {
     font-size: 1.2rem;
-    color: rgb(24, 24, 24);
+    color: rgba(0, 0, 0, 0.93);
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
     text-decoration: none;
     opacity: 0.75;
     font-weight: 300;
+    width: fit-content;
     /* padding-left: 20px; */
 }
 
@@ -124,7 +136,7 @@ footer p {
     /* same size as image height */
     margin-top: 100px; 
 }
-
+/*
 .wave {
     position: absolute;
     top: -100px;
@@ -162,7 +174,7 @@ footer p {
     bottom: 20px;
     animation: animate 15s linear infinite;
 }
-
+*/
 @keyframes animateWaves {
     0% {
         background-position-x: 1000px;

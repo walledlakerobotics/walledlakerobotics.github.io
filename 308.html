@@ -14,7 +14,10 @@
         <style>
             /* overriding footer css */
             footer {
-                background-image: linear-gradient(to right, rgb(255, 172, 172), rgb(255, 172, 172));
+                background-image: linear-gradient(to right, rgb(255, 239, 239), rgb(255, 239, 239));;
+            }
+            .social-icon__item:hover {
+                background-color: rgba(255, 175, 175, 0.5)
             }
 
             .wave {
@@ -50,21 +53,19 @@
         <!-- Your content goes here -->
 
         <nav class="topnav">
-            <a href="index.html" style="line-height: 24px; padding-top: 9px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
             <div class="mobile">
-                <img src="image/xicon.png" alt="x button" id="mobile-x-button" style="position: absolute; width: 30px; height: 30px; cursor: pointer;">
-                <a href="first.html">FIRST</a>
-                <a href="occra.html">OCCRA</a>
-                <a href="308.html">308</a>
-                <a href="7178.html">7178</a>
-                <a href="community.html">Community</a>
-                <a href="sponsors.html">Sponsors</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a>
+                <a href="home.html" class="href-align-right">WALLED LAKE ROBOTICS</a>
+                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank" class="href-align-left">SHOP</a>                
+                <a href="community.html" class="href-align-left">COMMUNITY</a>
+                <a href="sponsors.html" class="href-align-left">SPONSORS</a>
+                <a href="contact.html" class="href-align-left">CONTACT</a>
+                <a href="7178.html" class="href-align-left" style="color: rgb(218, 228, 251);">7178</a>
+                <a href="308.html" class="href-align-left" style="color: rgb(254, 217, 217);">308</a>
+                <a href="first.html" class="href-align-left">FIRST</a>
+                <a href="occra.html" class="href-align-left">OCCRA</a>
             </div>
-            <a href="#" style="line-height: 24px; padding-top: 9px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+            <a href="#" style="line-height: 24px; padding-top: 3px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
         </nav>
-
         <script src="js/nav.js"></script>
 
         <!-- This looked like it could be really cool, so I'm gonna leave it here in case we wanna go back to it
@@ -105,7 +106,7 @@
 
             .image-container img:hover {
                 /* Change border color to blue on hover */
-                border-color: rgb(237, 255, 236);
+                border-color: rgb(255, 236, 236);
             }
 
             .image-text {
@@ -147,7 +148,7 @@
                 box-shadow: 0 3px 9px rgba(0, 0, 0, 0.19), 0 5px 13px rgba(0, 0, 0, 0.23);
                 background-color: rgb(255, 213, 213);
 
-                margin-block: 2rem;
+                margin-block: 5rem;
             }
             
             .logoGroup h1 {
@@ -157,8 +158,16 @@
                 margin: 5px !important;
             }
             
-            @media only screen and (max-width: 500px) {
-                /* Adjust the font size for smaller screens */
+            @media only screen and (max-width: 952px) {
+                .logoGroup {
+                    margin-block: 7rem;
+                }
+            }
+            
+            @media only screen and (max-width: 600px) {
+                .logoGroup {
+                    margin-block: 5rem;
+                }
                 .logoGroup h1 {
                     font-size: 2.5rem;
                 }
@@ -284,7 +293,6 @@
         <!-- this is the awards -->
 
         <style>
-            
             .content2 li {
                 padding-left: 3px;
                 margin-bottom: 9px;
@@ -295,7 +303,7 @@
             }
 
             .content2 ul {
-                background-color: rgb(211, 211, 250);
+                background-color: rgb(250, 211, 211);
                 color: rgb(0, 0, 0);
                 padding: 10px 20px 10px 35px;
                 /* margin-bottom: 10px; */
@@ -304,7 +312,7 @@
             }
 
             .content2 td {
-                background-color: rgb(202, 196, 255);
+                background-color: rgb(255, 196, 196);
                 color: rgb(0, 0, 0);
                 padding: 10px 20px;
                 margin-bottom: 10px;
@@ -314,7 +322,7 @@
             }
 
             .content2 th {
-                background-color: rgb(209, 203, 255);
+                background-color: rgb(255, 203, 203);
                 color: rgb(0, 0, 0);
                 padding: 10px 20px;
                 margin-bottom: 10px;

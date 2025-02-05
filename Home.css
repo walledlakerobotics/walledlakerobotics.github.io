@@ -1,0 +1,49 @@
+.header-video {
+    position: fixed; 
+    top: 0;
+    width: 100vw; 
+    height: auto; 
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    font-size: 4vw;
+    top: calc(13.5vw + 35px);
+    left: 50%;
+    color: #f1f1f1;
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), transparent, transparent, transparent);
+    transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+    z-index: 0;
+    position: relative;
+    height: 56vw;
+}
+
+.logo {
+    height: 10vw;
+    width: 10vw;
+}
+
+.teams {
+    position: relative;
+    top: calc(20.5vw + 35px);
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        height: 15vw;
+        width: 15vw;
+    }
+    .title {
+        font-size: 6vw; 
+        top: calc(12.5vw + 35px);
+    }
+}

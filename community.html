@@ -1,155 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
     <head>
         <link rel="icon" href="image/iconWithLine.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css.css">
-        <link rel="stylesheet" href="footer.css">
+
+        <title>FIRST - Walled Lake Robotics</title>
+
         <link rel="stylesheet" href="nav.css">
-        
-        <title>Community Outreach - Walled Lake Robotics</title>
-
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="css.css">
         <style>
-            .text-box {
-                margin-top: 20px;
-                margin-bottom: 20px;
-                margin-inline: auto;
+            .hydrated,
+            .body,
+            .content,
+            footer {
+                background: linear-gradient(90deg, rgb(255 235 235) 0%, rgb(255 255 255) 33%, rgb(255 255 255) 66%, rgb(233 230 255) 100%)
             }
-
-            .vertical-split {
-                margin-inline: auto;
-                margin-block: 10px;
-                gap: 0px;
+            .content {
+                margin-top: 5vh;
+            }
+            .content img {
+                width: 38vw;
+            }
+            .text-box-wide, .text-box {
+                font-family: "Open Sans", serif;
+                font-weight: 400;
+                margin-left: calc(20vw);
+                margin-right: calc(20vw);
+                translate: none;
             }
             
-            .vertical-split-column img {
-                max-height: 18.75rem;
+            .text-box-wide {
+                margin-bottom: 3vh;
             }
-
-            h2 {
-                text-align: center;
-                font-size: 2.1rem;
+            .align-center {
+                justify-self:  center;
             }
-
-            p {
-                text-decoration: none;
-                /* padding: 10px 20px; */
-                font-size: 1.4rem;
-                max-width: 55ch;
-                margin: auto;
-            }
-
-            .content {
-                background-color: rgba(255, 255, 255, 0.229);
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            }
-
             @media (orientation: portrait) {
-                .vertical-split-column {
-                    padding-block: 6px;
-                }
-
                 .reverse {
+                    flex-direction:  column-reverse;
+                }
+            }
+            @media only screen and (max-width: 1000px) {
+                .content {
+                    margin-top: calc(5vh + 35px);
+                }
+                .vertical-column {
+                    display: block;
+                }
+                .regular {
+                    flex-direction: column;
+                }
+                .reverse {
+                    display: flex;
                     flex-direction: column-reverse;
+                }
+                .vertical-split-column {
+                    max-width: 100%;
+                }
+                .content img {
+                    display: flex;
+                    width: 70vw;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                .text-box-wide {
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                .content {
+                    margin-top: calc(3vh);
                 }
             }
         </style>
-
     </head>
+        <div class="content">
+            <h2 class="text-box popout-header align-center" style="font-weight: 700; font-size: 2rem; text-align: center;">
+                Community Outreach
+            </h2>
 
+            <p class="text-box-wide popout-header" style=" font-size: 1.375rem; text-indent: 6vw;">
+                We strongly believe that robotics 
+                is more than just making robots; 
+                it's about using robots to better the lives of people around us. Whenever we're not 
+                competing against other teams, we dedicate our time towards 
+                enriching the community around us.
+            </p>
+        </div>
+        <div class="content" style="padding-top: 0;">
+            <div class="vertical-split regular" style="padding: 0 5vw 0 5vw; background-color: rgb(241, 241, 241);">
+                <div class="vertical-split-column">
+                    <h2 class="text-box popout-header align-center" style="font-weight: 700; font-size: 1.7rem; margin: 0px 0px 20px 0px; background-color: rgb(255 255 255 / 69%);">
+                        Elementary STEAM Nights
+                    </h2>
+        
+                    <p class="text-box-wide popout-header" style="font-size: 1.175rem; text-indent: 6vw; margin: 0; background-color: rgb(255 255 255 / 69%);">
+                        We love participating in STEAM nights because it sparks 
+                        excitement and interest in STEAM for kids. At STEAM nights, 
+                        kids can operate our FRC robots in safe mode, and we 
+                        provide smaller VEX robots that they can use to play a game. 
+                        We also operate a pin-making station where kids can design 
+                        their own pins.
+                    </p>
+                </div>
+                <div class="vertical-split-column">
+                    <img src="image/stem-night.jpg" style="border-radius: 5px;"></img>
+                </div>
+            </div>
+            <div class="vertical-split reverse" style="padding: 0 5vw 0 5vw;">
+                <div class="vertical-split-column">
+                    <img src="image/2024memorialParade.jpg" style="border-radius: 5px;"></img>
+                </div>
+                <div class="vertical-split-column">
+                    <h2 class="text-box popout-header align-center" style="font-weight: 700; font-size: 1.7rem; margin: 0px 0px 20px 0px;">
+                        Memorial Day Parades
+                    </h2>
+        
+                    <p class="text-box-wide popout-header" style="font-size: 1.175rem; text-indent: 6vw; margin: 0;">
+                        Every year, Walled Lake Robotics participates in 
+                        the Walled Lake Memorial Day Parade in order to honor 
+                        the thousands of people that have lost their lives 
+                        protecting our nation. We like to showcase the 
+                        season's robots in the parade, as well as our beloved 
+                        T-shirt launching tank bot. We always bring candy to pass 
+                        out to kids during the parade.
+                    </p>
+                </div>
+            </div>
+            <p class="text-box-wide popout-header align-center" style="font-size: 1.175rem;  margin: 5vh 20vw 5vh 20vw;">
+                We are always looking for more opportunities to help out our 
+                community. If you are interested in collaborating, please
+                do not hesitate to <a href="contact.html">contact us!</a>
+            </p>
+        </div>
     <body>
         <nav class="topnav">
-            <a href="index.html" style="line-height: 24px; padding-top: 9px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
             <div class="mobile">
-                <img src="image/xicon.png" alt="x button" id="mobile-x-button" style="position: absolute; width: 30px; height: 30px; cursor: pointer;">
-                <a href="first.html">FIRST</a>
-                <a href="occra.html">OCCRA</a>
-                <a href="308.html">308</a>
-                <a href="7178.html">7178</a>
-                <a href="community.html">Community</a>
-                <a href="sponsors.html">Sponsors</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a>
+                <a href="index.html" class="href-align-right">WALLED LAKE ROBOTICS</a>
+                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank" class="href-align-left">SHOP</a>                
+                <a href="community.html" class="href-align-left">COMMUNITY</a>
+                <a href="sponsors.html" class="href-align-left">SPONSORS</a>
+                <a href="contact.html" class="href-align-left">CONTACT</a>
+                <a href="7178.html" class="href-align-left" style="color: rgb(218, 228, 251);">7178</a>
+                <a href="308.html" class="href-align-left" style="color: rgb(254, 217, 217);">308</a>
+                <a href="first.html" class="href-align-left">FIRST</a>
+                <a href="occra.html" class="href-align-left">OCCRA</a>
             </div>
-            <a href="#" style="line-height: 24px; padding-top: 9px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+            <a href="#" style="line-height: 24px; padding-top: 3px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
         </nav>
-
         <script src="js/nav.js"></script>
-
-        <br>
-        <div class="content">
-            <h1 style="text-align: center; font-size: 3.125rem;">Community Outreach</h1>
-            <p style="text-indent: 5%; font-size: 1.6rem;">
-                We strongly believe that robotics is more than just people making robots; it's about using robots to make people. 
-                Whenever we're not competing against other teams, we dedicate our time towards enriching the community around us.
-            </p>
-
-            <br><br>
-        </div>
-
-        <br>
-
-        <div class="vertical-split">
-
-            <div class="vertical-split-column">
-                <h2 class="text-box">Elementary STEAM Night</h2>
-                <div class="text-box" style="max-width: 500px;">
-                    <p> We love participating in STEAM nights because it sparks excitement and interest in STEAM for kids. 
-                        At STEAM nights, kids can operate our FRC robots in safe mode, and we provide smaller VEX robots that they can use to play a game.
-                        We also operate a pin-making station where kids can design their own pins.
-                    </p>
-                </div>
-            </div>
-           
-            <div class="vertical-split-column">
-                <img src="image/stem-night.jpg" alt="Kids playing with small VEX robots at STEM night.">
-            </div>
-
-        </div>
-
-        <div class="divider-bar"></div>
-
-        <div class="vertical-split reverse">
-
-            <div class="vertical-split-column">
-                <img src="image/2024memorialParade.jpg" alt="308 and 7178 holding banners in the parade.">
-            </div>
-
-            <div class="vertical-split-column">
-                <h2 class="text-box">Memorial Day Parade</h2>
-                <div class="text-box" style="max-width: 500px;">
-                    <p> Every year, Walled Lake Robotics participates in the Walled Lake Memorial Day Parade in
-                        order to honor the thousands of people that have lost their lives protecting our nation. 
-                        We like to showcase the season's robots in the parade, as well as our beloved T-shirt launching
-                        tank bot. We always bring candy to pass out to kids during the parade.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <div style="padding-inline: 20px;">
-            <div class="text-box" style="margin-top: 3rem; margin-bottom: 7rem;">
-                <p style="font-size: 1.6rem; max-width: 50ch;">
-                    We are always looking for more opportunities to help out 
-                    our community. If you are interested in collaborating with 
-                    us, do not hesitate to <a href="contact.html">contact us</a>!
-                </p>
-            </div>
-        </div>
-
         <footer>
-            <ul class="social-icon">
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://www.facebook.com/groups/972328127497050"><ion-icon name="logo-facebook"></ion-icon></a>
-                </li>
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
-                </li>
-            </ul>
-
             <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="first.html">FIRST</a></li>
                 <li class="menu__item"><a class="menu__link" href="occra.html">OCCRA</a></li>
@@ -158,10 +162,8 @@
                 <li class="menu__item"><a class="menu__link" href="community.html">Community</a></li>
                 <li class="menu__item"><a class="menu__link" href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a></li>
             </ul>
-
-            <p>&copy;2025 Walled Lake Robotics</p>
+            <p class="credit">&copy; 2024 Walled Lake Robotics</p>
         </footer>
-
     </body>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -33,8 +33,7 @@ function changeSlide(direction, slideId, button){
     newIndex = imgCount - 1;
   }
 
-  // this code works
-  // inshallah
+  // this code works inshAllah
 
   const currentImage = slideshow.querySelector("img:nth-child(" + (slideIndexes[slideId]+1) + ")")
 

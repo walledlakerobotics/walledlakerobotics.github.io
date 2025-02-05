@@ -1,117 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
     <head>
         <link rel="icon" href="image/iconWithLine.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css.css">
-        <link rel="stylesheet" href="footer.css">
+
+        <title>FIRST - Walled Lake Robotics</title>
+
         <link rel="stylesheet" href="nav.css">
-
-        <title>OCCRA - Walled Lake Robotics</title>
-
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="css.css">
         <style>
+            /* styles specific to this page go here. 
+            this page's theme: 
+            background: linear-gradient(90deg, rgb(255 235 235) 0%, rgb(255 255 255) 33%, rgb(255 255 255) 66%, rgb(233 230 255) 100%)
+            */
+            .hydrated,
+            .content,
+            footer {
+                background: linear-gradient(90deg, rgb(255 235 235) 0%, rgb(255 255 255) 33%, rgb(255 255 255) 66%, rgb(233 230 255) 100%)
+            }
             .content h2 {
                 padding: 10px 20px 10px 20px;
                 font-size: 1.563rem;
                 text-align: center;
+                margin-left: 10vw;
+                margin-right: 10vw;
                 width: auto;
             }
-
+            .content {
+                margin-top: 35px;
+                padding-top: 0;
+            }
+            .text-box-wide, .text-box, .text-box-acronym, .popout_header {
+                font-family: "Open Sans", serif;
+                font-weight: 400;
+                margin-left: calc(20vw);
+                margin-right: calc(20vw);
+                
+            }
+            .text-box-wide {
+                font-size: 1.375rem;
+                margin-bottom: 0;
+            }
+            .text-box-acronym {
+                margin-left: 0;
+                max-width: 15vw;
+                margin-top: 0;
+                margin-right: 0;
+                font-size: 2.3vw;
+                text-align: left;
+            }
+            .firstYoutube {
+                margin-left: 20vw;
+                margin-right: 20vw;
+            }
+            .logo {
+                height: 15vw;
+                width: auto; 
+            }
+            .topc {
+                margin-top: calc(3vw + 35px);
+            }
             @media (orientation: portrait) {
                 .content img {
-                    margin-left: 32%;
                     padding-left: 0px !important;
-                }
+                } 
 
-                .screen {
-                    margin-top: 0px;
-                    padding-top: 0px;
+                .firstYoutube {
+                    margin-top: 15px;
+                    padding-top: 15px;
                 }
             }
+            @media only screen and (max-width: 952px) {
+                .content {
+                    margin-top: calc(10vw + 35px);
+                }
+                .text-box-acronym {
+                    font-size: 3.8vw;
+                    max-width: 27vw;
+                }
+                .logo {
+                    height: 25vw;
+                    display: block; 
+                    width: auto;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                .text-box-wide {
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    font-size: 1.2rem;
+                }
+                .firstYoutube {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                .topc {
+                    margin-top: 70px;
+                }
+                .text-box-acronym {
+                    font-size: 4.5vw;
+                    max-width: 30vw;
+                }
+                .logo {
+                    height: 30vw;
+                    display: block; 
+                    width: auto;
+                }
+            }
+            
         </style>
     </head>
+        <div class="content center topc" style="margin-bottom: 3vw;">
+            <img src="image/occra.png" alt="occra logo" class="logo">
 
-    <body>
-
-        <nav class="topnav">
-            <a href="index.html" style="line-height: 24px; padding-top: 9px;"><img src="image/home.png" alt="Home logo" style="height:35px; width:35px;"></a>
-            <div class="mobile">
-                <img src="image/xicon.png" alt="x button" id="mobile-x-button" style="position: absolute; width: 30px; height: 30px; cursor: pointer;">
-                <a href="first.html">FIRST</a>
-                <a href="occra.html">OCCRA</a>
-                <a href="308.html">308</a>
-                <a href="7178.html">7178</a>
-                <a href="community.html">Community</a>
-                <a href="sponsors.html">Sponsors</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a>
+            <h1 class="text-box-acronym" style="font-weight: 600; margin-bottom: 0;">
+                Oakland County Competitive Robotics Association
+            </h1>
+        </div> 
+        <div class="content" style="margin-top: 0;">
+            <p class="text-box-wide" style="text-indent: 6vw; margin-top: 0;">
+                OCCRA provides a robotics challenge every year to give FRC teams something
+                 to do during their offseason. OCCRA creates a game for the teams similar to FRC,
+                  but less complicated. To compete in these games, students are tasked with 
+                  building a robot capable of playing the given game to the best of their ability. 
+                  Unlike FRC, OCCRA is completely student-driven; mentors cannot directly 
+                  work on the robot and may only provide guidance.
+            </p>
+            <p class="text-box-wide" style="text-indent: 6vw;">
+                Students must work as a team 
+                  using their knowledge of mechanical and electrical engineering, CAD design, and 
+                  programming to design and build their robots. Each year OCCRA gives a new objective for 
+                  teams, like FRC, to compete in so each year students can learn practical knowledge 
+                  of mechanics, engineering, programming, and physics every year in a new, fun way. 
+                  Walled Lake Robotics 308 and 7178 both participate in OCCRA every year, 
+                  along with various other FRC teams in Oakland County.
+            </p>
+            <br>
+            <h2 class="text-box" style="margin: auto; font-weight: 600; font-size: 1.7rem;">OCCRA 20th Anniversary</h2>
+            <br>
+            <div class="firstYoutube" style="background: transparent;  display: flex; justify-content: center;">
+                <iframe width="90%" style="aspect-ratio: 14/9;" src="https://www.youtube.com/embed/8IVR3npq3fE" title="2025 REEFSCAPE Game Animation" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"></iframe>
             </div>
-            <a href="#" style="line-height: 24px; padding-top: 9px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
-        </nav>
-
-        <script src="js/nav.js"></script>
-
-        <h1></h1>
-        <div class="column">
-            <div class="content">
-
-                <img src="image/occra.png" alt="OCCRA logo" style="width: 30%; padding-left: 20%;">
-                <h2 class="text-box" style="margin-left: 8px;">
-                    <u>O</u>akland <u>C</u>ounty <u>C</u>ompetitive <u>R</u>obotics <u>A</u>ssociation
-                </h2>
-
-                <p class="text-box" style="text-indent: 5%; margin-left: 8px; font-size: 1.375rem;"> 
-                    OCCRA provides a robotics challenge every year to give FRC teams something to do during their offseason.
-                    OCCRA creates a game for the teams similar to FRC, but less
-                    complicated. To compete in these games, students are tasked with building a robot capable of playing the given game to
-                    the best of their ability. Unlike FRC, OCCRA is completely student-driven; mentors cannot directly work on the robot and may only provide guidance. 
-                    Students must work as a team using their knowledge of mechanical and electrical engineering, CAD design,
-                    and programming to design and build their robots. Each year OCCRA gives a new objective for teams, like FRC, to
-                    compete in so each year students can learn practical knowledge of mechanics, engineering, programming, and
-                    physics every year in a new, fun way. Walled Lake Robotics 308 and 7178 both participate in OCCRA every year, along with various
-                    other FRC teams in Oakland County.
-                </p>
-
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-
-            <div class="screen">
-                <iframe width="100%" height="415px" src="https://www.youtube.com/embed/8IVR3npq3fE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
+    <body>
+        <nav class="topnav">
+            <div class="mobile">
+                <a href="index.html" class="href-align-right">WALLED LAKE ROBOTICS</a>
+                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank" class="href-align-left">SHOP</a>                
+                <a href="community.html" class="href-align-left">COMMUNITY</a>
+                <a href="sponsors.html" class="href-align-left">SPONSORS</a>
+                <a href="contact.html" class="href-align-left">CONTACT</a>
+                <a href="7178.html" class="href-align-left" style="color: rgb(218, 228, 251);">7178</a>
+                <a href="308.html" class="href-align-left" style="color: rgb(254, 217, 217);">308</a>
+                <a href="first.html" class="href-align-left">FIRST</a>
+                <a href="occra.html" class="href-align-left">OCCRA</a>
+            </div>
+            <a href="#" style="line-height: 24px; padding-top: 3px;" id="burger"><img src="image/burbur.png" alt="menu icon" style="height:35px; width:35px;"></a>
+        </nav>
+        <script src="js/nav.js"></script>
         <footer>
-            <ul class="social-icon">
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://www.facebook.com/groups/972328127497050"><ion-icon name="logo-facebook"></ion-icon></a>
-                </li>
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
-                </li>
-            </ul>
-
             <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="first.html">FIRST</a></li>
                 <li class="menu__item"><a class="menu__link" href="occra.html">OCCRA</a></li>
@@ -120,10 +171,8 @@
                 <li class="menu__item"><a class="menu__link" href="community.html">Community</a></li>
                 <li class="menu__item"><a class="menu__link" href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank">Shop</a></li>
             </ul>
-
-            <p>&copy;2025 Walled Lake Robotics</p>
+            <p class="credit">&copy; 2024 Walled Lake Robotics</p>
         </footer>
-
     </body>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
