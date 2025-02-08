@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="body">
     <head>
         <link rel="icon" href="image/icon/iconWithLine.png">
 
@@ -13,10 +13,6 @@
         <link rel="stylesheet" href="CSS/home.css">
         <link rel="stylesheet" href="CSS/footer.css">
         <style>
-            /* styles specific to this page go here. 
-            this page's theme: 
-            background-image: linear-gradient(to right, rgb(255, 225, 225), rgb(225, 230, 255));
-            */
             .body,
             .content,
             footer {
@@ -28,7 +24,13 @@
                 text-align: center;
                 width: auto;
             }
-
+            .arrows {
+                position: relative;
+                top: calc(21vw + 35px);
+            }
+            .scroll-Arrow {
+                width: 3vw;
+            }
             @media (orientation: portrait) {
                 .content img {
                     margin-left: 14%;
@@ -38,6 +40,11 @@
                 .firstYoutube {
                     margin-top: 0px;
                     padding-top: 0px;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                .arrows,.scroll-Arrow {
+                    display: none;
                 }
             }
         </style>
@@ -77,6 +84,9 @@
                 <img src="image/logos/7178.png" class="logo">
                 <img src="image/logos/308.png" class="logo">
             </div>
+            <div class="center arrows">
+                <img src="image/Scroll-Arrow.png" class="scroll-Arrow">
+            </div>
         </div>
         <div class="content">
             <h2 class="mini-header">Welcome to the home of Walled Lake Robotics.</h2>
@@ -84,7 +94,7 @@
             <div class="text-box">
                 <p style="text-indent: 6vw;">Our teams, 308 and 7178, are FIRST robotics teams based out of Walled Lake, Michigan. Walled Lake Robotics fosters a learning environment in which students 
                     are prepared for jobs that they are interested in pursuing in the future.</p>
-                <p style="text-indent: 6vw;">WLR competes in both the OCCRA season and the FIRST season early in the year.
+                <p style="text-indent: 6vw;">Walled Lake Robotics competes in both the OCCRA season and the FIRST season early in the year.
                     Anyone from Walled Lake Western, Central, or Northern is welcome to become a part of our teams! If you would like to learn more or meet us, visit
                     our <a href="contact.html">contact page.</a></p>
             </div>
@@ -97,7 +107,18 @@
                 </p>
             </div>
         </div>
-        <footer>
+        <footer style="margin-top: 0;">
+            <ul class="social-icon">
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="https://www.facebook.com/groups/972328127497050"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="https://github.com/Yeti-7178/"><ion-icon name="logo-github"></ion-icon></a>
+                </li>
+            </ul>
             <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="first.html">FIRST</a></li>
                 <li class="menu__item"><a class="menu__link" href="occra.html">OCCRA</a></li>
