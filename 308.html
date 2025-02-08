@@ -7,7 +7,7 @@
         <link rel="icon" href="image/iconWithLine.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="CSS/308css.css">
+        <link rel="stylesheet" href="CSS/main.css">
         <link rel="stylesheet" href="CSS/footer.css">
         <link rel="stylesheet" href="CSS/nav.css">
         <link rel="stylesheet" href="CSS/slideshow.css">
@@ -41,6 +41,226 @@
 
             .prev, .next {
                 padding: 64px 16px;
+            }
+
+            body {
+                margin: 0;
+                font-family: 'Roboto', Helvetica, sans-serif;
+                background-image: linear-gradient(to right, rgb(255, 239, 239), rgb(255, 239, 239));
+            }
+
+            .content {
+                max-width: 1000px;
+                margin: auto;
+                padding: 1px;
+            }
+
+            p {
+                font-size: 1.688rem;
+                line-height: 1.5;
+                margin: 0 0 1em 0;
+                text-align: justify;
+            }
+
+            /* Green color for headings */
+            h1,
+            h2,
+            h3 {
+                color: #000000;
+                background-color: rgb(255, 213, 213);
+                color: rgb(0, 0, 0);
+                padding: 10px 20px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Red color for links */
+            a {
+                color: #8B0000;
+            }
+
+            .caption {
+                display: block;
+                font-family: 'Comic Sans MS';
+                font-size: 1.875rem;
+                font-style: italic;
+                background-color: #e4e4e4;
+                margin: auto;
+                padding: 5px;
+                color: black;
+
+                min-height: 100px;
+                padding: 20px 50px;
+            }
+
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+            .column {
+                float: left;
+                width: 30%;
+                padding: 1vw;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .row img {
+                max-width: 30vw;
+                padding: 1px;
+            }
+
+            /* Clear floats after image containers */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            /*this is the top of the website*/
+            .team-section {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+                padding: 0px 40px;
+                padding-bottom: 70px;
+            }
+
+            .team-section img {
+                width: 50%;
+                border-radius: 3vw;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+
+            .team-section .team-text {
+                width: 50%;
+                margin-left: 50px;
+            }
+
+            .team-section h3 {
+                font-weight: normal;
+                font-size: 1.35rem;
+            }
+
+            .team-section h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            .team-section p {
+                font-size: 1.125rem;
+                color: #555;
+                line-height: 1.5;
+            }
+
+            .previous-robots {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-inline: 6rem;
+            }
+
+            .previous-robots img {
+                max-width: 30%;
+                max-height: 70vh;
+                margin: 1.5rem;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .previous-robots img:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 550px) {
+                .previous-robots {
+                    flex-wrap: wrap;
+                    margin-inline: 0px;
+                }
+
+                .previous-robots img {
+                    width: 35%;
+                }
+
+            }
+
+            @media (orientation: portrait) {
+                .team-section {
+                    flex-direction: column;
+                    margin: 0px;
+                    gap: 15px;
+                }
+
+                .team-section > * {
+                    width: 100% !important; 
+                }
+
+                .team-section .team-text {
+                    margin-left: 0px;
+                }
+            }
+
+            .content2 {
+                max-width: 100%;
+                overflow-x: auto;
+                margin: auto;
+            }
+
+            .modernDivider {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                display: block
+            }
+
+            .line {
+                height: 10px;
+                width: 100%;
+                clear:both;
+            }
+            .lineUpsidedown {
+                height: 10px;
+                width: 100%;
+                clear:both;
+            }
+
+
+            .line:nth-child(1) {
+                background-color: rgba(255, 0, 0, 0.8); /* Adjust the opacity of the second line */
+            }
+
+            .line:nth-child(2) {
+                background-color: rgba(255, 0, 0, 0.6); /* Adjust the opacity of the third line */
+            }
+
+            /* Add more lines and adjust their opacity as needed */
+
+            .line:nth-child(3) {
+                background-color: rgba(255, 0, 0, 0.4); /* Adjust the opacity of the fourth line */
+            }
+            .line:nth-child(4) {
+                background-color: rgba(255, 0, 0, 0.2); /* Adjust the opacity of the fourth line */
+            }
+            .lineUpsidedown:nth-child(1) {
+                background-color: rgba(255, 0, 0, 0.2); /* Adjust the opacity of the second line */
+            }
+
+            .lineUpsidedown:nth-child(2) {
+                background-color: rgba(255, 0, 0, 0.4); /* Adjust the opacity of the third line */
+            }
+
+            /* Add more lines and adjust their opacity as needed */
+
+            .lineUpsidedown:nth-child(3) {
+                background-color: rgba(255, 0, 0, 0.6); /* Adjust the opacity of the fourth line */
+            }
+            .lineUpsidedown:nth-child(4) {
+                background-color: rgba(255, 0, 0, 0.8); /* Adjust the opacity of the fourth line */
             }
         </style>
 
@@ -175,12 +395,12 @@
         </style>
 
         <div class="logoGroup">
-            <img class="logo" src="image/download (9).png" alt="308 Team Logo.">
+            <img class="logo" src="image/logos/download (9).png" alt="308 Team Logo.">
             <h1>308 - The Monsters</h1>
         </div>
         
         <div class="team-section">
-            <img src="image/308groupPhoto.jpg" alt="Team Group Photo.">
+            <img src="image/308Images/308groupPhoto.jpg" alt="Team Group Photo.">
             <div class="team-text">
                 
                 <h3>The 308 Monsters Robotics team, established in 1999, is a group of high school students who
@@ -238,7 +458,7 @@
             <head>
                 <style>
                     .fixed-bg {
-                        background-image: url("image/first logo.gif");
+                        background-image: url("image/logos/first logo.gif");
                         min-height: 300px;
                         height: 600px;
                         background-attachment: fixed;
@@ -265,12 +485,12 @@
 
         <br>
         <div class="slideshow-container">
-            <img src="image/winner.jpg" alt="FRC drive team holding a finalist award.">
-            <img src="image/part.jpg" alt="Students working on the 2022 OCCRA robot in the pits.">
-            <img src="image/awesomeproto.jpg" alt="Awesome Protogen Mascot!">
-            <img src="image/stands.jpg" alt="Students holding a 308 sign in the stands.">
-            <img src="image/speed.jpg" alt="2022 OCCRA drive team.">
-            <img src="image/touchrobot.jpg" alt="2023 FRC robot being pushed by cart.">
+            <img src="image/308Images/winner.jpg" alt="FRC drive team holding a finalist award.">
+            <img src="image/308Images/part.jpg" alt="Students working on the 2022 OCCRA robot in the pits.">
+            <img src="image/308Images/awesomeproto.jpg" alt="Awesome Protogen Mascot!">
+            <img src="image/308Images/stands.jpg" alt="Students holding a 308 sign in the stands.">
+            <img src="image/308Images/speed.jpg" alt="2022 OCCRA drive team.">
+            <img src="image/308Images/touchrobot.jpg" alt="2023 FRC robot being pushed by cart.">
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
         </div>
