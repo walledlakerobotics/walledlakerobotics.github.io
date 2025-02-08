@@ -5,13 +5,14 @@
         <link rel="icon" href="image/iconWithLine.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css.css">
-        <link rel="stylesheet" href="slideshow.css">
 
         <title>Team 7178 - Walled Lake Robotics</title>
 
-        <link rel="stylesheet" href="footer.css">
-        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="CSS/css.css">
+        <link rel="stylesheet" href="CSS/slideshow.css">
+        <link rel="stylesheet" href="CSS/footer.css">
+        <link rel="stylesheet" href="CSS/nav.css">
+        <link rel="stylesheet" href="CSS/7178.css">
         <style>
             /* Overriding color css */
             footer {
@@ -20,11 +21,12 @@
 
             /* override nav css */
             .topnav {
-                background-image: linear-gradient(to right, rgb(20, 20, 255), rgb(20, 20, 255));
+                background-image: linear-gradient(to right, rgb(35, 117, 198), rgb(35, 117, 198));
+                box-shadow: 0 10px 20px rgba(35, 117, 198, 0.19), 0 6px 6px rgba(35, 117, 198, 0.23);
             }
             
             body,.content {
-                background-image: linear-gradient(to right, rgb(177.5, 184, 252.5), rgb(177.5, 184, 252.5));
+                background-image: linear-gradient(to right, rgb(178 208 255), rgb(178 208 255));
             }
         </style>
         <style>
@@ -46,7 +48,7 @@
             h2,
             h3 {
                 color: #000000;
-                background-color: rgba(213, 227, 255, 0.5);
+                background-color: rgba(216, 229, 255, 0.43);
                 color: rgb(0, 0, 0);
                 padding: 10px 20px;
                 /* margin-bottom: 10px; */
@@ -155,7 +157,7 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 3px 9px rgba(0, 0, 0, 0.19), 0 5px 13px rgba(0, 0, 0, 0.23);
-            background-color: rgb(131, 142, 241);
+            background-color: rgb(116, 161, 239);
 
             margin-block: 5rem;
         }
@@ -184,49 +186,20 @@
 
     <div class="logoGroup">
         <img class="logo" src="image/7178.png" alt="7178 Team Logo.">
-        <h1>7178 Yeti</h1>
+        <h1>7178 - Yeti</h1>
     </div>
-
-        <div class="divider-bar"></div>
-
-        <div class="content">
-            <div class="text-group">
-                <h1 class="lefthead">About The Team</h1>
-                <h3 class="left">Team 7178, otherwise known as the Yetis, is a Walled Lake Robotics team. There was one team that originated in 1999, called the monsters. 
-                    In 2018 they split into two separate teams. The Yetis went their separate way from the Monsters and have been thriving ever 
-                    since then. They consist of many individual sub teams, such as electrical, mechanical, and programming, 
-                    which are all student driven and mentor advised. 7178 consists of many students with different experience levels, 
-                    meaning that anyone is able to join and can help out. In addition, our team fosters a learning environment in which 
-                    the more experienced students and mentors teach the new students/inexperienced the skills that they need to be successful 
-                    to keep our team thriving. With the variety of students 7178 has, they are able to maintain a well rounded team with a good 
-                    robot each year.  
-
-                </h3>
-            </div>
-
-            <!-- Slide show on the side of the about team section-->
-
-            <div class="slideshow-container">
-                <img src="7178images/2022teampitsOCCRA.jpg" alt="Students working on OCCRA robot in the pits.">
-                <img src="7178images/centralwinnig.jpg" alt="Group photo with finalist award.">
-                <img src="7178images/clim.jpg" alt="FRC robot climbing up bars.">
-                <img src="7178images/driveteamworlds.jpg" alt="Drive team at worlds.">
-                <img src="7178images/goodshoot.jpg" alt="Photo of 2022 OCCRA robot.">
-                <img src="7178images/michalbot.jpg" alt="Students working on OCCRA robot in the pits.">
-                <img src="7178images/OCCAR2021.jpg" alt="2021 group photo after winning Technical Excellence award.">
-                <img src="7178images/OCCAR2022.jpg" alt="Group photo with 308 and 7178 after being finalists for 2022 OCCRA season.">
-                <img src="7178images/OCCARBot7178.jpg" alt="Student working on OCCRA robot.">
-                <img src="7178images/teamstates.jpg" alt="Group photo after winning Ford Field at States.">
-                <img src="7178images/worldsstans.jpg" alt="View of FRC field from the stands at Worlds.">
-                <img src="7178images/2024AwardPic.jpg" alt="Students pose for spirit of the competition award.">
-                <img src="7178images/OCCRABrag2024.jpg" alt="7178's Brag board from 2024">
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-            </div>
+    <div class="team-section" style="flex-direction: row-reverse;">
+        <img src="7178images/2024AwardPic.jpg" alt="Team Group Photo.">
+        <div class="team-text" style="margin-right: 50px;">
+            <h3>Team 7178, otherwise known as the Yetis, is a Walled Lake Robotics team. There was one team that originated in 1999, called the monsters. In 2018 they split into two separate teams. The Yetis went their separate way from the Monsters and have been thriving ever since then. They consist of many individual sub teams, such as electrical, mechanical, and programming, which are all student driven and mentor advised.</h3>
+            <h3>We offer hands-on experiences and the opportunity to develop valuable life skills. Our team is
+                dedicated to providing students with first-hand experience in designing, building, and programming
+                robots. Our focus on teamwork, communication, problem-solving, and leadership helps students develop
+                important life skills that can give students the head start on careers. As an FRC team, we are
+                committed to excellence in all that we do and are dedicated to helping students achieve their full
+                potential. Join the 308 Robotics Team today and discover the many benefits of being a Monster!</h3>
         </div>
-
-        <div class="divider-bar"></div>
-
+    </div>
         <div class="content">
             <div class="slideshow-container">
                 <img src="7178images/parade.jpg" alt="Students driving robots in the Memorial Day parade.">
@@ -267,8 +240,6 @@
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             }
         </style>
-
-        <div class="divider-bar"></div>
         <h1 style="font-size: 3em; text-align: center;">Past Robots</h1>
         <h1 class="subBar" style="font-size: 3em;">2024 Robots</h1>
         <div class="previous-robots">
@@ -284,9 +255,6 @@
             <img src="robotImages/7178/2023OCCRA.jpg" alt="7178 OCCRA 2023">
             <h2 style="text-align: center;">OCCRA Robot</h2>
         </div>
-
-
-        <!-- <div class="divider-bar"></div> -->
 
         <style>
             .content2 table {
