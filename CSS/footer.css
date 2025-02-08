@@ -5,6 +5,7 @@ footer {
     background-image: linear-gradient(to right, rgb(255, 225, 225), rgb(225, 230, 255));
     min-height: 100px;
     padding: 20px 30px;
+    margin-top: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +72,7 @@ footer p {
 
 .social-icon__link {
     font-size: 2rem;
-    color: #fff;
+    color: #2d2d2d;
     margin: 0 10px;
     display: inline-block;
     transition: 0.3s;
