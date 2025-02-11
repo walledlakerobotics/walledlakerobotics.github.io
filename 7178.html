@@ -171,7 +171,7 @@
             }
 
             @media only screen and (max-width: 952px) {
-                .logoGroup {
+                .logoGroup  {
                     margin-block: 7rem;
                 }
             }
@@ -181,7 +181,7 @@
                     margin-block: 5rem;
                 }
 
-                .logoGroup h1 {
+                .logoGroup h1 .subBar  {
                     font-size: 2.5rem;
                 }
             }
@@ -275,8 +275,10 @@
             }*/
             .subBar {
                 color: #000000;
-                width: 350px;
                 margin: auto;
+                width: 350px;
+                font-size: 3em;
+                margin-bottom: 15px;
                 text-align: center;
                 background-color: rgba(85, 116, 177, 0.5);
                 padding: 10px 20px;
@@ -284,22 +286,43 @@
                 border-radius: 10px;
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             }
+            .adder{
+                .slideshow-container{
+                    margin: auto;
+                    padding-top: 35%;
+                    width: 80%;
+                    height: 100%;
+                    background-color: rgba(177.5, 184, 252.5);
+                    box-shadow: none;
+                    border: none;
+                    
+                    /* margin-bottom: 10px; */
+                }
+                .prev, .next{
+                    color: black;
+                    font-size: 7vw;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                .subBar {
+                    width: 75vw;
+                    font-size: 8vw;
+                }
+            }
         </style>
 
-        <h1 style="font-size: 3em; text-align: center;">Past Robots</h1>
-        <h1 class="subBar" style="font-size: 3em;">2024 Robots</h1>
-        <div class="previous-robots">
-            <h2 style="text-align: center;">FIRST Robot</h2>
-            <img src="image/robotImages/7178/2024FRC.png" alt="7178 First 2024">
-            <img src="image/robotImages/7178/2024OCCRA.JPG" alt="7178 OCCRA 2024">
-            <h2 style="text-align: center;">OCCRA Robot</h2>
-        </div>
-        <h1 class="subBar" style="font-size: 3em;">2023 Robots</h1>
-        <div class="previous-robots">
-            <h2 style="text-align: center;">FIRST Robot</h2>
-            <img src="image/robotImages/7178/2023FRC.jpg" alt="7178 First 2023">
-            <img src="image/robotImages/7178/2023OCCRA.jpg" alt="7178 OCCRA 2023">
-            <h2 style="text-align: center;">OCCRA Robot</h2>
+        <h1 style="text-align: center;">Past Robots</h1>
+        <h1 class="subBar">2024 Robots</h1>
+        <div class="adder">
+            <div class="slideshow-container">
+                <img src="image/robotImages/7178/23-24 season.png" alt="23-24.">
+                <img src="image/robotImages/7178/22-23 season.png" alt="22-23.">
+                <img src="image/robotImages/7178/21-22 season.png" alt="21-22.">
+                <img src="image/robotImages/7178/19-20 season.png" alt="19-20.">
+                <img src="image/robotImages/7178/18-19 season.png" alt="18-19.">
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
         </div>
 
         <style>
