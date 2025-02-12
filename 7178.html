@@ -149,7 +149,6 @@
                 padding: 5px;
                 padding-left: 25px;
                 box-shadow: none !important;
-                transform: translateX(-50px);
             }
 
             .logoGroup {
@@ -159,26 +158,30 @@
                 box-shadow: 0 3px 9px rgba(0, 0, 0, 0.19), 0 5px 13px rgba(0, 0, 0, 0.23);
                 background-color: rgb(131, 142, 241);
 
-                margin-block: 5rem;
+                margin-block-start: 5rem;
+                margin-block-end: 1rem;
             }
-
+            
             .logoGroup h1 {
                 font-size: 3.125rem;
                 background-color: transparent;
                 box-shadow: none;
                 margin: 5px !important;
-                transform: translateX(-50px);
             }
-
-            @media only screen and (max-width: 952px) {
+            .logoheader {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @media only screen and (max-width: 960px) {
                 .logoGroup  {
-                    margin-block: 7rem;
+                    margin-block-start: 7rem;
                 }
             }
 
             @media only screen and (max-width: 600px) {
                 .logoGroup {
-                    margin-block: 5rem;
+                    margin-block-start: 5rem;
                 }
 
                 .logoGroup h1 .subBar  {
@@ -287,11 +290,12 @@
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             }
             .adder{
+                height: fit-content;
                 .slideshow-container{
                     margin: auto;
-                    padding-top: 35%;
-                    width: 80%;
-                    height: 100%;
+                    padding-top: 30vw;
+                    width: 60%;
+                    height: 60%;
                     background-color: rgba(177.5, 184, 252.5);
                     box-shadow: none;
                     border: none;
@@ -300,15 +304,27 @@
                 }
                 .prev, .next{
                     color: black;
-                    font-size: 7vw;
+                    font-size: 6vw;
                 }
             }
             @media only screen and (max-width: 600px) {
                 .subBar {
-                    width: 75vw;
-                    font-size: 8vw;
+                    width: 50vw;
+                    font-size: 6vw;
+                    padding: 10px 8px;
+                }
+                .adder{
+                    height: 40vw;
+                    .slideshow-container    {
+                        padding-top: 45%;
+                        width: 90%;
+                    }
+                    .prev, .next{
+                        padding: 18px 10px;
+                    }
                 }
             }
+            
         </style>
 
         <h1 style="text-align: center;">Past Robots</h1>
@@ -325,7 +341,6 @@
                 <a class="next">&#10095;</a>
             </div>
         </div>
-
         <style>
             .content2 table {
                 padding: 20px 0px;
