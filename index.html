@@ -32,6 +32,7 @@
                 width: 3vw;
             }
             
+            
             @media (orientation: portrait) {
                 .content img {
                     margin-left: 14%;
@@ -44,7 +45,7 @@
                 }
             }
             @media only screen and (max-width: 600px) {
-                .arrows,.scroll-Arrow {
+                .arrows,.scroll-Arrow,.icon {
                     display: none;
                 }
             }
@@ -96,7 +97,7 @@
                 <img src="image/Scroll-Arrow.png" class="scroll-Arrow">
             </div>
         </div>
-        <div class="content">
+        <div class="content" style="padding-bottom: 2vw;">
             <h2 class="mini-header">Welcome to the home of Walled Lake Robotics.</h2>
             <h1 class="header">Who are we?</h1>
             <div class="text-box">
@@ -118,8 +119,46 @@
                 </p>
             </div>
             <h1 class="header">Upcoming Competition Schedule</h1>
-            <div class="margins">
 
+            <div class="center" style="margin-top: 2vw;">
+                <div class="popout-header" style="display: flex; align-items: center; justify-content: center;">
+                    <div >
+                        <h1 style="margin: 0;">
+                            FIM District Milford Event
+                        </h1>
+                        <h3 style="margin: 3px 0 7px 0; color: dimgrey; display: flex; align-items: center;">
+                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> Milford High School in Highland, MI 
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> February 27 to March 1, 2025 
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <a href="https://www.thebluealliance.com/event/2025mimil">TheBlueAlliance.com</a>
+                        </h3>
+                    </div>
+                    <img src="image/MilfordLogo.png" style="height: 80px; padding-left: 1.5vw;">
+                    </img>
+                </div>
+            </div>
+            <div class="center" style="margin-top: 1vh;">
+                <div class="popout-header" style="display: flex; align-items: center; justify-content: center; margin-top: 17px; align-self: center;">
+                    <div>
+                        <h1 style="margin: 0;">
+                            FIM District Livonia Event
+                        </h1>
+                        <h3 style="margin: 3px 0 7px 0; color: dimgrey; display: flex; align-items: center;">
+                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> Churchill High School in Livonia, MI 
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> March 27 to March 29, 2025 
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <a href="https://www.thebluealliance.com/event/2025miliv">TheBlueAlliance.com</a>
+                        </h3>
+                    </div>
+                    <img src="image/LivoniaLogo.png" style="height: 80px; padding-left: 1.5vw;">
+                    </img>
+                </div>
             </div>
         </div>
         <footer style="margin-top: 0;">
