@@ -14,14 +14,17 @@
     padding: 13px 23px;
     border-radius: 10px;
     margin-inline: auto;
-    margin-left: calc(20vw);
-    margin-right: calc(20vw);
     font-family: "Open Sans", serif;
     font-size: 21px;
     font-weight: 450;
     line-height: 30px;
+    margin-left: calc(20vw);
+    margin-right: calc(20vw);
 }
-
+.margins {
+    margin-left: calc(20vw);
+    margin-right: calc(20vw);
+}
 .column {
     margin-top: 0px;
     column-count: 2;
@@ -71,7 +74,7 @@
     align-items: center;
     justify-content: center;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     .text-box {
         margin-left: 15px;
         margin-right: 15px;

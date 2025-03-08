@@ -31,6 +31,8 @@
             .scroll-Arrow {
                 width: 3vw;
             }
+            
+            
             @media (orientation: portrait) {
                 .content img {
                     margin-left: 14%;
@@ -43,10 +45,17 @@
                 }
             }
             @media only screen and (max-width: 600px) {
-                .arrows,.scroll-Arrow {
+                .arrows,.scroll-Arrow,.icon {
                     display: none;
                 }
             }
+            @media only screen and (max-width: 920px) {
+                .text-box {
+                    margin-left: calc(10vw);
+                    margin-right: calc(10vw);
+                }
+            }
+            
         </style>
     </head>
 
@@ -88,23 +97,71 @@
                 <img src="image/Scroll-Arrow.png" class="scroll-Arrow">
             </div>
         </div>
-        <div class="content">
+        <div class="content" style="padding-bottom: 2vw;">
             <h2 class="mini-header">Welcome to the home of Walled Lake Robotics.</h2>
             <h1 class="header">Who are we?</h1>
             <div class="text-box">
-                <p style="text-indent: 6vw;">Our teams, 308 and 7178, are FIRST robotics teams based out of Walled Lake, Michigan. Walled Lake Robotics fosters a learning environment in which students 
+                <p style="text-indent: 6vw;">
+                    Our teams, 308 and 7178, are FIRST robotics teams based out of Walled Lake, Michigan. Walled Lake Robotics fosters a learning environment in which students 
                     are prepared for jobs that they are interested in pursuing in the future.</p>
-                <p style="text-indent: 6vw;">Walled Lake Robotics competes in both the OCCRA season and the FIRST season early in the year.
+                <p style="text-indent: 6vw;">
+                    Walled Lake Robotics competes in both the OCCRA season and the FIRST season early in the year.
                     Anyone from Walled Lake Western, Central, or Northern is welcome to become a part of our teams! If you would like to learn more or meet us, visit
                     our <a href="contact.html">contact page.</a></p>
             </div>
             <h1 class="header">What's Robotics?</h1>
             <div class="text-box">
-                <p>Robotics is an after-school varsity sport in which groups of high school students, 
+                <p style="text-indent: 6vw;">
+                    Robotics is an after-school varsity sport in which groups of high school students, 
                     guided by experienced mentors, collaborate to build a robot that can compete in a season-specific game. 
                     Each season provides a new and unique challenge!
                     To learn more about our seasons, visit our <a href="occra.html">OCCRA</a> and <a href="first.html">FIRST</a> pages.
                 </p>
+            </div>
+            <h1 class="header">Competition Schedule</h1>
+
+            <div class="center" style="margin-top: 2vw;">
+                <div class="popout-header" style="display: flex; align-items: center; justify-content: center; background-color: #e4e4e4;">
+                    <div >
+                        <h1 style="margin: 0;">
+                            FIM District Milford Event
+                        </h1>
+                        <h3 style="margin: 3px 0 7px 0; color: dimgrey; display: flex; align-items: center;">
+                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> Milford High School in Highland, MI 
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> February 27 to March 1, 2025 
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <a href="https://www.thebluealliance.com/event/2025mimil">TheBlueAlliance.com</a>
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center; color: grey;">
+                            <ion-icon name="information" class="icon" style="padding-right: 7px;"></ion-icon> Event Passed
+                        </h3>
+                    </div>
+                    <img src="image/MilfordLogo.png" style="height: 80px; padding-left: 1.5vw;">
+                    </img>
+                </div>
+            </div>
+            <div class="center" style="margin-top: 1vh;">
+                <div class="popout-header" style="display: flex; align-items: center; justify-content: center; margin-top: 17px; align-self: center;">
+                    <div>
+                        <h1 style="margin: 0;">
+                            FIM District Livonia Event
+                        </h1>
+                        <h3 style="margin: 3px 0 7px 0; color: dimgrey; display: flex; align-items: center;">
+                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> Churchill High School in Livonia, MI 
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> March 27 to March 29, 2025 
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <a href="https://www.thebluealliance.com/event/2025miliv">TheBlueAlliance.com</a>
+                        </h3>
+                    </div>
+                    <img src="image/LivoniaLogo.png" style="height: 80px; padding-left: 1.5vw;">
+                    </img>
+                </div>
             </div>
         </div>
         <footer style="margin-top: 0;">
