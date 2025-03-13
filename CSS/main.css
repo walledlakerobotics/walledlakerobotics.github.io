@@ -9,6 +9,7 @@
 }
 
 .text-box {
+    justify-self: center;
     width: fit-content;
     height: fit-content;
     padding: 13px 23px;
@@ -20,6 +21,10 @@
     line-height: 30px;
     margin-left: calc(20vw);
     margin-right: calc(20vw);
+}
+.text-box,.text-box-wide {
+    max-width: 700px;
+    justify-self: center;
 }
 .margins {
     margin-left: calc(20vw);
