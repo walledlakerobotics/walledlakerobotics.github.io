@@ -17,7 +17,7 @@
     width: 90%;
     text-align: center;
     align-self: center;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), transparent, transparent, transparent);
+    /*background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), transparent, transparent, transparent);*/
     transform: translate(-50%, -50%);
 }
 
