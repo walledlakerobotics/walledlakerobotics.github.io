@@ -6,7 +6,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/main.css">
-
+        
         <title>Walled Lake Robotics</title>
 
         <link rel="stylesheet" href="CSS/nav.css">
@@ -102,13 +102,20 @@
         </div>
         <div class="video-overlay">
             <p class="title">Walled Lake Robotics</p>
+            <p class="title" style="filter: blur(20px);">Walled Lake Robotics</p>
             <div class="center teams">
                 <img src="image/logos/7178.png" class="logo">
                 <img src="image/logos/308.png" class="logo">
             </div>
             <div class="center arrows">
-                <img src="image/Scroll-Arrow.png" class="scroll-Arrow">
+                <img src="image/Scroll-Arrow.png" class="scroll-Arrow" id="arrow" style="position: fixed;">
             </div>
+            <script>
+                window.addEventListener("scroll", function() {
+                    let scrollDist = window.scrollY;
+                    document.getElementById("arrow").style.filter = `blur(${scrollDist/25}px)`;
+                })
+            </script>
         </div>
         <div class="content" style="padding-bottom: 50px; padding-top: 0;">
             <div class="blur">
