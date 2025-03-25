@@ -75,7 +75,7 @@
     flex: 1; 
     margin: 0 1vw 0 1vw;
     max-width: 50%;
-    padding: 23px;
+    /*padding: 23px;*/
     align-items: center;
     justify-content: center;
 }
