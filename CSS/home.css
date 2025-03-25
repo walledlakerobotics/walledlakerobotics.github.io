@@ -47,4 +47,10 @@
         font-size: 6vw; 
         top: calc(10vw + 35px);
     }
+    .video-overlay {
+        margin-top: 20px;
+    }
+    .header-video {
+        margin-top: 35px;
+    }
 }
