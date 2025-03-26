@@ -21,7 +21,10 @@
                 margin-top: 5vh;
             }
             .content img {
-                width: 38vw;
+                width: Calc(20vw + 150px);
+            }
+            .vertical-split-column p {
+                max-width: 400px;
             }
             .text-box-wide, .text-box {
                 font-family: "Open Sans", serif;
@@ -30,7 +33,15 @@
                 margin-left: calc(20vw);
                 margin-right: calc(20vw);
             }
-            
+            .vertical-split-column {
+                padding: 23px 0 23px 0;
+                margin: 0;
+                max-width: max-content;
+            }
+            .vertical-split {
+                justify-content: center;
+                gap: 2vw;
+            }
             .text-box-wide {
                 margin-bottom: 3vh;
             }
@@ -73,6 +84,9 @@
                 .content {
                     margin-top: calc(3vh);
                 }
+                .vertical-split {
+                    gap: 0;
+                }
             }
         </style>
     </head>
@@ -90,7 +104,7 @@
             </p>
         </div>
         <div class="content" style="padding-top: 0;">
-            <div class="vertical-split regular" style="padding: 0 5vw 0 5vw; background-color: rgb(241, 241, 241);">
+            <div class="vertical-split regular" style="padding: 0 12vw 0 12vw; background-color: rgb(241, 241, 241);">
                 <div class="vertical-split-column">
                     <h2 class="text-box popout-header align-center" style="font-weight: 700; font-size: 1.7rem; margin: 0px 0px 20px 0px; background-color: rgb(255 255 255 / 69%);">
                         Elementary STEAM Nights
@@ -109,7 +123,7 @@
                     <img src="image/stem-night.jpg" style="border-radius: 5px;">
                 </div>
             </div>
-            <div class="vertical-split reverse" style="padding: 0 5vw 0 5vw;">
+            <div class="vertical-split reverse" style="padding: 0 12vw 0 12vw;">
                 <div class="vertical-split-column">
                     <img src="image/2024memorialParade.jpg" style="border-radius: 5px;">
                 </div>
@@ -129,7 +143,7 @@
                     </p>
                 </div>
             </div>
-            <p class="text-box-wide popout-header align-center" style="font-size: 1.175rem;  margin: 5vh 20vw 5vh 20vw;">
+            <p class="text-box-wide popout-header align-center" style="font-size: 1.175rem;">
                 We are always looking for more opportunities to help out our 
                 community. If you are interested in collaborating, please
                 do not hesitate to <a href="contact.html">contact us!</a>
@@ -143,8 +157,8 @@
                 <a href="community.html" class="href-align-left">COMMUNITY</a>
                 <a href="sponsors.html" class="href-align-left">SPONSORS</a>
                 <a href="contact.html" class="href-align-left">CONTACT</a>
-                <a href="7178.html" class="href-align-left" style="color: rgb(218, 228, 251);">7178</a>
-                <a href="308.html" class="href-align-left" style="color: rgb(254, 217, 217);">308</a>
+                <a href="7178.html" class="href-align-left" style="color: rgb(119, 160, 255);">7178</a>
+                <a href="308.html" class="href-align-left" style="color: rgb(255, 116, 116);">308</a>
                 <a href="first.html" class="href-align-left">FIRST</a>
                 <a href="occra.html" class="href-align-left">OCCRA</a>
             </div>

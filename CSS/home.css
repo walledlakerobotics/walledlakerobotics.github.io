@@ -17,7 +17,7 @@
     width: 90%;
     text-align: center;
     align-self: center;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), transparent, transparent, transparent);
+    /*background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), transparent, transparent, transparent);*/
     transform: translate(-50%, -50%);
 }
 
@@ -28,7 +28,7 @@
 }
 
 .logo {
-    height: 10vw;
+    /*height: 10vw;*/
     width: 10vw;
 }
 
@@ -46,5 +46,11 @@
     .title {
         font-size: 6vw; 
         top: calc(10vw + 35px);
+    }
+    .video-overlay {
+        margin-top: 20px;
+    }
+    .header-video {
+        margin-top: 35px;
     }
 }
