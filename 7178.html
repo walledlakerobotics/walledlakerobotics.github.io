@@ -1,563 +1,725 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en" class="body">
-    <head>
-        <link rel="icon" href="image/logos/iconWithLine.png">
+  <head>
+    <link rel="icon" href="image/logos/iconWithLine.png" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="CSS/main.css">
-        <link rel="stylesheet" href="CSS/slideshow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/slideshow.css" />
 
-        <title>Team 7178 - Walled Lake Robotics</title>
+    <title>Team 7178 - Walled Lake Robotics</title>
 
-        <link rel="stylesheet" href="CSS/footer.css">
-        <link rel="stylesheet" href="CSS/nav.css">
-        <style>
-            /* Overriding color css */
-            footer {
-                background-image: linear-gradient(to right, rgb(177.5, 184, 252.5), rgb(177.5, 184, 252.5));
-            }
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/nav.css" />
+    <style>
+      /* Overriding color css */
+      footer {
+        background-image: linear-gradient(
+          to right,
+          rgb(177.5, 184, 252.5),
+          rgb(177.5, 184, 252.5)
+        );
+      }
 
-            /* override nav css */
-            .topnav {
-                background-image: linear-gradient(to right, rgb(20, 20, 255), rgb(20, 20, 255));
-            }
+      /* override nav css */
+      .topnav {
+        background-image: linear-gradient(
+          to right,
+          rgb(20, 20, 255),
+          rgb(20, 20, 255)
+        );
+      }
 
-            body,
-            .content {
-                background-image: linear-gradient(to right, rgb(177.5, 184, 252.5), rgb(177.5, 184, 252.5));
-            }
-        </style>
-        <style>
-            .content {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                /* margin: 30px 80px; */
-                /*padding-block: 25px; */
-            }
+      body,
+      .content {
+        background-image: linear-gradient(
+          to right,
+          rgb(177.5, 184, 252.5),
+          rgb(177.5, 184, 252.5)
+        );
+      }
+    </style>
+    <style>
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        /* margin: 30px 80px; */
+        /*padding-block: 25px; */
+      }
 
-            .slideshow-container {
-                width: 450px;
-                height: 275px;
-            }
+      .slideshow-container {
+        width: 450px;
+        height: 275px;
+      }
 
-            h1,
-            h2,
-            h3 {
-                color: #000000;
-                background-color: rgba(213, 227, 255, 0.5);
-                color: rgb(0, 0, 0);
-                padding: 10px 20px;
-                /* margin-bottom: 10px; */
-                border-radius: 10px;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            }
+      h1,
+      h2,
+      h3 {
+        color: #000000;
+        background-color: rgba(213, 227, 255, 0.5);
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        /* margin-bottom: 10px; */
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
 
-            .text-group {
-                max-width: 40%;
-                margin: 10px;
-            }
+      .text-group {
+        max-width: 40%;
+        margin: 10px;
+      }
 
-            .text-group h1 {
-                text-align: center;
-                text-indent: 0%;
-            }
+      .text-group h1 {
+        text-align: center;
+        text-indent: 0%;
+      }
 
-            .text-group h3 {
-                position: relative;
-                text-indent: 5%;
-                max-width: 50ch;
-                font-weight: normal;
-            }
+      .text-group h3 {
+        position: relative;
+        text-indent: 5%;
+        max-width: 50ch;
+        font-weight: normal;
+      }
 
-            .content2 {
-                max-width: 100%;
-                overflow-x: auto;
-                margin: auto;
-            }
+      .content2 {
+        max-width: 100%;
+        overflow-x: auto;
+        margin: auto;
+      }
 
-            /* Caption text */
-            .text {
-                color: #f2f2f2;
-                font-size: 0.938rem;
-                padding: 8px 12px;
-                position: absolute;
-                bottom: 8px;
-                width: 100%;
-                text-align: center;
-            }
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 0.938rem;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
 
-            .awards {
-                width: 100%;
-            }
+      .awards {
+        width: 100%;
+      }
 
-            @media only screen and (max-width: 1000px) {
-                .text-group {
-                    max-width: 80%;
-                }
+      @media only screen and (max-width: 1000px) {
+        .text-group {
+          max-width: 80%;
+        }
 
-                .slideshow-container {
-                    max-width: 500px;
-                    max-height: 300px;
-                    aspect-ratio: 5/3;
-                }
+        .slideshow-container {
+          max-width: 500px;
+          max-height: 300px;
+          aspect-ratio: 5/3;
+        }
 
-                .righthead {
-                    font-size: 1.25rem;
-                }
+        .righthead {
+          font-size: 1.25rem;
+        }
 
-                .lefthead {
-                    font-size: 1.25rem;
-                }
-            }
+        .lefthead {
+          font-size: 1.25rem;
+        }
+      }
 
-            @keyframes fade {
-                from {
-                    opacity: .4
-                }
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
 
-                to {
-                    opacity: 1
-                }
-            }
-        </style>
-    </head>
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
 
-    <body>
+  <body>
+    <nav class="topnav">
+      <div class="mobile">
+        <a href="index.html" class="href-align-right">WALLED LAKE ROBOTICS</a>
+        <a
+          href="https://www.brodysonline.com/walledlakehsrobotics"
+          target="_blank"
+          class="href-align-left"
+          >SHOP</a
+        >
+        <a href="community.html" class="href-align-left">COMMUNITY</a>
+        <a href="sponsors.html" class="href-align-left">SPONSORS</a>
+        <a href="contact.html" class="href-align-left">CONTACT</a>
+        <a
+          href="7178.html"
+          class="href-align-left"
+          style="color: rgb(218, 228, 251)"
+          >7178</a
+        >
+        <a
+          href="308.html"
+          class="href-align-left"
+          style="color: rgb(255, 108, 108)"
+          >308</a
+        >
+        <a href="first.html" class="href-align-left">FIRST</a>
+        <a href="occra.html" class="href-align-left">OCCRA</a>
+      </div>
+      <a href="#" style="line-height: 24px; padding-top: 3px" id="burger"
+        ><img
+          src="image/burbur.png"
+          alt="menu icon"
+          style="height: 35px; width: 35px"
+      /></a>
+    </nav>
+    <script src="js/nav.js"></script>
+    <style>
+      .logoGroup .logo {
+        width: 5.5rem;
+        height: 5.5rem;
+        padding: 5px;
+        padding-left: 25px;
+        box-shadow: none !important;
+      }
 
-        <nav class="topnav">
-            <div class="mobile">
-                <a href="index.html" class="href-align-right">WALLED LAKE ROBOTICS</a>
-                <a href="https://www.brodysonline.com/walledlakehsrobotics" target="_blank" class="href-align-left">SHOP</a>
-                <a href="community.html" class="href-align-left">COMMUNITY</a>
-                <a href="sponsors.html" class="href-align-left">SPONSORS</a>
-                <a href="contact.html" class="href-align-left">CONTACT</a>
-                <a href="7178.html" class="href-align-left" style="color: rgb(218, 228, 251);">7178</a>
-                <a href="308.html" class="href-align-left" style="color: rgb(255, 108, 108);">308</a>
-                <a href="first.html" class="href-align-left">FIRST</a>
-                <a href="occra.html" class="href-align-left">OCCRA</a>
-            </div>
-            <a href="#" style="line-height: 24px; padding-top: 3px;" id="burger"><img src="image/burbur.png" alt="menu icon"
-                    style="height:35px; width:35px;"></a>
-        </nav>
-        <script src="js/nav.js"></script>
-        <style>
-            .logoGroup .logo {
-                width: 5.5rem;
-                height: 5.5rem;
-                padding: 5px;
-                padding-left: 25px;
-                box-shadow: none !important;
-            }
+      .logoGroup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow:
+          0 3px 9px rgba(0, 0, 0, 0.19),
+          0 5px 13px rgba(0, 0, 0, 0.23);
+        background-color: rgb(131, 142, 241);
 
-            .logoGroup {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 0 3px 9px rgba(0, 0, 0, 0.19), 0 5px 13px rgba(0, 0, 0, 0.23);
-                background-color: rgb(131, 142, 241);
+        margin-block-start: 5rem;
+        margin-block-end: 1rem;
+      }
 
-                margin-block-start: 5rem;
-                margin-block-end: 1rem;
-            }
-            
-            .logoGroup h1 {
-                font-size: 3.125rem;
-                background-color: transparent;
-                box-shadow: none;
-                margin: 5px !important;
-            }
-            .logoheader {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            @media only screen and (max-width: 960px) {
-                .logoGroup  {
-                    margin-block-start: 7rem;
-                }
-                .slideshow-container {
-                    margin: 0px 0px 15px 0px;
-                }
-            }
+      .logoGroup h1 {
+        font-size: 3.125rem;
+        background-color: transparent;
+        box-shadow: none;
+        margin: 5px !important;
+      }
+      .logoheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media only screen and (max-width: 960px) {
+        .logoGroup {
+          margin-block-start: 7rem;
+        }
+        .slideshow-container {
+          margin: 0px 0px 15px 0px;
+        }
+      }
 
-            @media only screen and (max-width: 600px) {
-                .logoGroup {
-                    margin-block-start: 5rem;
-                }
-                .logoGroup h1 .subBar  {
-                    font-size: 2.5rem;
-                }
-                .slideshow-container {
-                    width: 70vw;
-                    height: auto;
-                }
-            }
-        </style>
+      @media only screen and (max-width: 600px) {
+        .logoGroup {
+          margin-block-start: 5rem;
+        }
+        .logoGroup h1 .subBar {
+          font-size: 2.5rem;
+        }
+        .slideshow-container {
+          width: 70vw;
+          height: auto;
+        }
+      }
+    </style>
 
-        <div class="logoGroup">
-            <img class="logo" src="image/logos/7178.png" alt="7178 Team Logo.">
-            <h1>7178 - Yeti</h1>
-        </div>
+    <div class="logoGroup">
+      <img class="logo" src="image/logos/7178.png" alt="7178 Team Logo." />
+      <h1>7178 - Yeti</h1>
+    </div>
 
-        <div class="content">
-            <div class="text-group" style="margin-right: 2vw;">
-                <h1 class="lefthead">About The Team</h1>
-                <h3 class="left">Team 7178, known as the Yetis, is a Walled Lake Robotics team that formed in 2018 after splitting from the Monsters, a team that started in 1999. Since then, the Yetis have grown into a strong team with groups that focus on electrical, mechanical, and programming work, all led by students with help from mentors. The team is open to students of all skill levels, encouraging experienced members and mentors to teach newer students the skills they need. This welcoming environment helps the Yetis build a successful robot each year.
+    <div class="content">
+      <div class="text-group" style="margin-right: 2vw">
+        <h1 class="lefthead">About The Team</h1>
+        <h3 class="left">
+          Team 7178, known as the Yetis, is a Walled Lake Robotics team that
+          formed in 2018 after splitting from the Monsters, a team that started
+          in 1999. Since then, the Yetis have grown into a strong team with
+          groups that focus on electrical, mechanical, and programming work, all
+          led by students with help from mentors. The team is open to students
+          of all skill levels, encouraging experienced members and mentors to
+          teach newer students the skills they need. This welcoming environment
+          helps the Yetis build a successful robot each year.
+        </h3>
+      </div>
 
-                </h3>
-            </div>
+      <!-- Slide show on the side of the about team section-->
 
-            <!-- Slide show on the side of the about team section-->
+      <div class="slideshow-container">
+        <img
+          src="image/7178images/2022teampitsOCCRA.jpg"
+          alt="Students working on OCCRA robot in the pits."
+        />
+        <img
+          src="image/7178images/centralwinnig.jpg"
+          alt="Group photo with finalist award."
+        />
+        <img
+          src="image/7178images/climb.jpg"
+          alt="FRC robot climbing up bars."
+        />
+        <img
+          src="image/7178images/driveteamworlds.jpg"
+          alt="Drive team at worlds."
+        />
+        <img
+          src="image/robotImages/7178/2022OCCRA.JPG"
+          alt="Photo of 2022 OCCRA robot."
+        />
+        <img
+          src="image/7178images/michalbot.jpg"
+          alt="Students working on OCCRA robot in the pits."
+        />
+        <img
+          src="image/7178images/OCCAR2021.jpg"
+          alt="2021 group photo after winning Technical Excellence award."
+        />
+        <img
+          src="image/7178images/OCCAR2022.jpg"
+          alt="Group photo with 308 and 7178 after being finalists for 2022 OCCRA season."
+        />
+        <img
+          src="image/7178images/OCCARBot7178.jpg"
+          alt="Student working on OCCRA robot."
+        />
+        <img
+          src="image/7178images/teamstates.jpg"
+          alt="Group photo after winning Ford Field at States."
+        />
+        <img
+          src="image/7178images/worldsstans.jpg"
+          alt="View of FRC field from the stands at Worlds."
+        />
+        <img
+          src="image/7178images/2024AwardPic.jpg"
+          alt="Students pose for spirit of the competition award."
+        />
+        <img
+          src="image/7178images/OCCRABrag2024.jpg"
+          alt="7178's Brag board from 2024"
+        />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+    </div>
 
-            <div class="slideshow-container">
-                <img src="image/7178images/2022teampitsOCCRA.jpg" alt="Students working on OCCRA robot in the pits.">
-                <img src="image/7178images/centralwinnig.jpg" alt="Group photo with finalist award.">
-                <img src="image/7178images/climb.jpg" alt="FRC robot climbing up bars.">
-                <img src="image/7178images/driveteamworlds.jpg" alt="Drive team at worlds.">
-                <img src="image/robotImages/7178/2022OCCRA.JPG" alt="Photo of 2022 OCCRA robot.">
-                <img src="image/7178images/michalbot.jpg" alt="Students working on OCCRA robot in the pits.">
-                <img src="image/7178images/OCCAR2021.jpg" alt="2021 group photo after winning Technical Excellence award.">
-                <img src="image/7178images/OCCAR2022.jpg"
-                    alt="Group photo with 308 and 7178 after being finalists for 2022 OCCRA season.">
-                <img src="image/7178images/OCCARBot7178.jpg" alt="Student working on OCCRA robot.">
-                <img src="image/7178images/teamstates.jpg" alt="Group photo after winning Ford Field at States.">
-                <img src="image/7178images/worldsstans.jpg" alt="View of FRC field from the stands at Worlds.">
-                <img src="image/7178images/2024AwardPic.jpg" alt="Students pose for spirit of the competition award.">
-                <img src="image/7178images/OCCRABrag2024.jpg" alt="7178's Brag board from 2024">
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-            </div>
-        </div>
-
-        <div class="content" style="padding-top: 0;">
-            <div class="slideshow-container">
-                <img src="image/7178images/parade.jpg" alt="Students driving robots in the Memorial Day parade.">
-                <img src="image/7178images/7178worldssigninpit.jpg" alt="Students hold a 7178 sign at the pits in Worlds.">
-                <img src="image/7178images/TeamInfrontoffirstsign.jpg" alt="Group photo in front of FIRST sign.">
-                <img src="image/7178images/shop.jpg" alt="Students doing something in the workshop.">
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-            </div>
-            <div class="text-group" style="margin-left: 2vw;">
-                <h1 class="righthead">Community Involvement</h1>
-                <h3 class="right"> 
-                    Team 7178 is actively involved in the Walled Lake community, including Central, Western, and Northern schools. Whenever there's a chance to participate, the team takes it. One of their favorite activities is bringing their Tank bot, a robot that shoots t-shirts, to football games, pep assemblies, the Walled Lake Memorial Parade, STEM nights at elementary schools, and other events. During STEM nights, they showcase their robots, explain how they work, and display cool features like colorful lights. Through these events, 7178 inspires younger students to get involved in robotics and STEM.
-                </h3>
-            </div>
-
-
-        </div>
-        <style>
-            /*
+    <div class="content" style="padding-top: 0">
+      <div class="slideshow-container">
+        <img
+          src="image/7178images/parade.jpg"
+          alt="Students driving robots in the Memorial Day parade."
+        />
+        <img
+          src="image/7178images/7178worldssigninpit.jpg"
+          alt="Students hold a 7178 sign at the pits in Worlds."
+        />
+        <img
+          src="image/7178images/TeamInfrontoffirstsign.jpg"
+          alt="Group photo in front of FIRST sign."
+        />
+        <img
+          src="image/7178images/shop.jpg"
+          alt="Students doing something in the workshop."
+        />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+      <div class="text-group" style="margin-left: 2vw">
+        <h1 class="righthead">Community Involvement</h1>
+        <h3 class="right">
+          Team 7178 is actively involved in the Walled Lake community, including
+          Central, Western, and Northern schools. Whenever there's a chance to
+          participate, the team takes it. One of their favorite activities is
+          bringing their Tank bot, a robot that shoots t-shirts, to football
+          games, pep assemblies, the Walled Lake Memorial Parade, STEM nights at
+          elementary schools, and other events. During STEM nights, they
+          showcase their robots, explain how they work, and display cool
+          features like colorful lights. Through these events, 7178 inspires
+          younger students to get involved in robotics and STEM.
+        </h3>
+      </div>
+    </div>
+    <style>
+      /*
             .prev,.next {
                 font-size: 500%;
             }*/
-            
-            .adder{
-                height: fit-content;
-                .slideshow-container{
-                    margin: auto;
-                    padding-top: 30vw;
-                    width: 60%;
-                    height: 60%;
-                    background-color: rgba(177.5, 184, 252.5);
-                    box-shadow: none;
-                    border: none;
-                    
-                    /* margin-bottom: 10px; */
-                }
-                .prev, .next{
-                    color: black;
-                    font-size: 6vw;
-                }
-            }
-            @media only screen and (max-width: 600px) {
-                .adder{
-                    height: 40vw;
-                    .slideshow-container    {
-                        padding-top: 45%;
-                        width: 90%;
-                    }
-                    .prev, .next{
-                        padding: 18px 10px;
-                    }
-                }
-            }
-            
-        </style>
 
-        <h1 style="text-align: center;">Past Robots</h1>
-        <div class="adder">
-            <div class="slideshow-container">
-                <img src="image/robotImages/7178/23-24 season.png" alt="23-24.">
-                <img src="image/robotImages/7178/18-19 season.png" alt="18-19.">
-                <img src="image/robotImages/7178/19-20 season.png" alt="19-20.">
-                <img src="image/robotImages/7178/21-22 season.png" alt="21-22.">
-                <img src="image/robotImages/7178/22-23 season.png" alt="22-23.">
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-            </div>
-        </div>
-        <style>
-            .content2 table {
-                padding: 20px 0px;
-                width: 70%;
-                margin-inline: auto;
-            }
+      .adder {
+        height: fit-content;
+        .slideshow-container {
+          margin: auto;
+          padding-top: 30vw;
+          width: 60%;
+          height: 60%;
+          background-color: rgba(177.5, 184, 252.5);
+          box-shadow: none;
+          border: none;
 
-            .content2 li {
-                padding-left: 3px;
-                margin-bottom: 9px;
-            }
+          /* margin-bottom: 10px; */
+        }
+        .prev,
+        .next {
+          color: black;
+          font-size: 6vw;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .adder {
+          height: 40vw;
+          .slideshow-container {
+            padding-top: 45%;
+            width: 90%;
+          }
+          .prev,
+          .next {
+            padding: 18px 10px;
+          }
+        }
+      }
+    </style>
 
-            .content2 li:last-child {
-                margin-bottom: 0px;
-            }
+    <h1 style="text-align: center">Past Robots</h1>
+    <div class="adder">
+      <div class="slideshow-container">
+        <img src="image/robotImages/7178/23-24 season.png" alt="23-24." />
+        <img src="image/robotImages/7178/18-19 season.png" alt="18-19." />
+        <img src="image/robotImages/7178/19-20 season.png" alt="19-20." />
+        <img src="image/robotImages/7178/21-22 season.png" alt="21-22." />
+        <img src="image/robotImages/7178/22-23 season.png" alt="22-23." />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+    </div>
+    <style>
+      .content2 table {
+        padding: 20px 0px;
+        width: 70%;
+        margin-inline: auto;
+      }
 
-            .content2 ul {
-                background-color: rgb(211, 211, 250);
-                color: rgb(0, 0, 0);
-                padding: 10px 20px 10px 35px;
-                /* margin-bottom: 10px; */
-                border-radius: 10px;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            }
+      .content2 li {
+        padding-left: 3px;
+        margin-bottom: 9px;
+      }
 
-            .content2 td {
-                background-color: rgb(202, 196, 255);
-                color: rgb(0, 0, 0);
-                padding: 10px 20px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-                width: 50%;
-            }
+      .content2 li:last-child {
+        margin-bottom: 0px;
+      }
 
-            .content2 th {
-                background-color: rgb(209, 203, 255);
-                color: rgb(0, 0, 0);
-                padding: 10px 20px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            }
-            @media only screen and (max-width: 600px) {
-                .content2 li {
-                    padding-left: 3px;
-                    margin-bottom: 9px;
-                    font-size: 0.75rem;
-                }
-            }
-        </style>
+      .content2 ul {
+        background-color: rgb(211, 211, 250);
+        color: rgb(0, 0, 0);
+        padding: 10px 20px 10px 35px;
+        /* margin-bottom: 10px; */
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgb(85 93 175);
+      }
 
-        <div class="content2">
-            <h1 style="font-size: 3em; text-align: center;">Awards</h1>
+      .content2 td {
+        background-color: rgb(169 177 255);
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0 20px 20px 1px rgb(85 93 175 / 63%);
+        width: 50%;
+      }
 
-            <table class="awards">
-                <tr>
-                    <th>
-                        <img src="image/logos/firstlogo.png" alt="FIRST logo" style="width: 100px;">
-                    </th>
-                    <th>
-                        <img src="image/logos/occra.png" alt="OCCRA logo" style="width: 100px;">
-                    </th>
-                </tr>
-                <tr style="height:auto">
-                    <td style="font-weight: bold;text-align: center;">2024</td>
-                    <td style="font-weight: bold;text-align: center;">2024</td>
-                </tr>
-                <td>
-                    <ul>
-                        <li>Team Spirit Award ~ Milford District Event</li>
-                    </ul>
-                </td>
+      .content2 th {
+        background-color: rgb(112 123 238);
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgb(115 122 198);
+      }
+      .table-year {
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(85 93 175) !important;
+        color: white !important;
+        font-size: 1.1rem;
+        letter-spacing: 0.05em;
+      }
 
-                <td>
-                    <ul>
-                        <li>Spirit of the Competition ~ Walled Lake Central</li>
-                    </ul>
-                    <ul>
-                        <li>Technical Excellence ~ Marian High School</li>
-                    </ul>
+      @media only screen and (max-width: 600px) {
+        .content2 li {
+          padding-left: 3px;
+          margin-bottom: 9px;
+          font-size: 0.75rem;
+        }
+      }
+    </style>
 
-                </td>
+    <div class="content2">
+      <h1 style="font-size: 3em; text-align: center">Awards</h1>
 
+      <table class="awards">
+        <tr>
+          <th>
+            <img
+              src="image/logos/firstlogo.png"
+              alt="FIRST logo"
+              style="width: 100px"
+            />
+          </th>
+          <th>
+            <img
+              src="image/logos/occra.png"
+              alt="OCCRA logo"
+              style="width: 100px"
+            />
+          </th>
+        </tr>
+        <tr style="height: auto">
+          <td class="table-year">2025</td>
+          <td class="table-year">2025</td>
+        </tr>
+        <td>
+          <ul>
+            <li>Team Spirit Award ~ Milford District Event</li>
+            <li>Team Sustainability Award ~ Milford District Event</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Finalist ~ County Championship</li>
+            <li>Strategic Design Award ~ County Championship</li>
+          </ul>
+          <ul>
+            <li>Spirit of The Competition Award ~ Oxford Championship</li>
+          </ul>
+          <ul>
+            <li>
+              Technical Excellence Award ~ Birmingham Seaholm Championship
+            </li>
+          </ul>
+        </td>
+        <tr style="height: auto">
+          <td class="table-year">2024</td>
+          <td class="table-year">2024</td>
+        </tr>
+        <td>
+          <ul>
+            <li>Team Spirit Award ~ Milford District Event</li>
+          </ul>
+        </td>
 
-                <tr style="height:auto">
-                    <td style="font-weight: bold;text-align: center;">2023</td>
-                    <td style="font-weight: bold;text-align: center;">2023</td>
-                </tr>
-                <td>
-                    <ul>
-                        <li>Creativity Award ~ Milford District Event</li>
-                    </ul>
-                </td>
+        <td>
+          <ul>
+            <li>Spirit of the Competition ~ Walled Lake Central</li>
+          </ul>
+          <ul>
+            <li>Technical Excellence ~ Marian High School</li>
+          </ul>
+        </td>
 
-                <td>
-                    <ul>
-                        <li>Third Place ~ Marian Tournament</li>
-                    </ul>
-                    <ul>
-                        <li>Second Place ~ Seaholm Tournament</li>
-                    </ul>
-                    <ul>
-                        <li>Judges' Award ~ County Championship</li>
-                        <li>Finalist ~ County Championship</li>
-                    </ul>
-                </td>
+        <tr style="height: auto">
+          <td class="table-year">2023</td>
+          <td class="table-year">2023</td>
+        </tr>
+        <td>
+          <ul>
+            <li>Creativity Award ~ Milford District Event</li>
+          </ul>
+        </td>
 
-                <tr style="height:auto">
-                    <td style="font-weight: bold;text-align: center;">2022</td>
-                    <td style="font-weight: bold;text-align: center;">2022</td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Excellence in Engineering Award ~ Walled Lake District Event</li>
-                            <li>Finalist ~ Walled Lake District Event</li>
-                        </ul>
-                        <ul>
-                            <li>District Championship Winner ~ FIM District, Ford Field</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Third Place ~ Marian Tournament</li>
-                            <li>Beautiful Bot Award ~ Marian Tournament </li>
-                        </ul>
-                        <ul>
-                            <li>Second Place ~ Walled Lake Western Tournament</li>
-                            <li>Spirit of the Competition Award ~ Walled Lake Western Tournament</li>
-                        </ul>
-                        <ul>
-                            <li>Strategic Design Award ~ County Championship</li>
-                            <li>Finalist ~ County Championship</li>
-                        </ul>
-                    </td>
+        <td>
+          <ul>
+            <li>Third Place ~ Marian Tournament</li>
+          </ul>
+          <ul>
+            <li>Second Place ~ Seaholm Tournament</li>
+          </ul>
+          <ul>
+            <li>Judges' Award ~ County Championship</li>
+            <li>Finalist ~ County Championship</li>
+          </ul>
+        </td>
 
-                </tr>
-
-
-                <tr>
-                    <td style="font-weight: bold;text-align: center;">2021</td>
-                    <td style="font-weight: bold;text-align: center;">2021</td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li>Technical Excellence Award ~ County Championship</li>
-                        </ul>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="font-weight: bold;text-align: center;">2020</td>
-                    <td style="font-weight: bold;text-align: center;">2020</td>
-                </tr>
-
-                <tr>
-                    <td>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li>Most Improved Award ~ Virtual Design Challenge</li>
-                        </ul>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="font-weight: bold;text-align: center;">2019</td>
-                    <td style="font-weight: bold;text-align: center;">2019</td>
-                </tr>
-
-                <tr>
-                    <td>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li>Semi-Finalist ~ County Championship </li>
-                        </ul>
-                        <ul>
-                            <li>Technical Excellence Award ~ Oxford Tournament</li>
-                        </ul>
-                        <ul>
-                            <li>Judges' Award ~ Birmingham Tournament</li>
-                        </ul>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="font-weight: bold;text-align: center;">2018</td>
-                    <td style="font-weight: bold;text-align: center;">2018</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <ul>
-                            <li>District Event Winner ~ Milford District Event</li>
-                        </ul>
-                        <ul>
-                            <li>Highest Rookie Seed Award ~ Troy District Event</li>
-                        </ul>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li>Technical Excellence Award ~ Brother Rice/Marian Tournament</li>
-                            <li>Second Place ~ Brother Rice/Marian Tournament</li>
-                        </ul>
-                        <ul>
-                            <li>Third Place ~ Birmingham Tournament</li>
-                        </ul>
-                    </td>
-                </tr>
-
-
-            </table>
-
-        </div>
-
-        <br>
-
-        <footer>
-            <ul class="social-icon">
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://www.facebook.com/groups/972328127497050"><ion-icon
-                            name="logo-facebook"></ion-icon></a>
-                </li>
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://twitter.com/wl_robotics?lang=en"><ion-icon
-                            name="logo-twitter"></ion-icon></a>
-                </li>
-                <li class="social-icon__item">
-                    <a class="social-icon__link" href="https://github.com/Yeti-7178/"><ion-icon
-                            name="logo-github"></ion-icon></a>
-                </li>
+        <tr style="height: auto">
+          <td class="table-year">2022</td>
+          <td class="table-year">2022</td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                Excellence in Engineering Award ~ Walled Lake District Event
+              </li>
+              <li>Finalist ~ Walled Lake District Event</li>
             </ul>
-
-            <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="first.html">FIRST</a></li>
-                <li class="menu__item"><a class="menu__link" href="occra.html">OCCRA</a></li>
-                <li class="menu__item"><a class="menu__link" href="308.html">308</a></li>
-                <li class="menu__item"><a class="menu__link" href="7178.html">7178</a></li>
-                <li class="menu__item"><a class="menu__link" href="community.html">Community</a></li>
-                <li class="menu__item"><a class="menu__link" href="https://www.brodysonline.com/walledlakehsrobotics"
-                        target="_blank">Shop</a></li>
+            <ul>
+              <li>District Championship Winner ~ FIM District, Ford Field</li>
             </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Third Place ~ Marian Tournament</li>
+              <li>Beautiful Bot Award ~ Marian Tournament</li>
+            </ul>
+            <ul>
+              <li>Second Place ~ Walled Lake Western Tournament</li>
+              <li>
+                Spirit of the Competition Award ~ Walled Lake Western Tournament
+              </li>
+            </ul>
+            <ul>
+              <li>Strategic Design Award ~ County Championship</li>
+              <li>Finalist ~ County Championship</li>
+            </ul>
+          </td>
+        </tr>
 
-            <p>&copy;2026 Walled Lake Robotics</p>
-        </footer>
+        <tr>
+          <td class="table-year">2021</td>
+          <td class="table-year">2021</td>
+        </tr>
+        <tr>
+          <td></td>
 
-        <script src="js/slideshow.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+          <td>
+            <ul>
+              <li>Technical Excellence Award ~ County Championship</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-year">2020</td>
+          <td class="table-year">2020</td>
+        </tr>
+
+        <tr>
+          <td></td>
+
+          <td>
+            <ul>
+              <li>Most Improved Award ~ Virtual Design Challenge</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-year">2019</td>
+          <td class="table-year">2019</td>
+        </tr>
+
+        <tr>
+          <td></td>
+
+          <td>
+            <ul>
+              <li>Semi-Finalist ~ County Championship</li>
+            </ul>
+            <ul>
+              <li>Technical Excellence Award ~ Oxford Tournament</li>
+            </ul>
+            <ul>
+              <li>Judges' Award ~ Birmingham Tournament</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-year">2018</td>
+          <td class="table-year">2018</td>
+        </tr>
+
+        <tr>
+          <td>
+            <ul>
+              <li>District Event Winner ~ Milford District Event</li>
+            </ul>
+            <ul>
+              <li>Highest Rookie Seed Award ~ Troy District Event</li>
+            </ul>
+          </td>
+
+          <td>
+            <ul>
+              <li>
+                Technical Excellence Award ~ Brother Rice/Marian Tournament
+              </li>
+              <li>Second Place ~ Brother Rice/Marian Tournament</li>
+            </ul>
+            <ul>
+              <li>Third Place ~ Birmingham Tournament</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <br />
+
+    <footer>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.facebook.com/groups/972328127497050"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://twitter.com/wl_robotics?lang=en"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="https://github.com/Yeti-7178/"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+        </li>
+      </ul>
+
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="first.html">FIRST</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="occra.html">OCCRA</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="308.html">308</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="7178.html">7178</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="community.html">Community</a>
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__link"
+            href="https://www.brodysonline.com/walledlakehsrobotics"
+            target="_blank"
+            >Shop</a
+          >
+        </li>
+      </ul>
+
+      <p>&copy;2026 Walled Lake Robotics</p>
+    </footer>
+
+    <script src="js/slideshow.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
